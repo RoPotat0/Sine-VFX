@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SineVFX — VFX tooling for Roblox Studio</title>
+<meta name="description" content="A VFX editor for Roblox Studio: bezier curve graphs, 3D particles, and batch tools for every emitter property.">
+<meta property="og:title" content="SineVFX">
+<meta property="og:description" content="VFX tooling for Roblox Studio.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="vfx" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">SineVFX</a>
+    <nav>
+      <a href="#showcase">Showcase</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#redeem">Redeem</a>
+      <a href="#install">Install</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <h1>VFX tooling for Roblox&nbsp;Studio.</h1>
+      <p class="sub">
+        Bezier curve graphs on every number sequence. 3D particles from any part.
+        Batch tools that edit a hundred emitters at once.
+      </p>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="#pricing">Get SineVFX — <span data-price>$5</span></a>
+        <a class="btn btn-line" href="#install">Install</a>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><b data-stat="users">—</b><span>creators</span></div>
+        <div class="stat"><b data-stat="installs">—</b><span>installs</span></div>
+        <div class="stat"><b data-stat="version">—</b><span>latest</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="showcase">
+    <div class="wrap">
+      <div class="head">
+        <p class="label">Showcase</p>
+        <h2>See it work</h2>
+      </div>
+
+      <div class="carousel">
+        <div class="track" id="track" tabindex="0" aria-label="Showcase videos"></div>
+      </div>
+
+      <div class="car-foot">
+        <div class="dots" id="dots"></div>
+        <div class="arrows">
+          <button class="car-btn prev" aria-label="Previous">&#8249;</button>
+          <button class="car-btn next" aria-label="Next">&#8250;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="wrap">
+      <div class="head">
+        <p class="label">Pricing</p>
+        <h2><span data-price>$5</span> — <span data-price-note>one-time</span></h2>
+        <p>Every method gives you the same thing: a code you can redeem whenever you want.</p>
+      </div>
+
+      <div class="pay-list" id="payGrid"></div>
+
+      <p class="note-line">
+        Redeem your code below with your Roblox username and the plugin unlocks on its next
+        launch — nothing to paste into Studio.
+      </p>
+    </div>
+  </section>
+
+  <section id="redeem">
+    <div class="wrap">
+      <div class="head">
+        <p class="label">Access</p>
+        <h2>Already bought, or want to try it</h2>
+      </div>
+
+      <div class="panels">
+        <div class="panel">
+          <h3>Redeem a code</h3>
+          <p>Enter your code and the Roblox account that should get access.</p>
+          <form id="redeemForm" autocomplete="off">
+            <label for="code">Code</label>
+            <input id="code" name="code" placeholder="SVFX-XXXX-XXXX-XXXX" spellcheck="false" required>
+            <label for="user">Roblox username</label>
+            <input id="user" name="user" placeholder="YourUsername" spellcheck="false" required>
+            <button class="btn btn-primary full" type="submit">Redeem</button>
+          </form>
+          <p class="result" id="redeemResult" role="status" aria-live="polite"></p>
+        </div>
+
+        <div class="panel">
+          <h3>Free trial</h3>
+          <p>
+            <span data-trial-days>3</span> days, no payment details. It starts by itself the first
+            time the plugin runs — just install it.
+          </p>
+          <a class="btn btn-line full" href="#install" style="margin-top:20px">Installation steps</a>
+          <p class="hint">Trials are tied to your Roblox account, so reinstalling does not restart one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="install">
+    <div class="wrap">
+      <div class="head">
+        <p class="label">Install</p>
+        <h2>Four steps</h2>
+      </div>
+
+      <ol class="steps">
+        <li>
+          <h3>Get the plugin</h3>
+          <p>Install from the Creator Store, or download the loader from the repo into your Studio
+          <code>Plugins</code> folder.</p>
+          <a class="btn btn-line" data-repo href="#">Open the repo</a>
+        </li>
+        <li>
+          <h3>Allow HTTP once</h3>
+          <p>Studio asks for permission the first time SineVFX contacts the update server. Accept it —
+          updates and licence checks both go through it.</p>
+        </li>
+        <li>
+          <h3>Open it</h3>
+          <p>Click <strong>SineVFX</strong> in the Plugins tab. Select any emitter, beam or trail and
+          the properties panel fills in.</p>
+        </li>
+        <li>
+          <h3>It updates itself</h3>
+          <p>Every launch pulls the newest release automatically. No reinstalling.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>SineVFX</span>
+    <a data-repo href="#">GitHub</a>
+    <span class="sep">Not affiliated with Roblox Corporation.</span>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

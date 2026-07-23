@@ -1,0 +1,24 @@
+{
+  "_comment": "Showcase carousel. Add or remove entries here and the site updates - nothing else to edit. 'type' is 'youtube' (use the 11-char video id) or 'mp4' (a file in docs/media/). Order here is the order on the page.",
+  "videos": [
+    {
+      "type": "youtube",
+      "id": "REPLACE_WITH_VIDEO_ID",
+      "title": "Curve editor",
+      "caption": "Bezier graphs with envelopes, on any number sequence."
+    },
+    {
+      "type": "youtube",
+      "id": "REPLACE_WITH_VIDEO_ID",
+      "title": "3D particles",
+      "caption": "Turn any part into a particle system."
+    },
+    {
+      "type": "mp4",
+      "src": "media/example.mp4",
+      "poster": "media/example.jpg",
+      "title": "Local clip example",
+      "caption": "Drop an .mp4 in docs/media/ and reference it like this."
+    }
+  ]
+}
