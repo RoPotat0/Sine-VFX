@@ -23,7 +23,7 @@ window.SVFX_CONFIG = {
     creatorStore: null, // e.g. "https://create.roblox.com/store/asset/XXXXXXXX"
 
     // Stripe Payment Link (dashboard > Payment links). Just a URL, safe to ship.
-    stripe: null,       // e.g. "https://buy.stripe.com/xxxxxxxx"
+    stripe: "https://buy.stripe.com/test_bJe8wIf8hdiW2UVeBL5Ne00",       // e.g. "https://buy.stripe.com/xxxxxxxx"
 
     // PayPal.me or a hosted button link.
     paypal: null,       // e.g. "https://paypal.me/yourname/5"
