@@ -1,0 +1,11 @@
+name = "sinevfx-api"
+main = "worker.js"
+compatibility_date = "2026-07-01"
+
+# wrangler d1 create sinevfx  ->  paste the id it prints here
+[[d1_databases]]
+binding = "DB"
+database_name = "sinevfx"
+database_id = "4563f813-5ca5-4c53-9694-971ddd175406"
+
+# ADMIN_TOKEN is a secret, not a var:  wrangler secret put ADMIN_TOKEN

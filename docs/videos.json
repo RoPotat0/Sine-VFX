@@ -1,0 +1,8 @@
+{
+  "_comment": "Showcase strip. Put .mp4 files in docs/media/ and list them here. They autoplay muted on loop, so keep them short (5 to 15s) and small (a few MB each). Order here is the order on the page. Delete an entry to remove it.",
+  "videos": [
+    { "src": "media/curves.mp4",    "title": "Curve editor" },
+    { "src": "media/particles.mp4", "title": "3D particles" },
+    { "src": "media/tools.mp4",     "title": "Batch tools" }
+  ]
+}
