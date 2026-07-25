@@ -208,15 +208,16 @@ async function check(env, body) {
     return json({ ...base, ok: false, tier: "anonymous",
                   message: "Sign in to Roblox Studio to use SineVFX." });
 
-  const res = await trial(env, body);
-  const data = await res.clone().json();
-  return json({
-    ...base,
-    ok: !!data.ok,
-    tier: data.ok ? "trial" : "expired",
-    expiresAt: data.expiresAt ?? null,
-    message: data.error,
-  });
+  // Trial: RESUME an existing one, but never auto-start it. A fresh account gets tier "none"
+  // so the plugin can offer its trial window instead of silently spending the free trial.
+  const tr = await env.DB.prepare("SELECT expires_at FROM trials WHERE roblox_user = ?")
+    .bind(user).first();
+  if (!tr)
+    return json({ ...base, ok: false, tier: "none", message: "Start your free trial to use Sine VFX." });
+  const active = tr.expires_at > t;
+  return json({ ...base, ok: active, tier: active ? "trial" : "expired",
+                expiresAt: tr.expires_at,
+                message: active ? undefined : "Your Sine VFX free trial has ended." });
 }
 
 /**
@@ -557,17 +558,27 @@ async function ownsAsset(userId, assetId) {
  * code involved, because the purchase itself is the proof. Requires a public inventory.
  */
 async function claim(env, body) {
-  const username = clean(body.username, 32);
-  if (!username) return json({ ok: false, error: "missing username" }, 400);
+  // The plugin passes robloxUser (it already knows the id); the website passes username.
+  let user;
+  if (Number(body.robloxUser) > 0) {
+    user = { id: Number(body.robloxUser), name: clean(body.robloxName, 32) || String(Number(body.robloxUser)) };
+  } else {
+    const username = clean(body.username, 32);
+    if (!username) return json({ ok: false, error: "missing username" }, 400);
+    user = await resolveRobloxUser(username);
+    if (user === "busy") return json({ ok: false, error: "busy",
+      message: "Roblox is busy right now. Please try again in a moment." }, 503);
+    if (!user) return json({ ok: false, error: "No Roblox account with that username." }, 404);
+  }
 
-  const user = await resolveRobloxUser(username);
-  if (user === "busy") return json({ ok: false, error: "busy",
-    message: "Roblox is busy right now. Please try again in a moment." }, 503);
-  if (!user) return json({ ok: false, error: "No Roblox account with that username." }, 404);
-
-  const banned = await env.DB.prepare(
-    "SELECT role FROM allowlist WHERE roblox_user = ? AND role = 'banned'").bind(user.id).first();
-  if (banned) return json({ ok: false, error: "That account cannot be unlocked." }, 403);
+  const existing = await env.DB.prepare(
+    "SELECT role, expires_at FROM allowlist WHERE roblox_user = ?").bind(user.id).first();
+  if (existing && existing.role === "banned")
+    return json({ ok: false, error: "That account cannot be unlocked." }, 403);
+  // Already unlocked? Say so instead of re-checking the purchase.
+  if (existing && ["paid", "lifetime", "tester"].includes(existing.role)
+      && (!existing.expires_at || existing.expires_at > now()))
+    return json({ ok: true, alreadyHad: true, tier: existing.role, username: user.name });
 
   let owns = false, anyPrivate = false, anyBusy = false;
   for (const id of Object.values(OWNED_ASSETS)) {
@@ -594,7 +605,7 @@ async function claim(env, body) {
      ON CONFLICT(roblox_user) DO UPDATE SET role = 'paid', expires_at = NULL, note = excluded.note`
   ).bind(user.id, now(), "roblox purchase claim").run();
 
-  return json({ ok: true, tier: "paid", username: user.name });
+  return json({ ok: true, added: true, tier: "paid", username: user.name });
 }
 
 export default {

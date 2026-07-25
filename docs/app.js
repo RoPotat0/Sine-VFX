@@ -9,6 +9,9 @@
   // redeem popup calls this to reveal + focus that one field instead of asking
   // for the name again in the popup. Assigned by the buy-card block below.
   let revealUserField = () => {};
+  // Opens the "check your Roblox purchase" popup using the Get-plugin username.
+  // Assigned by the claim block; called by the Robux/Creator-Store tiles too.
+  let openClaim = () => {};
 
   $$("[data-price]").forEach(el => el.textContent = CFG.price || "$5");
   $$("[data-trial-days]").forEach(el => el.textContent = CFG.trialDays ?? 3);
@@ -51,6 +54,18 @@
       setTimeout(() => { btn.classList.remove("done"); use.setAttribute("href", "#i-copy"); }, 1400);
     });
   })();
+
+  // The download starts locked; a quiet "start the free trial" link unlocks it.
+  // It doesn't start a trial — the 3-day trial begins inside Studio on first open.
+  (() => {
+    const enable = $("#enableDownload"), dl = $("[data-loader]");
+    if (!enable || !dl) return;
+    enable.addEventListener("click", () => {
+      dl.classList.remove("is-locked");
+      enable.remove();
+    });
+  })();
+
   $$("[data-discord]").forEach(el => {
     if (CFG.discord) { el.href = CFG.discord; el.target = "_blank"; el.rel = "noopener noreferrer"; }
     else el.style.display = "none";
@@ -399,6 +414,11 @@
           const pm = $("#m-paypal");                 // show the "get your code" step on the main page
           if (pm) pm.hidden = false;
         });
+        else if (mode === "roblox") a.addEventListener("click", (e) => {
+          e.preventDefault();
+          openPopup(href);
+          openClaim();                                // show the "check your purchase" step
+        });
         else { a.target = "_blank"; a.rel = "noopener noreferrer"; }
       }
       let badgeHtml;
@@ -435,12 +455,12 @@
     }));
     list.appendChild(tile({
       href: pay.creatorStore, cls: "pay-store", name: "Creator Store",
-      meta: `${price} on Roblox, installs into Studio`, mode: "popup",
+      meta: `${price} on Roblox, installs into Studio`, mode: "roblox",
       badge: { mask: "icon-dev1.png" },
     }));
     list.appendChild(tile({
       href: pay.shirt, cls: "pay-robux", name: `${robux} Robux`,
-      meta: `${price} after devex + 30 percent`, mode: "popup",
+      meta: `${price} after devex + 30 percent`, mode: "roblox",
       badge: { mask: "icon-dev2.png" },
     }));
     list.appendChild(tile({
@@ -478,7 +498,7 @@
     if (tos) {
       const link = CFG.terms ? `<a href="${esc(CFG.terms)}">Terms of Service</a>` : "Terms of Service";
       tos.innerHTML = `By buying you agree to the ${link}. Sales are final once a code has been ` +
-        `redeemed. SineVFX is a Roblox Studio plugin and is not affiliated with Roblox Corporation.`;
+        `redeemed. Sine VFX is a Roblox Studio plugin and is not affiliated with Roblox Corporation.`;
     }
   })();
 
@@ -552,21 +572,23 @@
      For the Robux shirt and Creator Store, buying makes the account OWN the item,
      so the buyer just types their username and the Worker confirms it with Roblox. */
   (() => {
-    const m = $("#m-claim"), form = $("#claimForm"), out = $("#claimResult"), input = $("#claimUser");
+    const m = $("#m-claim"), form = $("#claimForm"), out = $("#claimResult"), using = $("#claimUsing");
     if (!m || !form) return;
 
-    $$("[data-modal='claim']").forEach(b => b.addEventListener("click", () => {
+    openClaim = () => {
       const u = ($("#buyUser")?.value || "").trim();
-      if (u && input) input.value = u;
+      if (!u) { revealUserField(); return; }        // needs the username from the buy card
+      if (using) using.innerHTML = `Checking <b>@${esc(u)}</b>`;
       if (out) { out.className = "result"; out.textContent = ""; }
       m.hidden = false;
-      input?.focus();
-    }));
+    };
+    $$("[data-modal='claim']").forEach(b => b.addEventListener("click", openClaim));
 
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
-      const username = (input?.value || "").trim();
-      if (!username || !CFG.API) return;
+      const username = ($("#buyUser")?.value || "").trim();
+      if (!username) { revealUserField(); return; }
+      if (!CFG.API) return;
       const btn = $("button[type=submit]", form);
       btn.disabled = true;
       out.className = "result";
@@ -580,14 +602,16 @@
         const d = await r.json().catch(() => ({}));
         if (r.ok && d.ok) {
           out.className = "result ok";
-          out.textContent = `Done. ${d.username} is unlocked. Open Studio to use it.`;
+          out.textContent = d.alreadyHad
+            ? `${d.username} already has access — you're all set. Install it below.`
+            : `Found your purchase. ${d.username} is now unlocked. Install it below.`;
           setTimeout(() => {
             m.hidden = true;
             $("#setup")?.scrollIntoView({ behavior: REDUCE ? "auto" : "smooth", block: "start" });
-          }, 1600);
+          }, 1800);
         } else {
           out.className = "result err";
-          out.textContent = d.message || d.error || "Could not unlock that account.";
+          out.textContent = d.message || d.error || "Could not check that account.";
         }
       } catch {
         out.className = "result err";

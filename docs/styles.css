@@ -28,7 +28,9 @@
   --ok:  #22e05f;
   --bad: #ff6b6b;
 
-  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
+  /* Cantora One for big display text; Nunito (a similar warm humanist) for the rest. */
+  --sans: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
+  --display: 'Cantora One', var(--sans);
   --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 
   --maxw: 1040px;
@@ -68,13 +70,7 @@ body {
 .b-green  { top: 12%; left: -30vw;
             background: radial-gradient(circle, rgba(34,224,95,.46) 0%, transparent 58%); animation-delay: -5.5s, -9s; }
 .b-red    { top: 34%; right: -30vw;
-            background: radial-gradient(circle, rgba(255,77,77,.44) 0%, transparent 58%); animation-delay: -11s, -16s; }
-.b-purple { top: 56%; left: -22vw;
-            background: radial-gradient(circle, rgba(139,92,255,.46) 0%, transparent 58%); animation-delay: -8s, -22s; }
-.b-cyan   { bottom: -38vw; left: 46%; margin-left: -39vw;
-            background: radial-gradient(circle, rgba(80,220,255,.4) 0%, transparent 58%); animation-delay: -3s, -12s; }
-.b-amber  { top: 4%; right: 4%; width: 54vw; height: 54vw; max-width: 700px; max-height: 700px;
-            background: radial-gradient(circle, rgba(255,190,90,.34) 0%, transparent 58%); animation-delay: -14s, -6s; }
+            background: radial-gradient(circle, rgba(255,77,77,.46) 0%, transparent 58%); animation-delay: -11s, -16s; }
 @keyframes breathe {
   0%, 100% { opacity: .06; }
   50%      { opacity: .4; }
@@ -97,8 +93,8 @@ body {
 
 .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
 
-h1, h2, h3 { margin: 0; font-weight: 700; line-height: 1.14; letter-spacing: -.028em; }
-h1 { font-size: clamp(40px, 6.8vw, 72px); letter-spacing: -.04em; }
+h1, h2, h3 { margin: 0; font-family: var(--display); font-weight: 400; line-height: 1.1; letter-spacing: -.01em; }
+h1 { font-size: clamp(40px, 6.8vw, 72px); letter-spacing: -.015em; }
 h2 { font-size: clamp(30px, 3.8vw, 46px); margin-bottom: 46px; }
 section > .wrap > h2::after {
   content: ""; display: block; width: 104px; height: 3px; margin: 18px auto 0;
@@ -157,17 +153,41 @@ section { padding: 100px 0; }
 /* ── hero ────────────────────────────────────────────────────────── */
 .hero { padding: 54px 0 92px; }
 .logo {
-  width: 126px; height: 126px; border-radius: 27px; margin-bottom: 30px;
-  animation: bob 5.5s ease-in-out infinite, logoGlow 7s ease-in-out infinite;
+  width: 126px; height: 126px; border-radius: 27px; margin-bottom: 16px;
+  animation: bob 5.5s ease-in-out infinite, logoGlow 7.5s ease-in-out infinite;
 }
 @keyframes bob { 0%,100% { transform: translateY(0) rotate(-1.5deg); } 50% { transform: translateY(-11px) rotate(1.5deg); } }
 @keyframes logoGlow {
-  0%,100% { filter: drop-shadow(0 12px 30px rgba(111,191,252,.28)); }
-  33%     { filter: drop-shadow(0 16px 44px rgba(139,92,255,.42)); }
-  66%     { filter: drop-shadow(0 16px 44px rgba(34,224,95,.34)); }
+  0%,100% { filter: drop-shadow(0 12px 32px rgba(111,191,252,.34)); }   /* blue */
+  33%     { filter: drop-shadow(0 16px 46px rgba(34,224,95,.36)); }     /* green */
+  66%     { filter: drop-shadow(0 16px 46px rgba(255,77,77,.36)); }     /* red */
 }
 
-.hero h1 { max-width: 16ch; margin: 0 auto; animation: introUp .85s var(--ease) both; }
+.wordmark {
+  font: 400 clamp(52px, 10vw, 104px)/1 var(--display);
+  letter-spacing: .01em; color: var(--text);
+  margin: 6px 0 0; animation: introUp .85s var(--ease) both;
+  text-shadow: 0 0 26px rgba(111,191,252,.35), 0 0 54px rgba(34,224,95,.16);
+}
+
+/* A colour sine wave under the wordmark — reads as VFX. The gradient is fixed and the
+   wave shape scrolls by exactly one tile (100px), so the loop is seamless, no jump. */
+.sinewave {
+  width: min(340px, 66%); height: 26px; margin: 12px auto 20px;
+  background: linear-gradient(90deg, #22e05f, #6fbffc, #ff6b6b);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='100'%20height='26'%20viewBox='0%200%20100%2026'%3E%3Cpath%20d='M0%2013%20Q12.5%203%2025%2013%20T50%2013%20T75%2013%20T100%2013'%20fill='none'%20stroke='%23fff'%20stroke-width='2.5'%20stroke-linecap='round'/%3E%3C/svg%3E");
+          mask-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='100'%20height='26'%20viewBox='0%200%20100%2026'%3E%3Cpath%20d='M0%2013%20Q12.5%203%2025%2013%20T50%2013%20T75%2013%20T100%2013'%20fill='none'%20stroke='%23fff'%20stroke-width='2.5'%20stroke-linecap='round'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: repeat-x; mask-repeat: repeat-x;
+  -webkit-mask-size: 100px 26px; mask-size: 100px 26px;
+  filter: drop-shadow(0 0 6px rgba(111,191,252,.4));
+  animation: waveTravel 5s linear infinite, introUp .85s .12s var(--ease) both;
+}
+@keyframes waveTravel {
+  from { -webkit-mask-position: 0 center; mask-position: 0 center; }
+  to   { -webkit-mask-position: 100px center; mask-position: 100px center; }
+}
+
+.sub b { color: var(--text); font-weight: 700; }
 .sub { color: var(--muted); font-size: 19px; max-width: 47ch; margin: 22px auto 0; animation: introUp .85s .08s var(--ease) both; }
 
 .actions { display: flex; gap: 12px; justify-content: center; margin-top: 36px; flex-wrap: wrap; animation: introUp .85s .16s var(--ease) both; }
@@ -460,6 +480,17 @@ input:focus { outline: none; box-shadow: none; }
 }
 .mclabel .ic { width: 15px; height: 15px; color: var(--muted); }
 .mchint { font-size: 13.5px; color: var(--dim); line-height: 1.5; }
+
+/* download starts locked until the quiet trial link is clicked */
+.dlbtn.is-locked { opacity: .5; pointer-events: none; filter: grayscale(.35); }
+.triallink {
+  align-self: flex-start; margin: 2px 0 0; padding: 3px 6px;
+  background: none; border: 0; cursor: pointer;
+  color: var(--dim); font: 500 12.5px var(--sans);
+  text-decoration: underline; text-underline-offset: 3px;
+  opacity: .55; transition: opacity .18s, color .18s;
+}
+.triallink:hover { opacity: 1; color: var(--muted); }
 
 /* copyable code box: dark field, big code, icon-only copy inside */
 .codebox { position: relative; }

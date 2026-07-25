@@ -3,13 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SineVFX</title>
+<title>Sine VFX</title>
 <meta name="description" content="A VFX editor for Roblox Studio.">
-<meta property="og:title" content="SineVFX">
+<meta property="og:title" content="Sine VFX">
 <meta property="og:description" content="A VFX editor for Roblox Studio.">
 <meta property="og:image" content="sine.png">
 <meta property="og:type" content="website">
 <link rel="icon" href="sine.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cantora+One&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,9 +22,9 @@
   <span class="blob b-blue"></span>
   <span class="blob b-green"></span>
   <span class="blob b-red"></span>
-  <span class="blob b-purple"></span>
-  <span class="blob b-cyan"></span>
-  <span class="blob b-amber"></span>
+  <span class="blob b-blue"></span>
+  <span class="blob b-green"></span>
+  <span class="blob b-red"></span>
 </div>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -45,7 +48,7 @@
 
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="#top"><img src="sine.png" alt="">SineVFX</a>
+    <a class="brand" href="#top"><img src="sine.png" alt="">Sine VFX</a>
     <nav>
       <a href="#showcase">Showcase</a>
       <a href="#buy">Buy</a>
@@ -59,9 +62,10 @@
 
   <section class="hero">
     <div class="wrap">
-      <img class="logo" src="sine.png" alt="SineVFX">
-      <h1>Make VFX you actually like.</h1>
-      <p class="sub">Curve graphs, 3D particles, and tools that edit every emitter at once.</p>
+      <img class="logo" src="sine.png" alt="Sine VFX">
+      <h1 class="wordmark">Sine VFX</h1>
+      <div class="sinewave" aria-hidden="true"></div>
+      <p class="sub"><b>The future of Roblox VFX.</b> An all-in-one VFX editor and toolkit built for Roblox Studio</p>
 
       <div class="actions">
         <a class="btn btn-primary big" href="#buy"><span class="wmark"></span>Buy plugin</a>
@@ -85,7 +89,7 @@
 
   <section id="buy">
     <div class="wrap">
-      <h2 class="reveal">Get SineVFX</h2>
+      <h2 class="reveal">Get Sine VFX</h2>
 
       <div class="buycard reveal">
         <h3 class="cardtitle"><span class="wmark"></span>Get plugin</h3>
@@ -116,7 +120,7 @@
 
       <div class="outer">
         <button class="obtn" data-modal="redeem"><svg class="ic"><use href="#i-key"/></svg>Redeem a code</button>
-        <button class="obtn" data-modal="claim"><svg class="ic"><use href="#i-roblox"/></svg>Unlock a Roblox purchase</button>
+        <button class="obtn" data-modal="claim"><svg class="ic"><use href="#i-roblox"/></svg>Already purchased?</button>
       </div>
     </div>
   </section>
@@ -137,8 +141,9 @@
 
         <div class="minicard">
           <span class="mclabel"><svg class="ic"><use href="#i-file"/></svg>Plugin file</span>
-          <a class="btn btn-primary dlbtn full" data-loader href="#"><svg class="ic"><use href="#i-down"/></svg>Download the plugin</a>
-          <span class="mchint">This one file is both the free <span data-trial-days>3</span>-day trial and the full plugin. Once your account is unlocked it stops being a trial on its own, no re-downloading.</span>
+          <a class="btn btn-primary dlbtn full is-locked" data-loader href="#"><svg class="ic"><use href="#i-down"/></svg>Download the plugin</a>
+          <button class="triallink" id="enableDownload" type="button">or start the free trial</button>
+          <span class="mchint">This one file is both the free <span data-trial-days>3</span>-day trial and the full plugin. The <span data-trial-days>3</span>-day trial starts inside Studio the first time you open it.</span>
         </div>
       </div>
 
@@ -165,7 +170,7 @@
 
 <footer>
   <div class="wrap">
-    <span class="brand"><img src="sine.png" alt="">SineVFX</span>
+    <span class="brand"><img src="sine.png" alt="">Sine VFX</span>
     <a data-discord href="#"><span class="dicon"></span>Discord</a>
     <a data-terms href="#">Terms of Service</a>
     <span class="fine">Not affiliated with Roblox Corporation.</span>
@@ -200,15 +205,13 @@
 </div>
 
 <div class="modal" id="m-claim" hidden>
-  <div class="sheet" role="dialog" aria-modal="true" aria-label="Unlock a Roblox purchase">
+  <div class="sheet" role="dialog" aria-modal="true" aria-label="Check your Roblox purchase">
     <button class="x" data-close aria-label="Close"><svg class="ic"><use href="#i-x"/></svg></button>
-    <h3>Unlock a Roblox purchase</h3>
-    <p class="sheetsub">Bought with Robux or on the Creator Store? Type your username and we'll check that you own it. Your Roblox inventory must be public.</p>
+    <h3>Check your Roblox purchase</h3>
+    <p class="sheetsub">We'll confirm your account owns Sine VFX (Robux or Creator Store) and unlock it. Your Roblox inventory must be public.</p>
+    <p class="usingname" id="claimUsing"></p>
     <form id="claimForm" autocomplete="off">
-      <div class="userfield"><span class="at">@</span>
-        <input id="claimUser" placeholder="Roblox username" spellcheck="false">
-      </div>
-      <button class="btn btn-primary full" type="submit"><svg class="ic"><use href="#i-check"/></svg>Unlock</button>
+      <button class="btn btn-primary full" type="submit"><svg class="ic"><use href="#i-check"/></svg>Check my purchase</button>
     </form>
     <p class="result" id="claimResult" role="status" aria-live="polite"></p>
   </div>
