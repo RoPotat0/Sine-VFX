@@ -220,17 +220,9 @@
         .then(d => { if (d && d.ok) countTo($('[data-stat="installs"]'), d.installs || 0); })
         .catch(() => {});
     }
-    if (CFG.repo) {
-      const slug = CFG.repo.replace(/^https?:\/\/github\.com\//, "").replace(/\/$/, "");
-      fetch(`https://api.github.com/repos/${slug}/releases`)
-        .then(r => r.ok ? r.json() : Promise.reject(r.status))
-        .then(list => {
-          const rel = Array.isArray(list) ? list.find(x => !x.draft) : null;
-          const el = $('[data-stat="version"]');
-          if (rel && el) el.textContent = rel.tag_name;
-        })
-        .catch(() => {});
-    }
+    // Version is a static value from config now (no longer pulled from GitHub releases).
+    const vEl = $('[data-stat="version"]');
+    if (vEl && CFG.version) vEl.textContent = CFG.version;
   })();
 
   /* ── showcase: an endless, freely scrolling strip ─────────────────

@@ -301,6 +301,11 @@ section { padding: 100px 0; }
 }
 .ordiv::before, .ordiv::after { content: ""; flex: 1; height: 1px; background: var(--line); }
 
+.storenote {
+  max-width: 560px; margin: 16px auto 0; color: var(--dim);
+  font-size: 14px; line-height: 1.6;
+}
+
 /* Setup stays hidden until the visitor unlocks (redeem / buy). */
 #setup[hidden] { display: none; }
 

@@ -51,8 +51,7 @@
     <a class="brand" href="#top"><img src="sine.png" alt="">Sine VFX</a>
     <nav>
       <a href="#showcase">Showcase</a>
-      <a href="#buy">Buy</a>
-      <a href="#setup">Setup</a>
+      <a href="#buy">Get it</a>
       <a class="dsc" data-discord href="#"><span class="dicon"></span>Discord</a>
     </nav>
   </div>
@@ -92,82 +91,13 @@
 
       <a class="storecard reveal" data-store href="#" target="_blank" rel="noopener">
         <span class="scbadge"><svg class="bic"><use href="#i-roblox"/></svg></span>
-        <span class="sctext"><b>Get it on the Creator Store</b><span>One click, installs straight into Studio</span></span>
+        <span class="sctext"><b>Get it on the Creator Store</b><span>Buy once, installs straight into Studio</span></span>
         <span class="scarrow"><svg class="ic"><use href="#i-arrow"/></svg></span>
       </a>
-      <div class="ordiv reveal"><span>or get the local plugin</span></div>
-
-      <div class="buycard reveal">
-        <h3 class="cardtitle"><span class="wmark"></span>Get plugin</h3>
-
-        <button class="tog" id="codeToggle" role="switch" aria-checked="false">
-          <span class="togname">Buy as a redeemable code</span>
-          <span class="switch"><span></span></span>
-        </button>
-        <p class="togsub" id="toggleSub"></p>
-
-        <div class="userwrap" id="userWrap">
-          <div class="userinner">
-            <label class="fieldlabel" for="buyUser">Your Roblox username</label>
-            <div class="userfield">
-              <span class="at">@</span>
-              <input id="buyUser" placeholder="Roblox username" spellcheck="false" autocomplete="off" aria-label="Roblox username">
-            </div>
-            <span class="fieldhint">The plugin unlocks on this account. You can also use it when redeeming a code.</span>
-          </div>
-        </div>
-
-        <div class="seclabel">Payment</div>
-        <div class="paylist" id="pays"></div>
-
-        <p class="tos" id="tos"></p>
-      </div>
-
-      <div class="outer">
-        <button class="obtn" data-modal="redeem"><svg class="ic"><use href="#i-key"/></svg>Redeem a code</button>
-      </div>
+      <p class="storenote reveal">Bought on the Roblox Creator Store, so it installs and updates itself right inside Studio.</p>
     </div>
   </section>
 
-  <section id="setup" hidden>
-    <div class="wrap">
-      <h2 class="reveal">Setup</h2>
-
-      <div class="setuptop reveal">
-        <div class="minicard">
-          <span class="mclabel"><svg class="ic"><use href="#i-key"/></svg>Redeemable code</span>
-          <div class="codebox">
-            <input id="setupCode" readonly value="????-????-????" aria-label="Redeemable code">
-            <button class="copybtn" id="copyCode" aria-label="Copy code"><svg class="ic"><use href="#i-copy"/></svg></button>
-          </div>
-          <span class="mchint">Your code appears here once you redeem or buy.</span>
-        </div>
-
-        <div class="minicard">
-          <span class="mclabel"><svg class="ic"><use href="#i-file"/></svg>Plugin file</span>
-          <a class="btn btn-primary dlbtn full" data-loader href="#"><svg class="ic"><use href="#i-down"/></svg>Download the plugin</a>
-          <span class="mchint">Drag this file into Roblox Studio and save it as a Local Plugin (steps below).</span>
-        </div>
-      </div>
-
-      <div class="installcard reveal">
-        <div class="installgrid">
-          <div class="shot">
-            <img src="Local%20Plugin.png" alt="Right clicking the file in Roblox Studio and choosing Save as Local Plugin">
-          </div>
-          <div class="stepcol">
-            <h3 class="cardtitle">Installation Steps</h3>
-            <ol class="steps">
-              <li><span class="n">1</span><span class="t">Download the file</span></li>
-              <li><span class="n">2</span><span class="t">Drag &amp; drop the file to Roblox Studio</span></li>
-              <li><span class="n">3</span><span class="t">Right click the file &gt; Save / Export</span></li>
-              <li><span class="n">4</span><span class="t">Click [ Save as Local Plugin... ]</span></li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
 </main>
 
@@ -179,46 +109,6 @@
     <span class="fine">Not affiliated with Roblox Corporation.</span>
   </div>
 </footer>
-
-<div class="modal" id="m-redeem" hidden>
-  <div class="sheet" role="dialog" aria-modal="true" aria-label="Redeem a code">
-    <button class="x" data-close aria-label="Close"><svg class="ic"><use href="#i-x"/></svg></button>
-    <h3>Redeem a code</h3>
-    <p class="sheetsub">Your code unlocks the plugin on the account below.</p>
-    <p class="usingname" id="usingName"></p>
-    <form id="redeemForm" autocomplete="off">
-      <input id="code" placeholder="SVFX-XXXX-XXXX-XXXX" spellcheck="false" required>
-      <button class="btn btn-primary full" type="submit"><svg class="ic"><use href="#i-check"/></svg>Redeem</button>
-    </form>
-    <p class="result" id="redeemResult" role="status" aria-live="polite"></p>
-  </div>
-</div>
-
-<div class="modal" id="m-paypal" hidden>
-  <div class="sheet" role="dialog" aria-modal="true" aria-label="Get your PayPal code">
-    <button class="x" data-close aria-label="Close"><svg class="ic"><use href="#i-x"/></svg></button>
-    <h3>Get your PayPal code</h3>
-    <p class="sheetsub">Once your PayPal payment goes through, enter the email you paid with and we'll fetch your code.</p>
-    <form id="paypalForm" autocomplete="off">
-      <input id="paypalEmail" type="email" placeholder="you@email.com" spellcheck="false">
-      <button class="btn btn-primary full" type="submit"><svg class="ic"><use href="#i-check"/></svg>Get my code</button>
-    </form>
-    <p class="result" id="paypalResult" role="status" aria-live="polite"></p>
-  </div>
-</div>
-
-<div class="modal" id="m-claim" hidden>
-  <div class="sheet" role="dialog" aria-modal="true" aria-label="Check your Roblox purchase">
-    <button class="x" data-close aria-label="Close"><svg class="ic"><use href="#i-x"/></svg></button>
-    <h3>Check your Roblox purchase</h3>
-    <p class="sheetsub">We'll confirm your account owns Sine VFX (Robux or Creator Store) and unlock it. Your Roblox inventory must be public.</p>
-    <p class="usingname" id="claimUsing"></p>
-    <form id="claimForm" autocomplete="off">
-      <button class="btn btn-primary full" type="submit"><svg class="ic"><use href="#i-check"/></svg>Check my purchase</button>
-    </form>
-    <p class="result" id="claimResult" role="status" aria-live="polite"></p>
-  </div>
-</div>
 
 <script src="config.js"></script>
 <script src="app.js"></script>

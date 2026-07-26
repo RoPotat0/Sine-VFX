@@ -41,8 +41,7 @@ const GRACE_DAYS = 7;
 // OWN the asset, which Roblox's inventory API confirms — proof of purchase, no code
 // needed. Keep these in sync with the creatorStore/shirt links in the site config.
 const OWNED_ASSETS = {
-  plugin: "108799042998848",   // Creator Store plugin
-  shirt:  "138288042903286",   // Robux shirt
+  plugin: "108799042998848",   // Creator Store plugin (the only purchase path now)
 };
 // CORS is required for the marketing site (GitHub Pages) to call this at all — a browser blocks a
 // cross-origin fetch that carries no allow-origin header. The plugin never cared, which is why this
