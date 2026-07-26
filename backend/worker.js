@@ -208,16 +208,10 @@ async function check(env, body) {
     return json({ ...base, ok: false, tier: "anonymous",
                   message: "Sign in to Roblox Studio to use SineVFX." });
 
-  // Trial: RESUME an existing one, but never auto-start it. A fresh account gets tier "none"
-  // so the plugin can offer its trial window instead of silently spending the free trial.
-  const tr = await env.DB.prepare("SELECT expires_at FROM trials WHERE roblox_user = ?")
-    .bind(user).first();
-  if (!tr)
-    return json({ ...base, ok: false, tier: "none", message: "Start your free trial to use Sine VFX." });
-  const active = tr.expires_at > t;
-  return json({ ...base, ok: active, tier: active ? "trial" : "expired",
-                expiresAt: tr.expires_at,
-                message: active ? undefined : "Your Sine VFX free trial has ended." });
+  // No trial system: an account with no allowlist grant and no key is simply not unlocked.
+  // The plugin shows its Buy / Redeem-a-code window for this.
+  return json({ ...base, ok: false, tier: "none",
+                message: "Buy Sine VFX or redeem a code to unlock it." });
 }
 
 /**
@@ -356,8 +350,7 @@ async function resolveRobloxUser(username) {
 
 async function redeem(env, body) {
   const key = clean(body.key, 64);
-  const username = clean(body.username, 32);
-  if (!key || !username) return json({ ok: false, error: "missing key or username" }, 400);
+  if (!key) return json({ ok: false, error: "missing code" }, 400);
 
   const lic = await env.DB.prepare("SELECT * FROM licenses WHERE key = ?").bind(key).first();
   if (!lic) return json({ ok: false, error: "That code is not valid." }, 403);
@@ -365,9 +358,17 @@ async function redeem(env, body) {
   if (lic.expires_at && lic.expires_at < now())
     return json({ ok: false, error: "That code has expired." }, 403);
 
-  const user = await resolveRobloxUser(username);
-  if (user === "busy") return json({ ok: false, error: "Roblox is busy right now. Please try again in a moment." }, 503);
-  if (!user) return json({ ok: false, error: "No Roblox account with that username." }, 404);
+  // Plugin passes robloxUser (it knows the id); website passes username.
+  let user;
+  if (Number(body.robloxUser) > 0) {
+    user = { id: Number(body.robloxUser), name: clean(body.robloxName, 32) || String(Number(body.robloxUser)) };
+  } else {
+    const username = clean(body.username, 32);
+    if (!username) return json({ ok: false, error: "missing username" }, 400);
+    user = await resolveRobloxUser(username);
+    if (user === "busy") return json({ ok: false, error: "Roblox is busy right now. Please try again in a moment." }, 503);
+    if (!user) return json({ ok: false, error: "No Roblox account with that username." }, 404);
+  }
 
   // Already bound to someone else -> a second person cannot reuse the same code.
   if (lic.roblox_user && lic.roblox_user !== user.id)

@@ -71,7 +71,6 @@
         <a class="btn btn-primary big" href="#buy"><span class="wmark"></span>Buy plugin</a>
         <a class="btn btn-soft big" data-discord href="#"><span class="dicon"></span>Discord</a>
       </div>
-      <a class="tinylink" href="#setup">or download the <span data-trial-days>3</span> day free trial</a>
 
       <div class="stats">
         <div class="stat"><b data-stat="installs">0</b><span>installs</span></div>
@@ -91,9 +90,15 @@
     <div class="wrap">
       <h2 class="reveal">Get Sine VFX</h2>
 
+      <a class="storecard reveal" data-store href="#" target="_blank" rel="noopener">
+        <span class="scbadge"><svg class="bic"><use href="#i-roblox"/></svg></span>
+        <span class="sctext"><b>Get it on the Creator Store</b><span>One click, installs straight into Studio</span></span>
+        <span class="scarrow"><svg class="ic"><use href="#i-arrow"/></svg></span>
+      </a>
+      <div class="ordiv reveal"><span>or get the local plugin</span></div>
+
       <div class="buycard reveal">
         <h3 class="cardtitle"><span class="wmark"></span>Get plugin</h3>
-        <a class="tinybtn" href="#setup">or download the <span data-trial-days>3</span> day free trial</a>
 
         <button class="tog" id="codeToggle" role="switch" aria-checked="false">
           <span class="togname">Buy as a redeemable code</span>
@@ -120,12 +125,11 @@
 
       <div class="outer">
         <button class="obtn" data-modal="redeem"><svg class="ic"><use href="#i-key"/></svg>Redeem a code</button>
-        <button class="obtn" data-modal="claim"><svg class="ic"><use href="#i-roblox"/></svg>Already purchased?</button>
       </div>
     </div>
   </section>
 
-  <section id="setup">
+  <section id="setup" hidden>
     <div class="wrap">
       <h2 class="reveal">Setup</h2>
 
@@ -136,14 +140,13 @@
             <input id="setupCode" readonly value="????-????-????" aria-label="Redeemable code">
             <button class="copybtn" id="copyCode" aria-label="Copy code"><svg class="ic"><use href="#i-copy"/></svg></button>
           </div>
-          <span class="mchint">Buy the plugin to get your code</span>
+          <span class="mchint">Your code appears here once you redeem or buy.</span>
         </div>
 
         <div class="minicard">
           <span class="mclabel"><svg class="ic"><use href="#i-file"/></svg>Plugin file</span>
-          <a class="btn btn-primary dlbtn full is-locked" data-loader href="#"><svg class="ic"><use href="#i-down"/></svg>Download the plugin</a>
-          <button class="triallink" id="enableDownload" type="button">or start the free trial</button>
-          <span class="mchint">This one file is both the free <span data-trial-days>3</span>-day trial and the full plugin. The <span data-trial-days>3</span>-day trial starts inside Studio the first time you open it.</span>
+          <a class="btn btn-primary dlbtn full" data-loader href="#"><svg class="ic"><use href="#i-down"/></svg>Download the plugin</a>
+          <span class="mchint">Drag this file into Roblox Studio and save it as a Local Plugin (steps below).</span>
         </div>
       </div>
 

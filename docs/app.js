@@ -13,6 +13,14 @@
   // Assigned by the claim block; called by the Robux/Creator-Store tiles too.
   let openClaim = () => {};
 
+  // The Setup section (download + install steps) stays hidden until the visitor unlocks by
+  // redeeming a code or buying. Once revealed it stays revealed across visits.
+  const revealSetup = () => {
+    const s = document.getElementById("setup");
+    if (s) s.hidden = false;
+    try { localStorage.setItem("svfx_unlocked", "1"); } catch {}
+  };
+
   $$("[data-price]").forEach(el => el.textContent = CFG.price || "$5");
   $$("[data-trial-days]").forEach(el => el.textContent = CFG.trialDays ?? 3);
   $$("[data-repo]").forEach(el => { if (CFG.repo) el.href = CFG.repo; });
@@ -55,21 +63,17 @@
     });
   })();
 
-  // The download starts locked; a quiet "start the free trial" link unlocks it.
-  // It doesn't start a trial — the 3-day trial begins inside Studio on first open.
-  (() => {
-    const enable = $("#enableDownload"), dl = $("[data-loader]");
-    if (!enable || !dl) return;
-    enable.addEventListener("click", () => {
-      dl.classList.remove("is-locked");
-      enable.remove();
-    });
-  })();
-
   $$("[data-discord]").forEach(el => {
     if (CFG.discord) { el.href = CFG.discord; el.target = "_blank"; el.rel = "noopener noreferrer"; }
     else el.style.display = "none";
   });
+  // Creator Store button (its own choice above the buy card) → opens the Roblox store directly.
+  $$("[data-store]").forEach(el => {
+    if (CFG.pay && CFG.pay.creatorStore) { el.href = CFG.pay.creatorStore; el.target = "_blank"; el.rel = "noopener noreferrer"; }
+    else el.style.display = "none";
+  });
+  // A returning visitor who already unlocked keeps the Setup section visible.
+  try { if (localStorage.getItem("svfx_unlocked")) revealSetup(); } catch {}
   // Footer links: hide if not configured rather than leave a dead "#".
   const wire = (sel, href) => $$(sel).forEach(el => {
     if (href) { el.href = href; el.target = "_blank"; el.rel = "noopener noreferrer"; }
@@ -448,25 +452,9 @@
     const robux = (CFG.robux || 1300).toLocaleString();
 
     list.appendChild(tile({
-      href: pay.stripe, cls: "pay-lemon", name: "Card",
-      meta: price, mode: "popup",
-      badge: { mask: "icon-card.png" },
-      marks: ["visa", "mc", "apay", "gpay"],
-    }));
-    list.appendChild(tile({
-      href: pay.creatorStore, cls: "pay-store", name: "Creator Store",
-      meta: `${price} on Roblox, installs into Studio`, mode: "roblox",
-      badge: { mask: "icon-dev1.png" },
-    }));
-    list.appendChild(tile({
       href: pay.shirt, cls: "pay-robux", name: `${robux} Robux`,
-      meta: `${price} after devex + 30 percent`, mode: "roblox",
+      meta: `${price} after devex + 30 percent`, mode: "popup",
       badge: { mask: "icon-dev2.png" },
-    }));
-    list.appendChild(tile({
-      href: pay.paypal, cls: "pay-paypal", name: "PayPal",
-      meta: `${price} by PayPal`, mode: "paypal",
-      badge: { img: "icon-paypal.png" },
     }));
 
     // Every option opens in a popup window, so this page stays visible behind
@@ -474,6 +462,7 @@
     // the checkout.
     $$(".pay:not(.soon)", list).forEach(a => {
       a.addEventListener("click", () => {
+        revealSetup();
         setTimeout(() => $("#setup")?.scrollIntoView({
           behavior: REDUCE ? "auto" : "smooth", block: "start",
         }), 60);
@@ -550,6 +539,7 @@
           out.className = "result ok";
           out.textContent = `Done. ${d.username} has access. Now install it below.`;
           form.reset();
+          revealSetup();
           // Send them to the Setup steps once they have read the confirmation.
           setTimeout(() => {
             $$(".modal").forEach(m => m.hidden = true);

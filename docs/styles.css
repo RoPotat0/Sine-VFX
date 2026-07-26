@@ -275,6 +275,35 @@ section { padding: 100px 0; }
 }
 
 /* ── buy card ────────────────────────────────────────────────────── */
+/* ── Creator Store choice (its own path, above the buy card) ─────── */
+.storecard {
+  display: flex; align-items: center; gap: 14px; text-decoration: none;
+  max-width: 620px; margin: 0 auto; padding: 14px 18px;
+  background: var(--card); border-radius: var(--r); color: var(--text);
+  backdrop-filter: blur(14px);
+  transition: transform .16s var(--ease), background .16s;
+}
+.storecard:hover { transform: translateY(-2px); background: var(--card-2); }
+.scbadge {
+  flex: 0 0 auto; width: 44px; height: 44px; border-radius: 50%;
+  display: grid; place-items: center; background: var(--blue); color: var(--on-blue);
+}
+.scbadge .bic { width: 24px; height: 24px; display: block; }
+.sctext { flex: 1; display: flex; flex-direction: column; text-align: left; min-width: 0; }
+.sctext b { font: 700 16.5px/1.2 var(--display); letter-spacing: -.01em; }
+.sctext span { font-size: 13px; color: var(--muted); margin-top: 2px; }
+.scarrow { color: var(--dim); display: flex; transition: transform .2s var(--ease); }
+.storecard:hover .scarrow { transform: translateX(4px); }
+
+.ordiv {
+  max-width: 620px; margin: 16px auto; display: flex; align-items: center; gap: 12px;
+  color: var(--dim); font-size: 13px; letter-spacing: .01em;
+}
+.ordiv::before, .ordiv::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+
+/* Setup stays hidden until the visitor unlocks (redeem / buy). */
+#setup[hidden] { display: none; }
+
 .buycard { max-width: 620px; margin: 0 auto; padding: 34px 30px 28px; }
 .cardtitle { display: inline-flex; align-items: center; gap: 11px; font-size: 28px; }
 /* full-width so the trial link sits on its own line BELOW the title, not beside it */
