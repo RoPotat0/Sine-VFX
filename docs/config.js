@@ -14,6 +14,6 @@ window.SVFX_CONFIG = {
 
   pay: {
     // Sine VFX is sold only on the Roblox Creator Store; it installs straight into Studio.
-    creatorStore: "https://create.roblox.com/store/asset/108799042998848/SineVFX",
+    creatorStore: "https://create.roblox.com/store/asset/96645663824840/SineVFX",
   },
 };
