@@ -8,7 +8,7 @@ window.SVFX_CONFIG = {
   discord: "https://discord.gg/krQE8tGsUz",
 
   price: "$5",
-  version: "v1.0",     // shown in the "latest" stat (static — edit it on each release)
+  version: "v1.0.0",     // shown in the "latest" stat (static — edit it on each release)
 
   terms: null,         // link for the Terms of Service line, e.g. "terms.html"
 
