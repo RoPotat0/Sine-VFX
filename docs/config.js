@@ -4,7 +4,6 @@
    ───────────────────────────────────────────────────────────────────────────── */
 window.SVFX_CONFIG = {
   API: "https://sinevfx-api.chutkapro480.workers.dev",
-  repo: "https://github.com/RoPotat0/Sine-VFX",
   discord: "https://discord.gg/krQE8tGsUz",
 
   price: "$5",
