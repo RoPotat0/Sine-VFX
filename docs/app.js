@@ -217,7 +217,7 @@
     if (CFG.API) {
       fetch(CFG.API + "/v1/stats")
         .then(r => r.ok ? r.json() : Promise.reject(r.status))
-        .then(d => { if (d && d.ok) countTo($('[data-stat="installs"]'), d.installs || 0); })
+        .then(d => { if (d && d.ok) countTo($('[data-stat="installs"]'), d.users || 0); })
         .catch(() => {});
     }
     // Version is a static value from config now (no longer pulled from GitHub releases).
