@@ -7,7 +7,7 @@ window.SVFX_CONFIG = {
 
   price: "$5",
   version: "v1.0.0",     // shown in the "latest" stat (static — edit it on each release)
-  users: 0,              // buyer/user count shown on the site (static — just edit this number)
+  users: 10+,              // buyer/user count shown on the site (static — just edit this number)
 
   pay: {
     // Sine VFX is sold only on the Roblox Creator Store; it installs straight into Studio.
