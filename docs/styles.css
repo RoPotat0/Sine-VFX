@@ -628,9 +628,15 @@ html, .strip { scroll-behavior: auto; }
 * { transition: none !important; animation: none !important; }
 }
 
-.wordmark, h2, .cardtitle {
-    transition: transform 0.25s ease-in-out !important;
+.wordmark, h2 {
+    transition: transform 0.5s ease-in-out !important;
     will-change: transform;
+}
+
+.cardtitle {
+    transition: transform 0.5s ease-in-out !important;
+    will-change: transform;
+    transform-origin: center center;
 }
 
 .wordmark:hover, h2:hover, .cardtitle:hover {
