@@ -629,7 +629,7 @@ html, .strip { scroll-behavior: auto; }
 }
 
 .wordmark, h2, .cardtitle {
-    transition: transform 0.25s var(--ease) !important;
+    transition: transform 0.7s var(--ease) !important;
     will-change: transform;
 }
 
