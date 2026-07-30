@@ -613,12 +613,11 @@ footer a.nolink:hover { color: var(--muted); }
   * { transition: none !important; animation: none !important; }
 }
 
-/* Big text hover effects */
 .wordmark, h2, .cardtitle {
-  transition: transform 0.25s var(--ease) !important;
-  will-change: transform;
+    transition: transform 0.25s var(--ease) !important;
+    will-change: transform;
 }
 
 .wordmark:hover, h2:hover, .cardtitle:hover {
-  transform: scale(1.04);
+    transform: scale(1.04) !important;
 }
