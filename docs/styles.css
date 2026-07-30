@@ -612,6 +612,6 @@ html, .strip { scroll-behavior: auto; }
     will-change: transform;
 }
 
-.wordmark:hover, h2:hover, .cardtitle:hover {
+.wordmark:hover, h2:hover {
     transform: scale(1.04) !important;
 }
