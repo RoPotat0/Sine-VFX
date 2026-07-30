@@ -214,7 +214,7 @@
           const el = document.createElement("div");
           el.className = "clip";
           el.innerHTML =
-            `<video muted loop playsinline preload="metadata" src="${esc(v.src)}"${
+            `<video muted loop playsinline preload="none" src="${esc(v.src)}"${
               v.poster ? ` poster="${esc(v.poster)}"` : ""}></video>` +
             (v.title ? `<span class="cap">${esc(v.title)}</span>` : "");
           strip.appendChild(el);
