@@ -607,11 +607,11 @@ html, .strip { scroll-behavior: auto; }
 * { transition: none !important; animation: none !important; }
 }
 
-.wordmark, h2 {
+h2 {
     transition: transform 0.5s ease-in-out !important;
     will-change: transform;
 }
 
-.wordmark:hover, h2:hover {
+h2:hover {
     transform: scale(1.04) !important;
 }
