@@ -606,12 +606,3 @@ html, .strip { scroll-behavior: auto; }
 .blob { opacity: .18; }
 * { transition: none !important; animation: none !important; }
 }
-
-h2 {
-    transition: transform 0.5s ease-in-out !important;
-    will-change: transform;
-}
-
-h2:hover {
-    transform: scale(1.04) !important;
-}
