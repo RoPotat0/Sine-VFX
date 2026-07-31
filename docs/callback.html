@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Verifying — SineVFX</title>
+<link rel="icon" href="sine.png">
+<link rel="stylesheet" href="styles.css">
+<script src="config.js"></script>
+<style>
+  body{min-height:100vh;display:grid;place-items:center;padding:24px}
+  .connect-card{max-width:440px;width:100%;background:var(--card-2);border:1px solid var(--line-2);
+    border-radius:var(--r);padding:34px;text-align:center;backdrop-filter:blur(14px);
+    box-shadow:0 20px 60px rgba(0,0,0,.45)}
+  .spinner{width:38px;height:38px;margin:0 auto 18px;border-radius:50%;
+    border:3px solid rgba(255,255,255,.12);border-top-color:var(--blue);animation:spin .8s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  h1{font-family:var(--display);font-weight:400;font-size:23px;margin:0 0 8px}
+  p{color:var(--muted);font-size:15px;margin:0}
+</style>
+</head>
+<body>
+  <div class="connect-card">
+    <div class="spinner"></div>
+    <h1>Verifying your account…</h1>
+    <p>Checking your Roblox purchase. This only takes a moment.</p>
+  </div>
+<script>
+(function () {
+  var cfg = (window.SVFX_CONFIG && window.SVFX_CONFIG.connect) || {};
+  var p = new URLSearchParams(location.search);
+
+  function done(status, name) {
+    location.replace("connected.html?s=" + encodeURIComponent(status) +
+      (name ? "&name=" + encodeURIComponent(name) : ""));
+  }
+
+  if (p.get("error")) return done("cancel");
+  var code = p.get("code"), state = p.get("state");
+  if (!code || !state || !cfg.workerUrl) return done("error");
+
+  // Hand the code to the Worker, which does the secret swap + ownership check + role grant.
+  fetch(cfg.workerUrl.replace(/\/$/, "") + "/exchange", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({ code: code, state: state }),
+  })
+    .then(function (r) { return r.json(); })
+    .then(function (data) { done(data.status || "error", data.name); })
+    .catch(function () { done("busy"); });
+})();
+</script>
+</body>
+</html>

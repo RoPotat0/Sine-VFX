@@ -61,7 +61,7 @@
   // secret code-swap + ownership check, then sends the user back to connected.html.
   var url = "https://apis.roblox.com/oauth/v1/authorize"
     + "?client_id=" + encodeURIComponent(cfg.robloxClientId)
-    + "&redirect_uri=" + encodeURIComponent(cfg.workerUrl.replace(/\/$/, "") + "/roblox/callback")
+    + "&redirect_uri=" + encodeURIComponent(location.origin + "/callback.html")
     + "&scope=" + encodeURIComponent("openid profile")
     + "&response_type=code"
     + "&state=" + encodeURIComponent(token);
