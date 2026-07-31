@@ -3,20 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Verifying — SineVFX</title>
+<title>Verifying - SineVFX</title>
 <link rel="icon" href="sine.png">
 <link rel="stylesheet" href="styles.css">
 <script src="config.js"></script>
 <style>
-  body{min-height:100vh;display:grid;place-items:center;padding:24px}
-  .connect-card{max-width:440px;width:100%;background:var(--card-2);border:1px solid var(--line-2);
-    border-radius:var(--r);padding:34px;text-align:center;backdrop-filter:blur(14px);
-    box-shadow:0 20px 60px rgba(0,0,0,.45)}
-  .spinner{width:38px;height:38px;margin:0 auto 18px;border-radius:50%;
+  body{min-height:100vh;display:grid;place-items:center;padding:12px}
+  .connect-card{max-width:360px;width:100%;background:var(--card-2);border:1px solid var(--line-2);
+    border-radius:var(--r);padding:12px;text-align:center;backdrop-filter:blur(14px);
+    box-shadow:0 20px 60px rgba(0,0,0,.45);
+    display:flex;flex-direction:column;align-items:center;gap:12px}
+  .spinner{width:38px;height:38px;margin:0;border-radius:50%;
     border:3px solid rgba(255,255,255,.12);border-top-color:var(--blue);animation:spin .8s linear infinite}
   @keyframes spin{to{transform:rotate(360deg)}}
-  h1{font-family:var(--display);font-weight:400;font-size:23px;margin:0 0 8px}
-  p{color:var(--muted);font-size:15px;margin:0}
+  h1{font-family:var(--display);font-weight:400;font-size:23px;margin:0}
+  p{color:var(--muted);font-size:14px;margin:0}
 </style>
 </head>
 <body>
