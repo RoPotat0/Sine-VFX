@@ -229,13 +229,37 @@
         setW = nextSet ? nextSet.offsetLeft - first.offsetLeft : 0;
       };
 
+      // Only the clips actually on screen are candidates for playback. Decoding
+      // several 720p streams at once is what makes the strip stutter while it
+      // loads, so we additionally cap how many play simultaneously (see
+      // prunePlayback below) and only start a clip's download once it's near.
+      const visible = new Set();
       const io = new IntersectionObserver((es) => {
         for (const e of es) {
-          if (e.isIntersecting) { const p = e.target.play(); if (p) p.catch(() => {}); }
-          else e.target.pause();
+          const v = e.target;
+          if (e.isIntersecting) { visible.add(v); if (v.preload !== "auto") v.preload = "auto"; }
+          else { visible.delete(v); v.pause(); }
         }
-      }, { threshold: 0.3 });
+        prunePlayback();
+      }, { threshold: 0.25 });
       $$("video", strip).forEach(v => io.observe(v));
+
+      // Keep at most MAX_PLAYING videos running — the ones closest to the centre
+      // of the viewport. Everything else pauses, which keeps the decoder from
+      // thrashing (the source of the scroll lag) without the field looking dead.
+      const MAX_PLAYING = 3;
+      const prunePlayback = () => {
+        const c = strip.scrollLeft + strip.clientWidth / 2;
+        const near = [...visible].sort((a, b) => {
+          const pa = a.parentElement, pb = b.parentElement;
+          return Math.abs(pa.offsetLeft + pa.offsetWidth / 2 - c)
+               - Math.abs(pb.offsetLeft + pb.offsetWidth / 2 - c);
+        });
+        near.forEach((v, i) => {
+          if (i < MAX_PLAYING) { if (v.paused) { const p = v.play(); if (p) p.catch(() => {}); } }
+          else if (!v.paused) v.pause();
+        });
+      };
 
       // Keep the scroll position inside the middle set. Re-measures itself if
       // the first measurement landed before layout was ready (offsetLeft is 0
@@ -258,6 +282,7 @@
             if (d < best) { best = d; win = el; }
           }
           clips.forEach(el => el.classList.toggle("active", el === win));
+          prunePlayback();
         });
       };
 
