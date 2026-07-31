@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Account connected — SineVFX</title>
+<link rel="icon" href="sine.png">
+<link rel="stylesheet" href="styles.css">
+<style>
+  body{min-height:100vh;display:grid;place-items:center;padding:24px}
+  .connect-card{max-width:440px;width:100%;background:var(--card-2);border:1px solid var(--line-2);
+    border-radius:var(--r);padding:34px;text-align:center;backdrop-filter:blur(14px);
+    box-shadow:0 20px 60px rgba(0,0,0,.45)}
+  .badge{font-size:40px;line-height:1;margin-bottom:12px}
+  .connect-card h1{font-family:var(--display);font-weight:400;font-size:25px;margin:0 0 10px}
+  .connect-card p{color:var(--muted);line-height:1.55;margin:0 0 14px;font-size:15px}
+  .fine{color:var(--dim);font-size:12.5px;margin-top:8px}
+  b{color:var(--text)}
+</style>
+</head>
+<body>
+  <div class="connect-card" id="card"></div>
+<script>
+(function () {
+  var p = new URLSearchParams(location.search);
+  var s = p.get("s") || "error";
+  var name = (p.get("name") || "your account").replace(/[<>&]/g, "");
+  var views = {
+    ok:      ["✅", "You're verified!",
+              "Signed in as <b>" + name + "</b> and confirmed you own SineVFX. You've got the <b>Buyer</b> role in Discord — check your DMs.",
+              "You can close this tab and head back to Discord."],
+    private: ["🔒", "Your inventory is private",
+              "We signed you in as <b>" + name + "</b>, but Roblox won't show your items while your inventory is private, so we can't confirm the purchase.",
+              "Open Roblox → Settings → Privacy, set <b>Who can see my inventory</b> to <b>Everyone</b>, then click Connect again in Discord."],
+    no:      ["❌", "We couldn't find the plugin",
+              "The account <b>" + name + "</b> doesn't own SineVFX. If you bought it on a different account, connect that one instead.",
+              ""],
+    busy:    ["🔁", "Roblox is being slow",
+              "We couldn't reach Roblox's inventory service just now. Give it a moment and try Connect again.",
+              ""],
+    cancel:  ["🚫", "Login cancelled",
+              "You didn't finish signing in with Roblox. No problem — try again from Discord whenever you're ready.",
+              ""],
+    error:   ["⚠️", "Something went wrong",
+              "Please start again from the <b>Connect</b> button in Discord.",
+              ""],
+  };
+  var v = views[s] || views.error;
+  document.getElementById("card").innerHTML =
+    '<div class="badge">' + v[0] + '</div><h1>' + v[1] + '</h1><p>' + v[2] + '</p>' +
+    (v[3] ? '<p class="fine">' + v[3] + '</p>' : '');
+})();
+</script>
+</body>
+</html>

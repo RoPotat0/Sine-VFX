@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Connect your account — SineVFX</title>
+<link rel="icon" href="sine.png">
+<link rel="stylesheet" href="styles.css">
+<script src="config.js"></script>
+<style>
+  /* centres the card; everything else is inherited from styles.css */
+  body{min-height:100vh;display:grid;place-items:center;padding:24px}
+  .connect-card{max-width:440px;width:100%;background:var(--card-2);border:1px solid var(--line-2);
+    border-radius:var(--r);padding:34px;text-align:center;backdrop-filter:blur(14px);
+    box-shadow:0 20px 60px rgba(0,0,0,.45)}
+  .connect-card img.logo{width:74px;height:74px;border-radius:18px;margin:0 0 16px;animation:none}
+  .connect-card h1{font-family:var(--display);font-weight:400;font-size:26px;margin:0 0 10px}
+  .connect-card p{color:var(--muted);line-height:1.55;margin:0 0 22px;font-size:15px}
+  .robtn{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:800;
+    padding:13px 24px;border-radius:10px;background:var(--blue);color:var(--on-blue);
+    transition:filter .15s;font-size:15px}
+  .robtn:hover{filter:brightness(1.08)}
+  .robtn.disabled{opacity:.5;pointer-events:none}
+  .fine{color:var(--dim);font-size:12.5px;margin-top:18px}
+</style>
+</head>
+<body>
+  <div class="connect-card">
+    <img class="logo" src="sine.png" alt="SineVFX">
+    <div id="content">
+      <h1>Connect your Roblox account</h1>
+      <p>You'll sign in with Roblox so we can confirm you own <b>SineVFX</b>, then you'll get the
+         Buyer role back in Discord.</p>
+      <a id="go" class="robtn disabled" href="#">Continue with Roblox</a>
+      <p class="fine">Make sure your Roblox inventory is set to <b>public</b> so we can see the purchase.
+         You can change it back afterwards.</p>
+    </div>
+  </div>
+
+<script>
+(function () {
+  var cfg = (window.SVFX_CONFIG && window.SVFX_CONFIG.connect) || {};
+  var params = new URLSearchParams(location.search);
+  var token = params.get("token");
+  var content = document.getElementById("content");
+
+  function fail(title, msg) {
+    content.innerHTML = "<h1>" + title + "</h1><p>" + msg + "</p>";
+  }
+
+  if (!token) {
+    fail("This link is invalid", "Head back to Discord and click <b>Connect your account(s)</b> to get a fresh link.");
+    return;
+  }
+  if (!cfg.robloxClientId || !cfg.workerUrl) {
+    fail("Not set up yet", "The connect flow isn't configured. If you're the admin, fill in <code>connect.robloxClientId</code> and <code>connect.workerUrl</code> in config.js.");
+    return;
+  }
+
+  // Build the official Roblox login URL. redirect_uri points at the Worker, which does the
+  // secret code-swap + ownership check, then sends the user back to connected.html.
+  var url = "https://apis.roblox.com/oauth/v1/authorize"
+    + "?client_id=" + encodeURIComponent(cfg.robloxClientId)
+    + "&redirect_uri=" + encodeURIComponent(cfg.workerUrl.replace(/\/$/, "") + "/roblox/callback")
+    + "&scope=" + encodeURIComponent("openid profile")
+    + "&response_type=code"
+    + "&state=" + encodeURIComponent(token);
+
+  var go = document.getElementById("go");
+  go.href = url;
+  go.classList.remove("disabled");
+})();
+</script>
+</body>
+</html>

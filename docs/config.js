@@ -13,4 +13,11 @@ window.SVFX_CONFIG = {
     // Sine VFX is sold only on the Roblox Creator Store; it installs straight into Studio.
     creatorStore: "https://create.roblox.com/store/asset/96645663824840/SineVFX",
   },
+
+  // Buyer-role account connect (used by connect.html). Both values are PUBLIC — safe here.
+  connect: {
+    robloxClientId: "7905125328022841312",  // your Roblox OAuth app Client ID
+    // The Discord bot Worker's base URL (from `wrangler deploy`), no trailing slash.
+    workerUrl: "https://sinevfx-discord.chutkapro480.workers.dev",
+  },
 };
