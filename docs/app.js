@@ -174,18 +174,21 @@
 
   /* ── stats ────────────────────────────────────────────────────── */
   (() => {
-    const countTo = (el, n) => {
+    const countTo = (el, raw) => {
       if (!el) return;
+      const str = String(raw);
+      const target = parseInt(str.replace(/[^0-9]/g, ""), 10) || 0; // digits -> 10
+      const suffix = str.replace(/[0-9,]/g, "").trim();              // keeps a trailing "+"
       const dur = 1100, t0 = performance.now();
       const tick = (t) => {
         const p = Math.min((t - t0) / dur, 1);
-        el.textContent = Math.round(n * (1 - Math.pow(1 - p, 3))).toLocaleString();
+        el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3))).toLocaleString() + suffix;
         if (p < 1) requestAnimationFrame(tick);
       };
       requestAnimationFrame(tick);
     };
-    // User count is a static value from config now (no database). Just edit CFG.users.
-    countTo($('[data-stat="installs"]'), Number(CFG.users) || 0);
+    // User count is a static value from config. Edit CFG.users (e.g. "10+", "250+").
+    countTo($('[data-stat="installs"]'), CFG.users);
     // Version is a static value from config now (no longer pulled from GitHub releases).
     const vEl = $('[data-stat="version"]');
     if (vEl && CFG.version) vEl.textContent = CFG.version;
