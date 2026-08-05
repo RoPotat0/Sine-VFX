@@ -28,8 +28,8 @@
   <div class="connect-card">
     <img class="logo" src="sine.png" alt="SineVFX">
     <div id="content">
-      <h1>Connect your Roblox account</h1>
-      <p>Sign in with Roblox to confirm you own SineVFX, then you'll get the Buyer role back in Discord.</p>
+      <h1>Redirecting to Roblox…</h1>
+      <p>Taking you to the Roblox sign-in to confirm you own SineVFX. You'll get the Buyer role back in Discord.</p>
       <a id="go" class="robtn disabled" href="#">Continue with Roblox</a>
     </div>
   </div>
@@ -66,6 +66,12 @@
   var go = document.getElementById("go");
   go.href = url;
   go.classList.remove("disabled");
+  go.textContent = "Continue with Roblox";
+
+  // Go straight to Roblox OAuth. The visible button is only a fallback for the
+  // rare case a browser blocks the auto-redirect. replace() keeps this page out
+  // of history so Back doesn't bounce the user through it again.
+  location.replace(url);
 })();
 </script>
 </body>
