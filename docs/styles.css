@@ -306,6 +306,16 @@ max-width: 560px; margin: 16px auto 0; color: var(--dim);
 font-size: 14px; line-height: 1.6;
 }
 
+.shirtblock { margin-top: 4px; }
+.shirtsteps {
+max-width: 560px; margin: 18px auto 0; padding-left: 24px;
+color: var(--muted); font-size: 14px; line-height: 1.7; text-align: left;
+display: flex; flex-direction: column; gap: 4px;
+}
+.shirtsteps li { padding-left: 4px; }
+.shirtsteps b { color: var(--text); font-weight: 600; }
+.shirtsteps a { color: var(--text); text-decoration: underline; text-underline-offset: 2px; }
+
 /* Setup stays hidden until the visitor unlocks (redeem / buy). */
 #setup[hidden] { display: none; }
 

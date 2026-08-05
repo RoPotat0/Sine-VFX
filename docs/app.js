@@ -44,6 +44,13 @@
     if (CFG.pay && CFG.pay.creatorStore) { el.href = CFG.pay.creatorStore; el.target = "_blank"; el.rel = "noopener noreferrer"; }
     else el.style.display = "none";
   });
+  // Buyer shirt button → opens the Roblox catalog listing. Hidden if not configured.
+  $$("[data-shirt]").forEach(el => {
+    if (CFG.pay && CFG.pay.shirt) { el.href = CFG.pay.shirt; el.target = "_blank"; el.rel = "noopener noreferrer"; }
+    else { const wrap = el.closest(".shirtblock"); (wrap || el).style.display = "none"; }
+  });
+  // Fill the shirt price text wherever it appears.
+  $$("[data-shirt-price]").forEach(el => { el.textContent = (CFG.pay && CFG.pay.shirtPrice) || "4,000 Robux"; });
   // Footer links: hide if not configured rather than leave a dead "#".
   const wire = (sel, href) => $$(sel).forEach(el => {
     if (href) { el.href = href; el.target = "_blank"; el.rel = "noopener noreferrer"; }
