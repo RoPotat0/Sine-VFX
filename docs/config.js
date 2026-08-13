@@ -7,7 +7,7 @@ window.SVFX_CONFIG = {
 
   price: "$5",
   version: "v1.0.0",     // shown in the "latest" stat (static — edit it on each release)
-  users: "800+",              // buyer/user count shown on the site (static — just edit this number)
+  users: "1300+",              // buyer/user count shown on the site (static — just edit this number)
 
   pay: {
     // Sine VFX is sold two ways:
