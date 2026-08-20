@@ -5,7 +5,7 @@
 window.SVFX_CONFIG = {
   discord: "https://discord.gg/krQE8tGsUz",
 
-  price: "$5",
+  price: "$8",
   version: "v1.2.3",     // shown in the "latest" stat (static — edit it on each release)
   users: "1300+",              // buyer/user count shown on the site (static — just edit this number)
 
@@ -16,7 +16,7 @@ window.SVFX_CONFIG = {
     //  2. Buyer shirt — 4000 Robux. After buying, you join the Discord and verify
     //     with the bot to get the plugin. (Local build; no auto-update.)
     shirt: "https://www.roblox.com/catalog/138288042903286",
-    shirtPrice: "2,100 Robux",
+    shirtPrice: "3000 Robux",
   },
 
   // Buyer-role account connect (used by connect.html). Both values are PUBLIC — safe here.
