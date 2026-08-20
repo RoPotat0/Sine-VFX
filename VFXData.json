@@ -64,8 +64,8 @@
   "Name": "SMGLoop (2)",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Loop"
+   "Loop",
+   "Gun"
   ]
  },
  "2697294": {
@@ -86,15 +86,15 @@
   "Name": "SMGLoop (3)",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Loop"
+   "Loop",
+   "Gun"
   ]
  },
  "2697432": {
   "Name": "Reload (4)",
   "Kind": "Sound",
   "Tags": [
-   "Weapon"
+   "Gun"
   ]
  },
  "2760979": {
@@ -115,7 +115,7 @@
   "Name": "Reload (5)",
   "Kind": "Sound",
   "Tags": [
-   "Weapon"
+   "Gun"
   ]
  },
  "9733390": {
@@ -172,7 +172,7 @@
   "Kind": "Sound",
   "Tags": [
    "Gun",
-   "Classic"
+   "Retro"
   ]
  },
  "11984351": {
@@ -186,23 +186,22 @@
   "Name": "BassClassic",
   "Kind": "Sound",
   "Tags": [
-   "Music",
-   "Classic"
+   "Retro"
   ]
  },
  "12221967": {
   "Name": "ClickClassic",
   "Kind": "Sound",
   "Tags": [
-   "UI",
-   "Classic"
+   "Retro",
+   "UI"
   ]
  },
  "12221976": {
   "Name": "TickClassic",
   "Kind": "Sound",
   "Tags": [
-   "Classic"
+   "Retro"
   ]
  },
  "12221984": {
@@ -210,7 +209,7 @@
   "Kind": "Sound",
   "Tags": [
    "Explosion",
-   "Classic"
+   "Retro"
   ]
  },
  "12221990": {
@@ -224,7 +223,7 @@
   "Name": "Glass (2)",
   "Kind": "Sound",
   "Tags": [
-   "Glass"
+   "Debris"
   ]
  },
  "12222019": {
@@ -252,15 +251,15 @@
   "Name": "OuchClassic",
   "Kind": "Sound",
   "Tags": [
-   "Horror",
-   "Classic"
+   "Retro",
+   "Horror"
   ]
  },
  "12222065": {
   "Name": "LaunchClassic (2)",
   "Kind": "Sound",
   "Tags": [
-   "Classic"
+   "Retro"
   ]
  },
  "12222076": {
@@ -275,15 +274,15 @@
   "Kind": "Sound",
   "Tags": [
    "Explosion",
-   "Classic"
+   "Retro"
   ]
  },
  "12222095": {
   "Name": "WhooshRocket",
   "Kind": "Sound",
   "Tags": [
-   "Whoosh",
    "Debris",
+   "Whoosh",
    "Mechanical"
   ]
  },
@@ -291,23 +290,22 @@
   "Name": "RubberClassic",
   "Kind": "Sound",
   "Tags": [
-   "Bounce",
-   "Classic"
+   "Impact",
+   "Retro"
   ]
  },
  "12222124": {
   "Name": "SpringClassic",
   "Kind": "Sound",
   "Tags": [
-   "Bounce",
-   "Classic"
+   "Retro"
   ]
  },
  "12222132": {
   "Name": "LaunchClassic",
   "Kind": "Sound",
   "Tags": [
-   "Classic"
+   "Retro"
   ]
  },
  "12222152": {
@@ -315,7 +313,7 @@
   "Kind": "Sound",
   "Tags": [
    "Gore",
-   "Classic"
+   "Retro"
   ]
  },
  "12222170": {
@@ -337,7 +335,7 @@
   "Kind": "Sound",
   "Tags": [
    "Sword",
-   "Classic"
+   "Retro"
   ]
  },
  "12222216": {
@@ -345,7 +343,7 @@
   "Kind": "Sound",
   "Tags": [
    "Sword",
-   "Classic"
+   "Retro"
   ]
  },
  "12222225": {
@@ -353,14 +351,14 @@
   "Kind": "Sound",
   "Tags": [
    "Sword",
-   "Classic"
+   "Retro"
   ]
  },
  "12222253": {
   "Name": "WinClassic",
   "Kind": "Sound",
   "Tags": [
-   "Classic"
+   "Retro"
   ]
  },
  "12229501": {
@@ -374,15 +372,15 @@
   "Name": "Echo",
   "Kind": "Sound",
   "Tags": [
-   "Ambient"
+   "Other"
   ]
  },
  "13061809": {
   "Name": "HorrorChime",
   "Kind": "Sound",
   "Tags": [
-   "Bell",
-   "Horror"
+   "Horror",
+   "UI"
   ]
  },
  "16606212": {
@@ -415,7 +413,7 @@
   "Name": "Reload (2)",
   "Kind": "Sound",
   "Tags": [
-   "Weapon"
+   "Gun"
   ]
  },
  "27690789": {
@@ -540,8 +538,8 @@
   "Name": "FireSlash",
   "Kind": "Sound",
   "Tags": [
-   "Sword",
-   "Fire"
+   "Fire",
+   "Sword"
   ]
  },
  "76990331": {
@@ -578,8 +576,8 @@
   "Name": "SMGLoop",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Loop"
+   "Loop",
+   "Gun"
   ]
  },
  "122434532": {
@@ -623,14 +621,14 @@
   "Kind": "Sound",
   "Tags": [
    "Debris",
-   "Door"
+   "Mechanical"
   ]
  },
  "131886985": {
   "Name": "Cash",
   "Kind": "Sound",
   "Tags": [
-   "Coin"
+   "UI"
   ]
  },
  "132758217": {
@@ -673,15 +671,14 @@
   "Kind": "Sound",
   "Tags": [
    "Fire",
-   "Classic"
+   "Retro"
   ]
  },
  "142491708": {
   "Name": "AWP reload",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Weapon"
+   "Gun"
   ]
  },
  "147741899": {
@@ -711,7 +708,7 @@
   "Name": "Wear (2)",
   "Kind": "Sound",
   "Tags": [
-   "Weapon"
+   "Other"
   ]
  },
  "153832545": {
@@ -740,7 +737,7 @@
   "Kind": "Sound",
   "Tags": [
    "Explosion",
-   "Classic"
+   "Retro"
   ]
  },
  "167063256": {
@@ -763,8 +760,8 @@
   "Name": "Alarm2",
   "Kind": "Sound",
   "Tags": [
-   "Mechanical",
-   "Loop"
+   "Loop",
+   "Mechanical"
   ]
  },
  "177349309": {
@@ -793,8 +790,8 @@
   "Name": "Warp Charge",
   "Kind": "Sound",
   "Tags": [
-   "Teleport",
-   "Charge"
+   "Charge",
+   "Magic"
   ]
  },
  "186399083": {
@@ -808,7 +805,7 @@
   "Name": "Wear",
   "Kind": "Sound",
   "Tags": [
-   "Weapon"
+   "Other"
   ]
  },
  "187823474": {
@@ -851,7 +848,7 @@
   "Name": "StabClassic",
   "Kind": "Sound",
   "Tags": [
-   "Classic"
+   "Retro"
   ]
  },
  "203691785": {
@@ -907,7 +904,7 @@
   "Name": "Healing",
   "Kind": "Sound",
   "Tags": [
-   "Heal"
+   "Magic"
   ]
  },
  "233380645": {
@@ -1269,7 +1266,7 @@
   "Name": "Glass",
   "Kind": "Sound",
   "Tags": [
-   "Glass"
+   "Debris"
   ]
  },
  "265788038": {
@@ -1306,8 +1303,7 @@
   "Name": "8-bit jump",
   "Kind": "Sound",
   "Tags": [
-   "Retro",
-   "Bounce"
+   "Retro"
   ]
  },
  "271370648": {
@@ -1514,8 +1510,8 @@
   "Name": "FireExplosion",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Fire"
+   "Fire",
+   "Explosion"
   ]
  },
  "332491482": {
@@ -1592,7 +1588,7 @@
   "Name": "BreakingDown",
   "Kind": "Sound",
   "Tags": [
-   "Glass"
+   "Debris"
   ]
  },
  "376023896": {
@@ -1657,8 +1653,8 @@
   "Name": "Engine (2)",
   "Kind": "Sound",
   "Tags": [
-   "Mechanical",
-   "Loop"
+   "Loop",
+   "Mechanical"
   ]
  },
  "392758851": {
@@ -1704,15 +1700,14 @@
   "Name": "Glock 18_Reload",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Weapon"
+   "Gun"
   ]
  },
  "405888014": {
   "Name": "Reload",
   "Kind": "Sound",
   "Tags": [
-   "Weapon"
+   "Gun"
   ]
  },
  "406192556": {
@@ -1990,8 +1985,8 @@
   "Name": "Engine",
   "Kind": "Sound",
   "Tags": [
-   "Mechanical",
-   "Loop"
+   "Loop",
+   "Mechanical"
   ]
  },
  "489415286": {
@@ -2267,16 +2262,16 @@
   "Name": "Ice Freeze/Summon",
   "Kind": "Sound",
   "Tags": [
-   "Ice",
-   "Magic"
+   "Magic",
+   "Ice"
   ]
  },
  "632919727": {
   "Name": "Ice summon",
   "Kind": "Sound",
   "Tags": [
-   "Ice",
-   "Magic"
+   "Magic",
+   "Ice"
   ]
  },
  "643064975": {
@@ -2362,8 +2357,7 @@
   "Name": "M4A1 Reload (2)",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Weapon"
+   "Gun"
   ]
  },
  "801170812": {
@@ -2377,8 +2371,7 @@
   "Name": "P90 Reload",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Weapon"
+   "Gun"
   ]
  },
  "811122220": {
@@ -2417,8 +2410,8 @@
   "Name": "Siren",
   "Kind": "Sound",
   "Tags": [
-   "Mechanical",
-   "Loop"
+   "Loop",
+   "Mechanical"
   ]
  },
  "863344136": {
@@ -2505,8 +2498,7 @@
   "Name": "Deploy",
   "Kind": "Sound",
   "Tags": [
-   "Weapon",
-   "Sci-Fi"
+   "Other"
   ]
  },
  "914595092": {
@@ -3011,8 +3003,8 @@
   "Name": "AK-47 Fire Sound",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Fire"
+   "Fire",
+   "Gun"
   ]
  },
  "1177196540": {
@@ -3185,8 +3177,8 @@
   "Name": "Weap_warm_beam_red_01 (Charging sound)",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
-   "Charge"
+   "Charge",
+   "Beam"
   ]
  },
  "1337243068": {
@@ -3238,9 +3230,9 @@
   "Name": "DragonBall - Kamehameha Charge Sound Effect",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
+   "Charge",
    "Beam",
-   "Charge"
+   "Explosion"
   ]
  },
  "1379899761": {
@@ -3367,7 +3359,7 @@
   "Name": "Detach",
   "Kind": "Sound",
   "Tags": [
-   "Weapon"
+   "Other"
   ]
  },
  "1503030545": {
@@ -3411,8 +3403,8 @@
   "Name": "Custom SFX - Mini Magical Explosion",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Magic"
+   "Magic",
+   "Explosion"
   ]
  },
  "1598630577": {
@@ -3458,23 +3450,23 @@
   "Name": "Energy Blast (3)",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Beam"
+   "Beam",
+   "Explosion"
   ]
  },
  "1841352043": {
   "Name": "Energy Blast (2)",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Beam"
+   "Beam",
+   "Explosion"
   ]
  },
  "1843115950": {
   "Name": "HitEcho",
   "Kind": "Sound",
   "Tags": [
-   "Ambient"
+   "Other"
   ]
  },
  "1843146382": {
@@ -3569,7 +3561,7 @@
   "Name": "Pickup",
   "Kind": "Sound",
   "Tags": [
-   "Coin"
+   "UI"
   ]
  },
  "2048097307": {
@@ -3695,7 +3687,7 @@
   "Name": "Fall",
   "Kind": "Sound",
   "Tags": [
-   "Footstep"
+   "Impact"
   ]
  },
  "2382169232": {
@@ -3819,8 +3811,8 @@
   "Name": "Electric Explosion",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Electric"
+   "Electric",
+   "Explosion"
   ]
  },
  "2689837482": {
@@ -3846,7 +3838,7 @@
   "Name": "ReloadBig",
   "Kind": "Sound",
   "Tags": [
-   "Weapon"
+   "Gun"
   ]
  },
  "2763450503": {
@@ -3862,8 +3854,8 @@
   "Name": "Alarm",
   "Kind": "Sound",
   "Tags": [
-   "Mechanical",
-   "Loop"
+   "Loop",
+   "Mechanical"
   ]
  },
  "2780197456": {
@@ -4143,8 +4135,7 @@
   "Name": "Deploy (2)",
   "Kind": "Sound",
   "Tags": [
-   "Weapon",
-   "Sci-Fi"
+   "Other"
   ]
  },
  "3454554153": {
@@ -4188,8 +4179,8 @@
   "Name": "IceSword",
   "Kind": "Sound",
   "Tags": [
-   "Sword",
-   "Ice"
+   "Ice",
+   "Sword"
   ]
  },
  "3546610106": {
@@ -4224,23 +4215,21 @@
   "Name": "Reload (3)",
   "Kind": "Sound",
   "Tags": [
-   "Weapon"
+   "Gun"
   ]
  },
  "3606135620": {
   "Name": "Glock 18 Equip",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Weapon"
+   "Gun"
   ]
  },
  "3606136833": {
   "Name": "Glock 18 Reload",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Weapon"
+   "Gun"
   ]
  },
  "3739363791": {
@@ -4261,16 +4250,15 @@
   "Name": "AK47 Reload",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Weapon"
+   "Gun"
   ]
  },
  "3744392667": {
   "Name": "WaterCharge",
   "Kind": "Sound",
   "Tags": [
-   "Water",
-   "Charge"
+   "Charge",
+   "Water"
   ]
  },
  "3744393124": {
@@ -4284,16 +4272,15 @@
   "Name": "P90 Equip",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Weapon"
+   "Gun"
   ]
  },
  "3748209484": {
   "Name": "ChargingFire",
   "Kind": "Sound",
   "Tags": [
-   "Fire",
-   "Charge"
+   "Charge",
+   "Fire"
   ]
  },
  "3748209678": {
@@ -4314,7 +4301,7 @@
   "Name": "Teleport / Open",
   "Kind": "Sound",
   "Tags": [
-   "Teleport"
+   "Magic"
   ]
  },
  "3750959107": {
@@ -4461,16 +4448,16 @@
   "Name": "WindWoosh",
   "Kind": "Sound",
   "Tags": [
-   "Whoosh",
-   "Wind"
+   "Wind",
+   "Whoosh"
   ]
  },
  "3809085250": {
   "Name": "WindWoosh (2)",
   "Kind": "Sound",
   "Tags": [
-   "Whoosh",
-   "Wind"
+   "Wind",
+   "Whoosh"
   ]
  },
  "3809085650": {
@@ -4506,8 +4493,8 @@
   "Name": "LightningCharge",
   "Kind": "Sound",
   "Tags": [
-   "Electric",
-   "Charge"
+   "Charge",
+   "Electric"
   ]
  },
  "3929467229": {
@@ -4556,14 +4543,14 @@
   "Name": "Appear",
   "Kind": "Sound",
   "Tags": [
-   "Teleport"
+   "Other"
   ]
  },
  "3932669475": {
   "Name": "Healing (1)",
   "Kind": "Sound",
   "Tags": [
-   "Heal"
+   "Magic"
   ]
  },
  "3939948074": {
@@ -4601,8 +4588,7 @@
   "Name": "FutureGun",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Sci-Fi"
+   "Gun"
   ]
  },
  "4085858384": {
@@ -4610,7 +4596,7 @@
   "Kind": "Sound",
   "Tags": [
    "Water",
-   "Weather"
+   "Wind"
   ]
  },
  "4085938599": {
@@ -4666,8 +4652,7 @@
   "Name": "m4a1_equip",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Weapon"
+   "Gun"
   ]
  },
  "4124211540": {
@@ -116089,7 +116074,7 @@
   "Name": "8 Bit Teleport",
   "Kind": "Sound",
   "Tags": [
-   "Teleport",
+   "Magic",
    "Retro"
   ]
  },
@@ -116104,8 +116089,8 @@
   "Name": "dbz beam charge",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
-   "Charge"
+   "Charge",
+   "Beam"
   ]
  },
  "89009748568522": {
@@ -116133,8 +116118,8 @@
   "Name": "Beam Charge (3)",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
-   "Charge"
+   "Charge",
+   "Beam"
   ]
  },
  "8011910411": {
@@ -116148,15 +116133,15 @@
   "Name": "Transform",
   "Kind": "Sound",
   "Tags": [
-   "Teleport"
+   "Magic"
   ]
  },
  "9114118668": {
   "Name": "Beam Blast (3)",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Beam"
+   "Beam",
+   "Explosion"
   ]
  },
  "8164951181": {
@@ -116193,23 +116178,22 @@
   "Kind": "Sound",
   "Tags": [
    "Charge",
-   "Classic"
+   "Retro"
   ]
  },
  "7117632452": {
   "Name": "You've got no discipline",
   "Kind": "Sound",
   "Tags": [
-   "Horror",
-   "Sci-Fi"
+   "Other"
   ]
  },
  "5696557721": {
   "Name": "Magic Charge",
   "Kind": "Sound",
   "Tags": [
-   "Magic",
-   "Charge"
+   "Charge",
+   "Magic"
   ]
  },
  "80883737696871": {
@@ -116272,17 +116256,17 @@
   "Name": "Bell Laser Charge",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
    "Charge",
-   "Bell"
+   "Beam",
+   "UI"
   ]
  },
  "85676999738030": {
   "Name": "Fire Impact",
   "Kind": "Sound",
   "Tags": [
-   "Impact",
-   "Fire"
+   "Fire",
+   "Impact"
   ]
  },
  "71472197762839": {
@@ -116296,8 +116280,8 @@
   "Name": "Magic WHOOSH  Sound FX",
   "Kind": "Sound",
   "Tags": [
-   "Whoosh",
-   "Magic"
+   "Magic",
+   "Whoosh"
   ]
  },
  "115548643884536": {
@@ -116312,8 +116296,7 @@
   "Name": "P90INSPECT",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Weapon"
+   "Gun"
   ]
  },
  "124837936201770": {
@@ -116328,8 +116311,8 @@
   "Name": "Rushing Bubbles (2)",
   "Kind": "Sound",
   "Tags": [
-   "Whoosh",
-   "Water"
+   "Water",
+   "Whoosh"
   ]
  },
  "5707240744": {
@@ -116343,8 +116326,8 @@
   "Name": "elemental-magic-spell-impact-outgoing-228342",
   "Kind": "Sound",
   "Tags": [
-   "Impact",
-   "Magic"
+   "Magic",
+   "Impact"
   ]
  },
  "4914399472": {
@@ -116358,48 +116341,47 @@
   "Name": "JBA - Taunt",
   "Kind": "Sound",
   "Tags": [
-   "Music"
+   "Other"
   ]
  },
  "9113605402": {
   "Name": "Bubble Whoosh",
   "Kind": "Sound",
   "Tags": [
-   "Whoosh",
-   "Water"
+   "Water",
+   "Whoosh"
   ]
  },
  "125098152356234": {
   "Name": "Budokai 3 - Kamehameha Charge",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
+   "Charge",
    "Beam",
-   "Charge"
+   "Explosion"
   ]
  },
  "99763214359944": {
   "Name": "Water Breathing (2)",
   "Kind": "Sound",
   "Tags": [
-   "Water",
-   "Voice",
-   "Loop"
+   "Loop",
+   "Water"
   ]
  },
  "4299623826": {
   "Name": "HealingLoop",
   "Kind": "Sound",
   "Tags": [
-   "Heal",
-   "Loop"
+   "Loop",
+   "Magic"
   ]
  },
  "7098547035": {
   "Name": "JBA - This is the world",
   "Kind": "Sound",
   "Tags": [
-   "Music"
+   "Other"
   ]
  },
  "4953118406": {
@@ -116434,8 +116416,8 @@
   "Name": "Electric Explosion (2)",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Electric"
+   "Electric",
+   "Explosion"
   ]
  },
  "8080941676": {
@@ -116457,8 +116439,7 @@
   "Name": "m4a1 bolt forward",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Weapon"
+   "Gun"
   ]
  },
  "77105407734151": {
@@ -116486,7 +116467,7 @@
   "Name": "ar15-boltback",
   "Kind": "Sound",
   "Tags": [
-   "Other"
+   "Gun"
   ]
  },
  "8563136052": {
@@ -116578,16 +116559,16 @@
   "Name": "Energy Blast (6)",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Beam"
+   "Beam",
+   "Explosion"
   ]
  },
  "7260423115": {
   "Name": "Magic_Spells_CastShort_Water_Aggressive01",
   "Kind": "Sound",
   "Tags": [
-   "Water",
-   "Magic"
+   "Magic",
+   "Water"
   ]
  },
  "108221299985037": {
@@ -116601,8 +116582,8 @@
   "Name": "Energy Blast (5)",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Beam"
+   "Beam",
+   "Explosion"
   ]
  },
  "75637310522679": {
@@ -116616,8 +116597,8 @@
   "Name": "Rushing Bubbles",
   "Kind": "Sound",
   "Tags": [
-   "Whoosh",
-   "Water"
+   "Water",
+   "Whoosh"
   ]
  },
  "9125644676": {
@@ -116631,9 +116612,9 @@
   "Name": "Shockwave Impact",
   "Kind": "Sound",
   "Tags": [
-   "Impact",
+   "Electric",
    "Water",
-   "Electric"
+   "Impact"
   ]
  },
  "79436646901611": {
@@ -116668,8 +116649,8 @@
   "Name": "PortalLoop",
   "Kind": "Sound",
   "Tags": [
-   "Teleport",
-   "Loop"
+   "Loop",
+   "Magic"
   ]
  },
  "108344922277683": {
@@ -116705,15 +116686,15 @@
   "Kind": "Sound",
   "Tags": [
    "Impact",
-   "Glass"
+   "Debris"
   ]
  },
  "125628300343935": {
   "Name": "lightning dash",
   "Kind": "Sound",
   "Tags": [
-   "Whoosh",
-   "Electric"
+   "Electric",
+   "Whoosh"
   ]
  },
  "6706982964": {
@@ -116727,15 +116708,15 @@
   "Name": "Anti-Mage Blink",
   "Kind": "Sound",
   "Tags": [
-   "Teleport"
+   "Magic"
   ]
  },
  "9119477732": {
   "Name": "Splash impact",
   "Kind": "Sound",
   "Tags": [
-   "Impact",
-   "Water"
+   "Water",
+   "Impact"
   ]
  },
  "5686379468": {
@@ -116778,16 +116759,15 @@
   "Name": "Ice impact",
   "Kind": "Sound",
   "Tags": [
-   "Impact",
-   "Ice"
+   "Ice",
+   "Impact"
   ]
  },
  "75149651330676": {
   "Name": "M4A1 Reload",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Weapon"
+   "Gun"
   ]
  },
  "84127157291746": {
@@ -116801,8 +116781,8 @@
   "Name": "Slice",
   "Kind": "Sound",
   "Tags": [
-   "Sword",
-   "Ice"
+   "Ice",
+   "Sword"
   ]
  },
  "7837535984": {
@@ -116879,17 +116859,17 @@
   "Name": "DBS - Kamehameha SFX (Charge)",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
+   "Charge",
    "Beam",
-   "Charge"
+   "Explosion"
   ]
  },
  "9114118855": {
   "Name": "Beam Blast",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Beam"
+   "Beam",
+   "Explosion"
   ]
  },
  "9116385087": {
@@ -116903,8 +116883,8 @@
   "Name": "Lightning Transformation",
   "Kind": "Sound",
   "Tags": [
-   "Electric",
-   "Teleport"
+   "Magic",
+   "Electric"
   ]
  },
  "4427236368": {
@@ -116919,8 +116899,8 @@
   "Name": "Electric Impact",
   "Kind": "Sound",
   "Tags": [
-   "Impact",
-   "Electric"
+   "Electric",
+   "Impact"
   ]
  },
  "4612385808": {
@@ -116934,8 +116914,8 @@
   "Name": "Laser charge up",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
-   "Charge"
+   "Charge",
+   "Beam"
   ]
  },
  "6337656934": {
@@ -116956,8 +116936,8 @@
   "Name": "Energy Blast (9)",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Beam"
+   "Beam",
+   "Explosion"
   ]
  },
  "5556648575": {
@@ -116978,16 +116958,15 @@
   "Name": "ice explosion",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Ice"
+   "Ice",
+   "Explosion"
   ]
  },
  "5109123963": {
   "Name": "RevolverReload",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Weapon"
+   "Gun"
   ]
  },
  "6623782410": {
@@ -117051,16 +117030,16 @@
   "Name": "Downslam Air",
   "Kind": "Sound",
   "Tags": [
-   "Whoosh",
-   "Debris"
+   "Debris",
+   "Whoosh"
   ]
  },
  "85906293248431": {
   "Name": "Lightning Impact",
   "Kind": "Sound",
   "Tags": [
-   "Impact",
-   "Electric"
+   "Electric",
+   "Impact"
   ]
  },
  "91955607157521": {
@@ -117074,14 +117053,14 @@
   "Name": "JBA - Bow Down to my power",
   "Kind": "Sound",
   "Tags": [
-   "Bow"
+   "Whoosh"
   ]
  },
  "134339071110897": {
   "Name": "ar15-boltforward",
   "Kind": "Sound",
   "Tags": [
-   "Other"
+   "Gun"
   ]
  },
  "6720360703": {
@@ -117102,8 +117081,8 @@
   "Name": "Thunder Spear Charge SFX",
   "Kind": "Sound",
   "Tags": [
-   "Electric",
-   "Charge"
+   "Charge",
+   "Electric"
   ]
  },
  "134879445761994": {
@@ -117145,8 +117124,8 @@
   "Name": "Ice magic casting",
   "Kind": "Sound",
   "Tags": [
-   "Ice",
-   "Magic"
+   "Magic",
+   "Ice"
   ]
  },
  "105059479818470": {
@@ -117188,8 +117167,8 @@
   "Name": "Energy Charge",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
-   "Charge"
+   "Charge",
+   "Beam"
   ]
  },
  "6750270946": {
@@ -117259,15 +117238,15 @@
   "Name": "M16A4 reload",
   "Kind": "Sound",
   "Tags": [
-   "Weapon"
+   "Gun"
   ]
  },
  "74584231552865": {
   "Name": "Magical Lightning",
   "Kind": "Sound",
   "Tags": [
-   "Electric",
-   "Magic"
+   "Magic",
+   "Electric"
   ]
  },
  "124790131890062": {
@@ -117281,16 +117260,16 @@
   "Name": "ElectricityLoop",
   "Kind": "Sound",
   "Tags": [
-   "Electric",
-   "Loop"
+   "Loop",
+   "Electric"
   ]
  },
  "18403140686": {
   "Name": "Magic Fireball",
   "Kind": "Sound",
   "Tags": [
-   "Fire",
-   "Magic"
+   "Magic",
+   "Fire"
   ]
  },
  "114241373942580": {
@@ -117311,25 +117290,25 @@
   "Name": "Energy Blast (14)",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Beam"
+   "Beam",
+   "Explosion"
   ]
  },
  "100175674767785": {
   "Name": "fire blast magic",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
+   "Magic",
    "Fire",
-   "Magic"
+   "Explosion"
   ]
  },
  "9119594928": {
   "Name": "Electric Impact (3)",
   "Kind": "Sound",
   "Tags": [
-   "Impact",
-   "Electric"
+   "Electric",
+   "Impact"
   ]
  },
  "110131855063470": {
@@ -117365,15 +117344,15 @@
   "Kind": "Sound",
   "Tags": [
    "Ice",
-   "Glass"
+   "Debris"
   ]
  },
  "101856583450672": {
   "Name": "Beam Charge (2)",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
-   "Charge"
+   "Charge",
+   "Beam"
   ]
  },
  "120898948780322": {
@@ -117409,7 +117388,7 @@
   "Name": "Heal",
   "Kind": "Sound",
   "Tags": [
-   "Heal"
+   "Magic"
   ]
  },
  "6356173417": {
@@ -117423,47 +117402,47 @@
   "Name": "Energy Blast (8)",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Beam"
+   "Beam",
+   "Explosion"
   ]
  },
  "6006851551": {
   "Name": "WindBoomerang",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Wind"
+   "Wind",
+   "Explosion"
   ]
  },
  "9125890241": {
   "Name": "Rushing Bubbles (3)",
   "Kind": "Sound",
   "Tags": [
-   "Whoosh",
-   "Water"
+   "Water",
+   "Whoosh"
   ]
  },
  "9114758344": {
   "Name": "Clap",
   "Kind": "Sound",
   "Tags": [
-   "Crowd"
+   "Other"
   ]
  },
  "121134713310630": {
   "Name": "Laser-charge-sound",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
-   "Charge"
+   "Charge",
+   "Beam"
   ]
  },
  "8578316223": {
   "Name": "Laser Charge",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
-   "Charge"
+   "Charge",
+   "Beam"
   ]
  },
  "18600276177": {
@@ -117519,16 +117498,16 @@
   "Name": "Magic crystal sparkle sound effect 2",
   "Kind": "Sound",
   "Tags": [
-   "Electric",
-   "Magic"
+   "Magic",
+   "Electric"
   ]
  },
  "18920787133": {
   "Name": "M4A1 Charge Release",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Charge"
+   "Charge",
+   "Gun"
   ]
  },
  "6952411082": {
@@ -117542,8 +117521,8 @@
   "Name": "cosmic laser charge",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
-   "Charge"
+   "Charge",
+   "Beam"
   ]
  },
  "9120611160": {
@@ -117620,8 +117599,8 @@
   "Name": "big magic explosion",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Magic"
+   "Magic",
+   "Explosion"
   ]
  },
  "118508162044901": {
@@ -117642,16 +117621,16 @@
   "Name": "Energy Blast",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Beam"
+   "Beam",
+   "Explosion"
   ]
  },
  "9114314399": {
   "Name": "Energy Blast (12)",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Beam"
+   "Beam",
+   "Explosion"
   ]
  },
  "9060808331": {
@@ -117680,8 +117659,8 @@
   "Name": "Magic Hit",
   "Kind": "Sound",
   "Tags": [
-   "Impact",
-   "Magic"
+   "Magic",
+   "Impact"
   ]
  },
  "87458950209409": {
@@ -117709,16 +117688,15 @@
   "Name": "Energy Blast (13)",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Beam"
+   "Beam",
+   "Explosion"
   ]
  },
  "8452111862": {
   "Name": "AK47 Equip",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Weapon"
+   "Gun"
   ]
  },
  "9120503305": {
@@ -117732,8 +117710,7 @@
   "Name": "Magic Circle Warp Sound",
   "Kind": "Sound",
   "Tags": [
-   "Magic",
-   "Teleport"
+   "Magic"
   ]
  },
  "91656203252586": {
@@ -117748,8 +117725,8 @@
   "Name": "Electric Impact (2)",
   "Kind": "Sound",
   "Tags": [
-   "Impact",
-   "Electric"
+   "Electric",
+   "Impact"
   ]
  },
  "115316359774037": {
@@ -117771,8 +117748,8 @@
   "Name": "Beam Loop (10)",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
-   "Loop"
+   "Loop",
+   "Beam"
   ]
  },
  "7601865567": {
@@ -117795,16 +117772,16 @@
   "Name": "Beam Loop (8)",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
-   "Loop"
+   "Loop",
+   "Beam"
   ]
  },
  "113935579251393": {
   "Name": "Beam Loop (4)",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
-   "Loop"
+   "Loop",
+   "Beam"
   ]
  },
  "79278172623758": {
@@ -117862,32 +117839,32 @@
   "Name": "Stab Wind",
   "Kind": "Sound",
   "Tags": [
-   "Sword",
-   "Wind"
+   "Wind",
+   "Sword"
   ]
  },
  "128137145636877": {
   "Name": "Beam Loop",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
-   "Loop"
+   "Loop",
+   "Beam"
   ]
  },
  "82928729857245": {
   "Name": "Beam Charge (4)",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
-   "Charge"
+   "Charge",
+   "Beam"
   ]
  },
  "104820912123652": {
   "Name": "Beam Loop (7)",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
-   "Loop"
+   "Loop",
+   "Beam"
   ]
  },
  "114316093500729": {
@@ -117932,8 +117909,8 @@
   "Name": "Beam Charge (5)",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
-   "Charge"
+   "Charge",
+   "Beam"
   ]
  },
  "86110275786673": {
@@ -118023,8 +118000,8 @@
   "Name": "Beam Loop (9)",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
-   "Loop"
+   "Loop",
+   "Beam"
   ]
  },
  "116238018455576": {
@@ -118061,16 +118038,16 @@
   "Name": "Beam Charge (6)",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
-   "Charge"
+   "Charge",
+   "Beam"
   ]
  },
  "9114119082": {
   "Name": "Beam Blast (2)",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Beam"
+   "Beam",
+   "Explosion"
   ]
  },
  "114890089288632": {
@@ -118144,16 +118121,16 @@
   "Name": "ice impact",
   "Kind": "Sound",
   "Tags": [
-   "Impact",
-   "Ice"
+   "Ice",
+   "Impact"
   ]
  },
  "74168777977225": {
   "Name": "Beam Loop (6)",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
-   "Loop"
+   "Loop",
+   "Beam"
   ]
  },
  "121098116753471": {
@@ -118167,15 +118144,14 @@
   "Name": "Splash impact (2)",
   "Kind": "Sound",
   "Tags": [
-   "Impact",
-   "Water"
+   "Water",
+   "Impact"
   ]
  },
  "84623079364958": {
   "Name": "Lightning Electrocute",
   "Kind": "Sound",
   "Tags": [
-   "Sword",
    "Electric"
   ]
  },
@@ -118204,8 +118180,8 @@
   "Name": "Lightning Chargeup",
   "Kind": "Sound",
   "Tags": [
-   "Electric",
-   "Charge"
+   "Charge",
+   "Electric"
   ]
  },
  "18403722871": {
@@ -118219,8 +118195,8 @@
   "Name": "Energy Blast (19)",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Beam"
+   "Beam",
+   "Explosion"
   ]
  },
  "9116273379": {
@@ -118242,7 +118218,7 @@
   "Kind": "Sound",
   "Tags": [
    "Electric",
-   "Glass"
+   "Debris"
   ]
  },
  "9116385079": {
@@ -118278,9 +118254,9 @@
   "Name": "Magical Ice impact",
   "Kind": "Sound",
   "Tags": [
-   "Impact",
+   "Magic",
    "Ice",
-   "Magic"
+   "Impact"
   ]
  },
  "5507782816": {
@@ -118302,8 +118278,8 @@
   "Name": "Energy Blast (18)",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Beam"
+   "Beam",
+   "Explosion"
   ]
  },
  "5507829691": {
@@ -118339,8 +118315,8 @@
   "Name": "Lightning Shot",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Electric"
+   "Electric",
+   "Gun"
   ]
  },
  "112198630684733": {
@@ -118419,15 +118395,14 @@
   "Name": "Heal (2)",
   "Kind": "Sound",
   "Tags": [
-   "Heal"
+   "Magic"
   ]
  },
  "5868617418": {
   "Name": "lightning appear",
   "Kind": "Sound",
   "Tags": [
-   "Electric",
-   "Teleport"
+   "Electric"
   ]
  },
  "120605552780983": {
@@ -118463,16 +118438,16 @@
   "Name": "Energy Blast",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Beam"
+   "Beam",
+   "Explosion"
   ]
  },
  "9114314245": {
   "Name": "Energy Blast (15)",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Beam"
+   "Beam",
+   "Explosion"
   ]
  },
  "82023898140837": {
@@ -118486,8 +118461,8 @@
   "Name": "Energy Blast (16)",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Beam"
+   "Beam",
+   "Explosion"
   ]
  },
  "6738503253": {
@@ -118530,8 +118505,8 @@
   "Name": "8-bit Impact Water",
   "Kind": "Sound",
   "Tags": [
-   "Impact",
    "Water",
+   "Impact",
    "Retro"
   ]
  },
@@ -118546,15 +118521,14 @@
   "Name": "Laser_Charge",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
-   "Charge"
+   "Charge",
+   "Beam"
   ]
  },
  "136936729151176": {
   "Name": "Lightning Eletrocute",
   "Kind": "Sound",
   "Tags": [
-   "Sword",
    "Electric"
   ]
  },
@@ -118584,16 +118558,16 @@
   "Name": "Fire 1 ReSound [M4A1]",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Fire"
+   "Fire",
+   "Gun"
   ]
  },
  "6875009415": {
   "Name": "Magic Hit (2)",
   "Kind": "Sound",
   "Tags": [
-   "Impact",
-   "Magic"
+   "Magic",
+   "Impact"
   ]
  },
  "5933939542": {
@@ -118608,16 +118582,15 @@
   "Kind": "Sound",
   "Tags": [
    "Explosion",
-   "Horror",
-   "Music"
+   "Horror"
   ]
  },
  "139943212269145": {
   "Name": "M9K Glock 18 fire",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Fire"
+   "Fire",
+   "Gun"
   ]
  },
  "18920780846": {
@@ -118638,8 +118611,8 @@
   "Name": "Beam Loop (2)",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
-   "Loop"
+   "Loop",
+   "Beam"
   ]
  },
  "9118617342": {
@@ -118661,16 +118634,16 @@
   "Name": "Energy Blast (4)",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Beam"
+   "Beam",
+   "Explosion"
   ]
  },
  "9114314919": {
   "Name": "Energy Blast (20)",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Beam"
+   "Beam",
+   "Explosion"
   ]
  },
  "104205757519095": {
@@ -118684,7 +118657,7 @@
   "Name": "ArrowHit",
   "Kind": "Sound",
   "Tags": [
-   "Bow"
+   "Whoosh"
   ]
  },
  "8597296318": {
@@ -118720,8 +118693,8 @@
   "Name": "Energy Blast (17)",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Beam"
+   "Beam",
+   "Explosion"
   ]
  },
  "79997020353786": {
@@ -118729,7 +118702,7 @@
   "Kind": "Sound",
   "Tags": [
    "Gun",
-   "Coin"
+   "UI"
   ]
  },
  "8477376443": {
@@ -118801,16 +118774,15 @@
   "Name": "AK47 Reload 2",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Weapon"
+   "Gun"
   ]
  },
  "112553783607296": {
   "Name": "Beam Loop (5)",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
-   "Loop"
+   "Loop",
+   "Beam"
   ]
  },
  "4580856203": {
@@ -118831,8 +118803,8 @@
   "Name": "Electric Explosion (3)",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Electric"
+   "Electric",
+   "Explosion"
   ]
  },
  "84571542706228": {
@@ -118867,7 +118839,7 @@
   "Name": "AR-15 Reload",
   "Kind": "Sound",
   "Tags": [
-   "Weapon"
+   "Gun"
   ]
  },
  "8592853360": {
@@ -118923,7 +118895,7 @@
   "Name": "JBA - Taunt (2)",
   "Kind": "Sound",
   "Tags": [
-   "Music"
+   "Other"
   ]
  },
  "7128851174": {
@@ -118938,7 +118910,7 @@
   "Kind": "Sound",
   "Tags": [
    "Magic",
-   "Music"
+   "UI"
   ]
  },
  "4299625529": {
@@ -119009,16 +118981,16 @@
   "Name": "Lightning Bolt (2)",
   "Kind": "Sound",
   "Tags": [
-   "Electric"
+   "Electric",
+   "Gun"
   ]
  },
  "7603071288": {
   "Name": "water breathing",
   "Kind": "Sound",
   "Tags": [
-   "Water",
-   "Voice",
-   "Loop"
+   "Loop",
+   "Water"
   ]
  },
  "7060389277": {
@@ -119039,8 +119011,8 @@
   "Name": "OM Knux Punch Charge3",
   "Kind": "Sound",
   "Tags": [
-   "Impact",
-   "Charge"
+   "Charge",
+   "Impact"
   ]
  },
  "121164666947781": {
@@ -119061,8 +119033,8 @@
   "Name": "ice hit",
   "Kind": "Sound",
   "Tags": [
-   "Impact",
-   "Ice"
+   "Ice",
+   "Impact"
   ]
  },
  "98065610810095": {
@@ -119097,8 +119069,7 @@
   "Name": "M9K Glock 18 reload",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Weapon"
+   "Gun"
   ]
  },
  "6947964914": {
@@ -119119,8 +119090,8 @@
   "Name": "Energy Hammer_Charge",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
-   "Charge"
+   "Charge",
+   "Beam"
   ]
  },
  "77084914774539": {
@@ -119141,8 +119112,8 @@
   "Name": "Beam Charge",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
-   "Charge"
+   "Charge",
+   "Beam"
   ]
  },
  "86539437442615": {
@@ -119199,7 +119170,7 @@
   "Name": "JudgementCut",
   "Kind": "Sound",
   "Tags": [
-   "Sword"
+   "Other"
   ]
  },
  "4529474217": {
@@ -119248,8 +119219,8 @@
   "Name": "Laser_Charge (2)",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
-   "Charge"
+   "Charge",
+   "Beam"
   ]
  },
  "16480580213": {
@@ -119298,9 +119269,9 @@
   "Name": "Magic Wind Cut SFX",
   "Kind": "Sound",
   "Tags": [
-   "Sword",
+   "Magic",
    "Wind",
-   "Magic"
+   "Sword"
   ]
  },
  "7290135911": {
@@ -119314,16 +119285,15 @@
   "Name": "AWP Reload",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Weapon"
+   "Gun"
   ]
  },
  "6319199563": {
   "Name": "Alarm (2)",
   "Kind": "Sound",
   "Tags": [
-   "Mechanical",
-   "Loop"
+   "Loop",
+   "Mechanical"
   ]
  },
  "126252469119047": {
@@ -119359,8 +119329,8 @@
   "Name": "MetalGrinding",
   "Kind": "Sound",
   "Tags": [
-   "Bell",
-   "Debris"
+   "Debris",
+   "UI"
   ]
  },
  "135441807407039": {
@@ -119374,8 +119344,8 @@
   "Name": "Ice Blast",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Ice"
+   "Ice",
+   "Explosion"
   ]
  },
  "81737474220111": {
@@ -119397,8 +119367,8 @@
   "Name": "Beam Loop (3)",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
-   "Loop"
+   "Loop",
+   "Beam"
   ]
  },
  "120469392406982": {
@@ -119449,8 +119419,7 @@
   "Name": "P90RELOAD",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Weapon"
+   "Gun"
   ]
  },
  "81158490239686": {
@@ -119478,16 +119447,16 @@
   "Name": "Soul beam charge",
   "Kind": "Sound",
   "Tags": [
-   "Beam",
-   "Charge"
+   "Charge",
+   "Beam"
   ]
  },
  "134787800528297": {
   "Name": "magic swoosh crystal sound thing",
   "Kind": "Sound",
   "Tags": [
-   "Whoosh",
-   "Magic"
+   "Magic",
+   "Whoosh"
   ]
  },
  "9116282409": {
@@ -119501,8 +119470,8 @@
   "Name": "Railgun charging",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Charge"
+   "Charge",
+   "Gun"
   ]
  },
  "73207009484146": {
@@ -119532,7 +119501,8 @@
   "Name": "Lightning Bolt (3)",
   "Kind": "Sound",
   "Tags": [
-   "Electric"
+   "Electric",
+   "Gun"
   ]
  },
  "7223765833": {
@@ -119569,8 +119539,8 @@
   "Name": "Energy Blast (11)",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Beam"
+   "Beam",
+   "Explosion"
   ]
  },
  "17726923018": {
@@ -119606,7 +119576,7 @@
   "Kind": "Sound",
   "Tags": [
    "Charge",
-   "Heal"
+   "Magic"
   ]
  },
  "4621548161": {
@@ -119641,8 +119611,8 @@
   "Name": "Magic Glow Constant Pulsing Warbled Hum Ring (SFX)",
   "Kind": "Sound",
   "Tags": [
-   "Magic",
-   "Loop"
+   "Loop",
+   "Magic"
   ]
  },
  "5301078479": {
@@ -119698,8 +119668,8 @@
   "Name": "ice impact",
   "Kind": "Sound",
   "Tags": [
-   "Impact",
-   "Ice"
+   "Ice",
+   "Impact"
   ]
  },
  "8759525785": {
@@ -119741,8 +119711,8 @@
   "Name": "Electric Explosion (4)",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Electric"
+   "Electric",
+   "Explosion"
   ]
  },
  "4306994923": {
@@ -119784,25 +119754,25 @@
   "Name": "Magical Exit Sparkling Pass Bys Clinking Chi (SFX)",
   "Kind": "Sound",
   "Tags": [
-   "Electric",
-   "Magic"
+   "Magic",
+   "Electric"
   ]
  },
  "120694720899178": {
   "Name": "RS-422 Railgun - Charge",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
-   "Charge"
+   "Charge",
+   "Gun"
   ]
  },
  "96144156475300": {
   "Name": "Magic Bullet Fire",
   "Kind": "Sound",
   "Tags": [
-   "Gun",
+   "Magic",
    "Fire",
-   "Magic"
+   "Gun"
   ]
  },
  "135365329638791": {
@@ -119823,16 +119793,16 @@
   "Name": "Energy Blast (7)",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Beam"
+   "Beam",
+   "Explosion"
   ]
  },
  "9114314604": {
   "Name": "Energy Blast (10)",
   "Kind": "Sound",
   "Tags": [
-   "Explosion",
-   "Beam"
+   "Beam",
+   "Explosion"
   ]
  },
  "74238153433253": {
@@ -119853,9 +119823,9 @@
   "Name": "Ice Sword Summon",
   "Kind": "Sound",
   "Tags": [
-   "Sword",
+   "Magic",
    "Ice",
-   "Magic"
+   "Sword"
   ]
  },
  "9114221327": {
@@ -119890,9 +119860,8 @@
   "Name": "Water Breathing",
   "Kind": "Sound",
   "Tags": [
-   "Water",
-   "Voice",
-   "Loop"
+   "Loop",
+   "Water"
   ]
  },
  "76525344270919": {
