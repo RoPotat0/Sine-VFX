@@ -18457,7 +18457,8 @@
   "Kind": "Texture",
   "Tags": [
    "Grid"
-  ]
+  ],
+  "Grid": 8
  },
  "11037284566": {
   "Name": "ElectricMask",
@@ -30795,7 +30796,8 @@
   "Kind": "Texture",
   "Tags": [
    "Flare"
-  ]
+  ],
+  "Grid": 4
  },
  "11410124087": {
   "Name": "lensflare (1)",
@@ -40366,7 +40368,8 @@
   "Kind": "Texture",
   "Tags": [
    "Crescent"
-  ]
+  ],
+  "Grid": 4
  },
  "100032231000863": {
   "Name": "Text 19",
@@ -42289,7 +42292,8 @@
   "Kind": "Texture",
   "Tags": [
    "Flare"
-  ]
+  ],
+  "Grid": 4
  },
  "11381557354": {
   "Name": "flipbook4",
@@ -48884,7 +48888,8 @@
   "Kind": "Texture",
   "Tags": [
    "Other"
-  ]
+  ],
+  "Grid": 4
  },
  "12362702029": {
   "Name": "spiral_36",
@@ -52955,7 +52960,8 @@
   "Tags": [
    "Spec"
   ],
-  "Quality": "high"
+  "Quality": "high",
+  "Grid": 8
  },
  "87158052323401": {
   "Name": "smoke (1)",
@@ -53424,7 +53430,8 @@
   "Kind": "Texture",
   "Tags": [
    "Other"
-  ]
+  ],
+  "Grid": 6
  },
  "12362837291": {
   "Name": "fire_25",
@@ -57657,7 +57664,8 @@
   "Kind": "Texture",
   "Tags": [
    "Flare"
-  ]
+  ],
+  "Grid": 4
  },
  "17635302684": {
   "Name": "Wireframe 9",
@@ -60382,7 +60390,8 @@
   "Kind": "Texture",
   "Tags": [
    "Other"
-  ]
+  ],
+  "Grid": 6
  },
  "73766396846895": {
   "Name": "Impact 6895",
@@ -67550,7 +67559,8 @@
   "Kind": "Texture",
   "Tags": [
    "Spec"
-  ]
+  ],
+  "Grid": 8
  },
  "5021159599": {
   "Name": "Hexagon",
@@ -68480,7 +68490,8 @@
   "Kind": "Texture",
   "Tags": [
    "Other"
-  ]
+  ],
+  "Grid": 6
  },
  "139208184167879": {
   "Name": "13388204057_c",
@@ -70785,7 +70796,8 @@
   "Kind": "Texture",
   "Tags": [
    "Flare"
-  ]
+  ],
+  "Grid": 4
  },
  "7216855489": {
   "Name": "fire_01",
@@ -84225,7 +84237,8 @@
   "Tags": [
    "Other"
   ],
-  "Resolution": 595
+  "Resolution": 595,
+  "Grid": 4
  },
  "85858177391804": {
   "Name": "stylized leaf 1",
@@ -84566,7 +84579,8 @@
   "Tags": [
    "Other"
   ],
-  "Resolution": 593
+  "Resolution": 593,
+  "Grid": 8
  },
  "84503798663729": {
   "Name": "white flipping rock 2",
@@ -86709,7 +86723,8 @@
   "Tags": [
    "Crescent"
   ],
-  "Resolution": 150
+  "Resolution": 150,
+  "Grid": 4
  },
  "117428721886404": {
   "Name": "Expanding square",
@@ -89329,7 +89344,8 @@
   "Tags": [
    "Spec"
   ],
-  "Resolution": 811
+  "Resolution": 811,
+  "Grid": 4
  },
  "16866060000": {
   "Name": "Water29",
@@ -89540,7 +89556,8 @@
   "Tags": [
    "Other"
   ],
-  "Resolution": 422
+  "Resolution": 422,
+  "Grid": 4
  },
  "16865817861": {
   "Name": "Water1",
@@ -93368,7 +93385,8 @@
   "Tags": [
    "Fire"
   ],
-  "Resolution": 450
+  "Resolution": 450,
+  "Grid": 4
  },
  "122797613283495": {
   "Name": "Blurry Star",
@@ -94056,7 +94074,8 @@
   "Tags": [
    "Other"
   ],
-  "Resolution": 593
+  "Resolution": 593,
+  "Grid": 4
  },
  "123447873199405": {
   "Name": "Fire Dispersing",
@@ -101138,7 +101157,8 @@
   "Tags": [
    "Smoke"
   ],
-  "Resolution": 593
+  "Resolution": 593,
+  "Grid": 8
  },
  "129483039162676": {
   "Name": "Ground19",
@@ -104626,7 +104646,8 @@
    "Other"
   ],
   "Resolution": 1402,
-  "Quality": "high"
+  "Quality": "high",
+  "Grid": 4
  },
  "92898354714824": {
   "Name": "Colored Party Popper Emoji 4x4",
@@ -109421,7 +109442,8 @@
    "Other"
   ],
   "Resolution": 2048,
-  "Quality": "very high"
+  "Quality": "very high",
+  "Grid": 6
  },
  "140706580961842": {
   "Name": "Energy Splash",
@@ -109499,7 +109521,8 @@
    "Other"
   ],
   "Resolution": 2048,
-  "Quality": "very high"
+  "Quality": "very high",
+  "Grid": 6
  },
  "117648803529717": {
   "Name": "Glitch Chromatic Shard",
@@ -109508,7 +109531,8 @@
    "Other"
   ],
   "Resolution": 2048,
-  "Quality": "very high"
+  "Quality": "very high",
+  "Grid": 6
  },
  "122216763005332": {
   "Name": "Basic Noise Star",
@@ -109536,7 +109560,8 @@
    "Other"
   ],
   "Resolution": 2048,
-  "Quality": "very high"
+  "Quality": "very high",
+  "Grid": 6
  },
  "109054962949229": {
   "Name": "Regular Shockwave",
@@ -109565,7 +109590,8 @@
    "Other"
   ],
   "Resolution": 2048,
-  "Quality": "very high"
+  "Quality": "very high",
+  "Grid": 6
  },
  "94778248213776": {
   "Name": "Poison Skull",
@@ -109574,7 +109600,8 @@
    "Other"
   ],
   "Resolution": 2048,
-  "Quality": "very high"
+  "Quality": "very high",
+  "Grid": 6
  },
  "72018203072434": {
   "Name": "Cartoon Swirl",
@@ -109603,7 +109630,8 @@
    "Other"
   ],
   "Resolution": 2048,
-  "Quality": "very high"
+  "Quality": "very high",
+  "Grid": 6
  },
  "101454343831998": {
   "Name": "Snoring",
@@ -109642,7 +109670,8 @@
    "Other"
   ],
   "Resolution": 2048,
-  "Quality": "very high"
+  "Quality": "very high",
+  "Grid": 6
  },
  "125527254877782": {
   "Name": "Energy 6",
@@ -109661,7 +109690,8 @@
    "Other"
   ],
   "Resolution": 2048,
-  "Quality": "very high"
+  "Quality": "very high",
+  "Grid": 6
  },
  "86042007228424": {
   "Name": "Hollow Fractal Poly",
@@ -109720,7 +109750,8 @@
    "Other"
   ],
   "Resolution": 2048,
-  "Quality": "very high"
+  "Quality": "very high",
+  "Grid": 6
  },
  "125083054981682": {
   "Name": "Noisy Cloud",
@@ -109759,7 +109790,8 @@
    "Other"
   ],
   "Resolution": 2048,
-  "Quality": "very high"
+  "Quality": "very high",
+  "Grid": 6
  },
  "120998994980218": {
   "Name": "Fractal Shockwave",
@@ -109828,7 +109860,8 @@
    "Other"
   ],
   "Resolution": 2048,
-  "Quality": "very high"
+  "Quality": "very high",
+  "Grid": 6
  },
  "116537383626257": {
   "Name": "Dissolving Spec 6",
@@ -109975,7 +110008,8 @@
    "Other"
   ],
   "Resolution": 2048,
-  "Quality": "very high"
+  "Quality": "very high",
+  "Grid": 6
  },
  "128125027427756": {
   "Name": "TDS Star Indicator",
@@ -109984,7 +110018,8 @@
    "Other"
   ],
   "Resolution": 2048,
-  "Quality": "very high"
+  "Quality": "very high",
+  "Grid": 6
  },
  "134048807142869": {
   "Name": "Dissolving Spec 8",
