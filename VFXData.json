@@ -121114,10 +121114,11 @@
   "Quality": "high"
  },
  "mflip_1": {
-  "Name": "Flipbook 1",
+  "Name": "Slash 1",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Slash",
+   "Crescent"
   ],
   "Frames": [
    "93403994693415",
@@ -121135,10 +121136,11 @@
   "Quality": "high"
  },
  "mflip_10": {
-  "Name": "Flipbook 10",
+  "Name": "Splash 10",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Swirl",
+   "Impact"
   ],
   "Frames": [
    "71727634545677",
@@ -121162,10 +121164,11 @@
   "Quality": "high"
  },
  "mflip_11": {
-  "Name": "Flipbook 11",
+  "Name": "Spark 11",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Spark",
+   "Debris"
   ],
   "Frames": [
    "105625346191467",
@@ -121189,10 +121192,11 @@
   "Quality": "high"
  },
  "mflip_12": {
-  "Name": "Flipbook 12",
+  "Name": "Splash 12",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Swirl",
+   "Impact"
   ],
   "Frames": [
    "119728213994348",
@@ -121216,10 +121220,11 @@
   "Quality": "high"
  },
  "mflip_13": {
-  "Name": "Flipbook 13",
+  "Name": "Crescent Slash 13",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Slash",
+   "Crescent"
   ],
   "Frames": [
    "78334381919439",
@@ -121238,10 +121243,11 @@
   "Quality": "high"
  },
  "mflip_14": {
-  "Name": "Flipbook 14",
+  "Name": "Crescent Slash 14",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Slash",
+   "Crescent"
   ],
   "Frames": [
    "104367325010243",
@@ -121260,10 +121266,11 @@
   "Quality": "high"
  },
  "mflip_15": {
-  "Name": "Flipbook 15",
+  "Name": "Swirl Slash 15",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Slash",
+   "Swirl"
   ],
   "Frames": [
    "82268294027571",
@@ -121287,10 +121294,11 @@
   "Quality": "high"
  },
  "mflip_16": {
-  "Name": "Flipbook 16",
+  "Name": "Explosion 16",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Explosion",
+   "Smoke"
   ],
   "Frames": [
    "89216192739925",
@@ -121314,10 +121322,10 @@
   "Quality": "high"
  },
  "mflip_17": {
-  "Name": "Flipbook 17",
+  "Name": "Shockwave 17",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Shockwave"
   ],
   "Frames": [
    "93103128851951",
@@ -121335,10 +121343,11 @@
   "Quality": "high"
  },
  "mflip_18": {
-  "Name": "Flipbook 18",
+  "Name": "Crescent Slash 18",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Slash",
+   "Crescent"
   ],
   "Frames": [
    "80064518752839",
@@ -121355,10 +121364,11 @@
   "Quality": "high"
  },
  "mflip_19": {
-  "Name": "Flipbook 19",
+  "Name": "Impact 19",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Impact",
+   "Spark"
   ],
   "Frames": [
    "97367531268677",
@@ -121375,10 +121385,10 @@
   "Quality": "high"
  },
  "mflip_2": {
-  "Name": "Flipbook 2",
+  "Name": "Slash 2",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Slash"
   ],
   "Frames": [
    "93587244675205",
@@ -121402,10 +121412,10 @@
   "Quality": "high"
  },
  "mflip_20": {
-  "Name": "Flipbook 20",
+  "Name": "Slash 20",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Slash"
   ],
   "Frames": [
    "110912247976175",
@@ -121429,10 +121439,10 @@
   "Quality": "high"
  },
  "mflip_21": {
-  "Name": "Flipbook 21",
+  "Name": "Shockwave 21",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Shockwave"
   ],
   "Frames": [
    "73684459995073",
@@ -121449,10 +121459,11 @@
   "Quality": "high"
  },
  "mflip_22": {
-  "Name": "Flipbook 22",
+  "Name": "Impact 22",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Impact",
+   "Spark"
   ],
   "Frames": [
    "88872507850085",
@@ -121476,10 +121487,11 @@
   "Quality": "high"
  },
  "mflip_23": {
-  "Name": "Flipbook 23",
+  "Name": "Explosion 23",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Explosion",
+   "Swirl"
   ],
   "Frames": [
    "99869986170032",
@@ -121503,10 +121515,11 @@
   "Quality": "high"
  },
  "mflip_24": {
-  "Name": "Flipbook 24",
+  "Name": "Swirl 24",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Swirl",
+   "Explosion"
   ],
   "Frames": [
    "138202366030398",
@@ -121529,10 +121542,11 @@
   "Quality": "high"
  },
  "mflip_25": {
-  "Name": "Flipbook 25",
+  "Name": "Impact 25",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Impact",
+   "Spark"
   ],
   "Frames": [
    "73547558362204",
@@ -121554,10 +121568,11 @@
   "Quality": "high"
  },
  "mflip_26": {
-  "Name": "Flipbook 26",
+  "Name": "Smoke 26",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Smoke",
+   "Fire"
   ],
   "Frames": [
    "132092945462849",
@@ -121577,10 +121592,11 @@
   "Quality": "high"
  },
  "mflip_27": {
-  "Name": "Flipbook 27",
+  "Name": "Magic 27",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Magic",
+   "Impact"
   ],
   "Frames": [
    "115998120046127",
@@ -121604,10 +121620,11 @@
   "Quality": "high"
  },
  "mflip_28": {
-  "Name": "Flipbook 28",
+  "Name": "Crescent Slash 28",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Slash",
+   "Crescent"
   ],
   "Frames": [
    "130425567254875",
@@ -121631,10 +121648,10 @@
   "Quality": "high"
  },
  "mflip_29": {
-  "Name": "Flipbook 29",
+  "Name": "Fire 29",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Fire"
   ],
   "Frames": [
    "101894427566342",
@@ -121673,10 +121690,11 @@
   "Quality": "high"
  },
  "mflip_3": {
-  "Name": "Flipbook 3",
+  "Name": "Swirl Slash 3",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Slash",
+   "Swirl"
   ],
   "Frames": [
    "76942885291648",
@@ -121700,10 +121718,10 @@
   "Quality": "high"
  },
  "mflip_30": {
-  "Name": "Flipbook 30",
+  "Name": "Explosion 30",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Explosion"
   ],
   "Frames": [
    "99668285577787",
@@ -121729,10 +121747,11 @@
   "Quality": "high"
  },
  "mflip_31": {
-  "Name": "Flipbook 31",
+  "Name": "Swirl Slash 31",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Slash",
+   "Swirl"
   ],
   "Frames": [
    "92326047785507",
@@ -121755,10 +121774,10 @@
   "Quality": "high"
  },
  "mflip_32": {
-  "Name": "Flipbook 32",
+  "Name": "Shockwave 32",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Shockwave"
   ],
   "Frames": [
    "104525751872202",
@@ -121781,10 +121800,11 @@
   "Quality": "high"
  },
  "mflip_33": {
-  "Name": "Flipbook 33",
+  "Name": "Spark 33",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Spark",
+   "Debris"
   ],
   "Frames": [
    "92044349147791",
@@ -121805,10 +121825,10 @@
   "Quality": "high"
  },
  "mflip_34": {
-  "Name": "Flipbook 34",
+  "Name": "Smoke 34",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Smoke"
   ],
   "Frames": [
    "95370482272137",
@@ -121831,10 +121851,11 @@
   "Quality": "high"
  },
  "mflip_35": {
-  "Name": "Flipbook 35",
+  "Name": "Slash 35",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Slash",
+   "Spark"
   ],
   "Frames": [
    "73112360066492",
@@ -121853,10 +121874,10 @@
   "Quality": "high"
  },
  "mflip_36": {
-  "Name": "Flipbook 36",
+  "Name": "Slash 36",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Slash"
   ],
   "Frames": [
    "135156434756650",
@@ -121880,10 +121901,11 @@
   "Quality": "high"
  },
  "mflip_37": {
-  "Name": "Flipbook 37",
+  "Name": "Fire 37",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Fire",
+   "Swirl"
   ],
   "Frames": [
    "117453000589965",
@@ -121907,10 +121929,11 @@
   "Quality": "high"
  },
  "mflip_38": {
-  "Name": "Flipbook 38",
+  "Name": "Crescent Slash 38",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Slash",
+   "Crescent"
   ],
   "Frames": [
    "125161698334832",
@@ -121927,10 +121950,11 @@
   "Quality": "high"
  },
  "mflip_39": {
-  "Name": "Flipbook 39",
+  "Name": "Shockwave 39",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Shockwave",
+   "Debris"
   ],
   "Frames": [
    "98043829390095",
@@ -121952,10 +121976,10 @@
   "Quality": "high"
  },
  "mflip_4": {
-  "Name": "Flipbook 4",
+  "Name": "Shockwave 4",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Shockwave"
   ],
   "Frames": [
    "77259018932471",
@@ -121974,10 +121998,11 @@
   "Quality": "high"
  },
  "mflip_40": {
-  "Name": "Flipbook 40",
+  "Name": "Spark 40",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Spark",
+   "Debris"
   ],
   "Frames": [
    "97563626155325",
@@ -122001,10 +122026,10 @@
   "Quality": "high"
  },
  "mflip_41": {
-  "Name": "Flipbook 41",
+  "Name": "Smoke 41",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Smoke"
   ],
   "Frames": [
    "94216171182709",
@@ -122028,10 +122053,10 @@
   "Quality": "high"
  },
  "mflip_42": {
-  "Name": "Flipbook 42",
+  "Name": "Smoke 42",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Smoke"
   ],
   "Frames": [
    "86321972657215",
@@ -122051,10 +122076,10 @@
   "Quality": "high"
  },
  "mflip_43": {
-  "Name": "Flipbook 43",
+  "Name": "Smoke 43",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Smoke"
   ],
   "Frames": [
    "131801464866068",
@@ -122078,10 +122103,10 @@
   "Quality": "high"
  },
  "mflip_44": {
-  "Name": "Flipbook 44",
+  "Name": "Lightning 44",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Lightning"
   ],
   "Frames": [
    "71442047762328",
@@ -122105,10 +122130,10 @@
   "Quality": "high"
  },
  "mflip_45": {
-  "Name": "Flipbook 45",
+  "Name": "Smoke 45",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Smoke"
   ],
   "Frames": [
    "106811371567772",
@@ -122132,10 +122157,11 @@
   "Quality": "high"
  },
  "mflip_46": {
-  "Name": "Flipbook 46",
+  "Name": "Crescent Slash 46",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Slash",
+   "Crescent"
   ],
   "Frames": [
    "92167201956791",
@@ -122159,10 +122185,11 @@
   "Quality": "high"
  },
  "mflip_47": {
-  "Name": "Flipbook 47",
+  "Name": "Impact 47",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Impact",
+   "Spark"
   ],
   "Frames": [
    "87472357113554",
@@ -122186,10 +122213,10 @@
   "Quality": "high"
  },
  "mflip_48": {
-  "Name": "Flipbook 48",
+  "Name": "Magic 48",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Magic"
   ],
   "Frames": [
    "99596092907695",
@@ -122213,10 +122240,11 @@
   "Quality": "high"
  },
  "mflip_49": {
-  "Name": "Flipbook 49",
+  "Name": "Fire 49",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Fire",
+   "Swirl"
   ],
   "Frames": [
    "76924476005456",
@@ -122240,10 +122268,10 @@
   "Quality": "high"
  },
  "mflip_5": {
-  "Name": "Flipbook 5",
+  "Name": "Lightning 5",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Lightning"
   ],
   "Frames": [
    "71265739500751",
@@ -122263,10 +122291,11 @@
   "Quality": "high"
  },
  "mflip_50": {
-  "Name": "Flipbook 50",
+  "Name": "Flare 50",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Magic",
+   "Impact"
   ],
   "Frames": [
    "95444952023223",
@@ -122290,10 +122319,11 @@
   "Quality": "high"
  },
  "mflip_6": {
-  "Name": "Flipbook 6",
+  "Name": "Slash 6",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Slash",
+   "Spark"
   ],
   "Frames": [
    "81074786662104",
@@ -122317,10 +122347,10 @@
   "Quality": "high"
  },
  "mflip_7": {
-  "Name": "Flipbook 7",
+  "Name": "Smoke 7",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Smoke"
   ],
   "Frames": [
    "106056899947663",
@@ -122343,10 +122373,11 @@
   "Quality": "high"
  },
  "mflip_8": {
-  "Name": "Flipbook 8",
+  "Name": "Crescent Slash 8",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Slash",
+   "Crescent"
   ],
   "Frames": [
    "80223810782153",
@@ -122367,10 +122398,10 @@
   "Quality": "high"
  },
  "mflip_9": {
-  "Name": "Flipbook 9",
+  "Name": "Impact 9",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Impact"
   ],
   "Frames": [
    "139855349066273",
@@ -122393,10 +122424,10 @@
   "Quality": "high"
  },
  "mflip_27-2": {
-  "Name": "Flipbook 27-2",
+  "Name": "Magic 27b",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Magic"
   ],
   "Frames": [
    "125246494786757",
@@ -122415,10 +122446,11 @@
   "Quality": "high"
  },
  "mflip_23-2": {
-  "Name": "Flipbook 23-2",
+  "Name": "Fire 23b",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Fire",
+   "Magic"
   ],
   "Frames": [
    "119133943990889",
@@ -122442,10 +122474,10 @@
   "Quality": "high"
  },
  "mflip_45-2": {
-  "Name": "Flipbook 45-2",
+  "Name": "Lightning 45b",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Lightning"
   ],
   "Frames": [
    "106811371567772",
@@ -122469,10 +122501,10 @@
   "Quality": "high"
  },
  "mflip_26-2": {
-  "Name": "Flipbook 26-2",
+  "Name": "Smoke 26b",
   "Kind": "MeshFlipbook",
   "Tags": [
-   "Flipbook"
+   "Smoke"
   ],
   "Frames": [
    "108393704592915",
