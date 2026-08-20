@@ -109462,7 +109462,8 @@
    "Other"
   ],
   "Resolution": 2048,
-  "Quality": "very high"
+  "Quality": "very high",
+  "Grid": 5
  },
  "100707967232794": {
   "Name": "Energy 3",
@@ -109541,7 +109542,8 @@
    "Other"
   ],
   "Resolution": 2048,
-  "Quality": "very high"
+  "Quality": "very high",
+  "Grid": 6
  },
  "75152162802863": {
   "Name": "Sung Eyes",
@@ -109940,7 +109942,8 @@
    "Other"
   ],
   "Resolution": 2048,
-  "Quality": "very high"
+  "Quality": "very high",
+  "Grid": 5
  },
  "127936527591248": {
   "Name": "Hollow Fractal Square",
@@ -109959,7 +109962,8 @@
    "Other"
   ],
   "Resolution": 2048,
-  "Quality": "very high"
+  "Quality": "very high",
+  "Grid": 5
  },
  "89795770583144": {
   "Name": "Energy 7",
