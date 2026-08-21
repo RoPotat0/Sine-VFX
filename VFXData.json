@@ -119931,61 +119931,28 @@
   "Tags": [
    "Water"
   ]
- },
- "75860837672225": {
-  "Name": "Abstract_603",
-  "Kind": "Texture",
-  "Tags": [
-   "Abstract"
-  ],
-  "Quality": "high"
- },
- "136704387236058": {
-  "Name": "Abstract_685",
-  "Kind": "Texture",
-  "Tags": [
-   "Abstract"
-  ],
-  "Quality": "high"
- },
- "16978713087": {
-  "Name": "Aura_071",
-  "Kind": "Texture",
-  "Tags": [
-   "Aura"
-  ],
-  "Quality": "high"
- },
+ },
  "100300862060592": {
   "Name": "Aura_103",
   "Kind": "Texture",
   "Tags": [
-   "Aura",
    "Other"
   ],
   "Quality": "high"
- },
- "74614021916565": {
-  "Name": "Beam_225",
-  "Kind": "Texture",
-  "Tags": [
-   "Beam"
-  ],
-  "Quality": "high"
- },
+ },
  "110781751514494": {
   "Name": "Beam_329",
-  "Kind": "Texture",
+  "Kind": "Beam",
   "Tags": [
-   "Beam"
+   "Other"
   ],
   "Quality": "high"
  },
  "139200777915968": {
   "Name": "Beam_412",
-  "Kind": "Texture",
+  "Kind": "Beam",
   "Tags": [
-   "Beam"
+   "Other"
   ],
   "Quality": "high"
  },
@@ -120345,8 +120312,7 @@
   "Name": "Rays_161",
   "Kind": "Texture",
   "Tags": [
-   "Rays",
-   "Wisp"
+   "Rays"
   ],
   "Quality": "high"
  },
@@ -120599,55 +120565,7 @@
    "Water"
   ],
   "Quality": "high"
- },
- "73108624995898": {
-  "Name": "Wisp_360",
-  "Kind": "Texture",
-  "Tags": [
-   "Wisp"
-  ],
-  "Quality": "high"
- },
- "101872876976948": {
-  "Name": "Wisp_445",
-  "Kind": "Texture",
-  "Tags": [
-   "Wisp"
-  ],
-  "Quality": "high"
- },
- "110361796788602": {
-  "Name": "Wisp_470",
-  "Kind": "Texture",
-  "Tags": [
-   "Wisp"
-  ],
-  "Quality": "high"
- },
- "120553932796626": {
-  "Name": "Wisp_506",
-  "Kind": "Texture",
-  "Tags": [
-   "Wisp"
-  ],
-  "Quality": "high"
- },
- "134968196396951": {
-  "Name": "Wisp_550",
-  "Kind": "Texture",
-  "Tags": [
-   "Wisp"
-  ],
-  "Quality": "high"
- },
- "100081129411640": {
-  "Name": "Wisp_569",
-  "Kind": "Texture",
-  "Tags": [
-   "Wisp"
-  ],
-  "Quality": "high"
- },
+ },
  "100143732952958": {
   "Name": "Other_993",
   "Kind": "Texture",
@@ -120775,23 +120693,7 @@
    "Star"
   ],
   "Quality": "high"
- },
- "123396326155795": {
-  "Name": "Aura_163",
-  "Kind": "Texture",
-  "Tags": [
-   "Aura"
-  ],
-  "Quality": "high"
- },
- "123410872768878": {
-  "Name": "Aura_164",
-  "Kind": "Texture",
-  "Tags": [
-   "Aura"
-  ],
-  "Quality": "high"
- },
+ },
  "124870454414784": {
   "Name": "Other_1192",
   "Kind": "Texture",
@@ -120903,15 +120805,7 @@
    "Text"
   ],
   "Quality": "high"
- },
- "137155013777181": {
-  "Name": "Wisp_742",
-  "Kind": "Texture",
-  "Tags": [
-   "Wisp"
-  ],
-  "Quality": "high"
- },
+ },
  "139537068536932": {
   "Name": "Other_1318",
   "Kind": "Texture",
