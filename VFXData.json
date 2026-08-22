@@ -2274,14 +2274,6 @@
    "Ice"
   ]
  },
- "643064975": {
-  "Name": "Textured Wind Ring",
-  "Kind": "Mesh",
-  "Tags": [
-   "Wind",
-   "Shockwave"
-  ]
- },
  "643098245": {
   "Name": "MeshPart",
   "Kind": "Mesh",
@@ -4131,13 +4123,6 @@
   "MeshId": "rbxassetid://3375161112",
   "Size": "2.2000, 1.1000, 2.2000"
  },
- "3422592990": {
-  "Name": "Deploy (2)",
-  "Kind": "Sound",
-  "Tags": [
-   "Other"
-  ]
- },
  "3454554153": {
   "Name": "Thin Wind Circle",
   "Kind": "Mesh",
@@ -4678,13 +4663,6 @@
   "Kind": "Texture",
   "Tags": [
    "Energy"
-  ]
- },
- "4282172813": {
-  "Name": "Water (4)",
-  "Kind": "Sound",
-  "Tags": [
-   "Water"
   ]
  },
  "90431684950883": {
@@ -116323,14 +116301,6 @@
    "Whoosh"
   ]
  },
- "115548643884536": {
-  "Name": "Beam Fire",
-  "Kind": "Sound",
-  "Tags": [
-   "Beam",
-   "Fire"
-  ]
- },
  "93218906399796": {
   "Name": "P90INSPECT",
   "Kind": "Sound",
@@ -117295,14 +117265,6 @@
    "Charge"
   ]
  },
- "140038969188848": {
-  "Name": "ElectricityLoop",
-  "Kind": "Sound",
-  "Tags": [
-   "Loop",
-   "Electric"
-  ]
- },
  "18403140686": {
   "Name": "Magic Fireball",
   "Kind": "Sound",
@@ -117470,14 +117432,6 @@
  },
  "121134713310630": {
   "Name": "Laser-charge-sound",
-  "Kind": "Sound",
-  "Tags": [
-   "Charge",
-   "Beam"
-  ]
- },
- "8578316223": {
-  "Name": "Laser Charge",
   "Kind": "Sound",
   "Tags": [
    "Charge",
@@ -118556,14 +118510,6 @@
    "Gore"
   ]
  },
- "76786040776528": {
-  "Name": "Laser_Charge",
-  "Kind": "Sound",
-  "Tags": [
-   "Charge",
-   "Beam"
-  ]
- },
  "136936729151176": {
   "Name": "Lightning Eletrocute",
   "Kind": "Sound",
@@ -119118,13 +119064,6 @@
    "Impact"
   ]
  },
- "119410348870001": {
-  "Name": "FAHHH (Pump Sound)",
-  "Kind": "Sound",
-  "Tags": [
-   "Other"
-  ]
- },
  "73678054568493": {
   "Name": "Energy Hammer_Charge",
   "Kind": "Sound",
@@ -119385,13 +119324,6 @@
   "Tags": [
    "Ice",
    "Explosion"
-  ]
- },
- "81737474220111": {
-  "Name": "LightningHit",
-  "Kind": "Sound",
-  "Tags": [
-   "Electric"
   ]
  },
  "6308606116": {
@@ -119931,7 +119863,7 @@
   "Tags": [
    "Water"
   ]
- },
+ },
  "100300862060592": {
   "Name": "Aura_103",
   "Kind": "Texture",
@@ -119939,7 +119871,7 @@
    "Other"
   ],
   "Quality": "high"
- },
+ },
  "110781751514494": {
   "Name": "Beam_329",
   "Kind": "Beam",
@@ -120565,7 +120497,7 @@
    "Water"
   ],
   "Quality": "high"
- },
+ },
  "100143732952958": {
   "Name": "Other_993",
   "Kind": "Texture",
@@ -120693,7 +120625,7 @@
    "Star"
   ],
   "Quality": "high"
- },
+ },
  "124870454414784": {
   "Name": "Other_1192",
   "Kind": "Texture",
@@ -120805,7 +120737,7 @@
    "Text"
   ],
   "Quality": "high"
- },
+ },
  "139537068536932": {
   "Name": "Other_1318",
   "Kind": "Texture",
