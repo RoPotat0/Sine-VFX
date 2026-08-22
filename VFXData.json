@@ -2274,6 +2274,14 @@
    "Ice"
   ]
  },
+ "643064975": {
+  "Name": "Textured Wind Ring",
+  "Kind": "Mesh",
+  "Tags": [
+   "Wind",
+   "Shockwave"
+  ]
+ },
  "643098245": {
   "Name": "MeshPart",
   "Kind": "Mesh",
@@ -122669,5 +122677,65 @@
   "Quality": "high",
   "TextureId": "rbxassetid://16745635960",
   "Size": "27.0604, 50.0000, 27.0604"
+ },
+ "140038969188848": {
+  "Kind": "Sound",
+  "Name": "ElectricityLoop",
+  "Tags": [
+   "Loop",
+   "Electric"
+  ]
+ },
+ "119410348870001": {
+  "Kind": "Sound",
+  "Name": "FAHHH (Pump Sound)",
+  "Tags": [
+   "Other"
+  ]
+ },
+ "115548643884536": {
+  "Kind": "Sound",
+  "Name": "Beam Fire",
+  "Tags": [
+   "Beam",
+   "Fire"
+  ]
+ },
+ "8578316223": {
+  "Kind": "Sound",
+  "Name": "Laser Charge",
+  "Tags": [
+   "Charge",
+   "Beam"
+  ]
+ },
+ "81737474220111": {
+  "Kind": "Sound",
+  "Name": "LightningHit",
+  "Tags": [
+   "Electric"
+  ]
+ },
+ "3422592990": {
+  "Kind": "Sound",
+  "Name": "Deploy (2)",
+  "Tags": [
+   "Other"
+  ]
+ },
+ "76786040776528": {
+  "Kind": "Sound",
+  "Name": "Laser_Charge",
+  "Tags": [
+   "Charge",
+   "Beam"
+  ]
+ },
+ "4282172813": {
+  "Kind": "Sound",
+  "Name": "Water (4)",
+  "Tags": [
+   "Water"
+  ]
  }
 }
