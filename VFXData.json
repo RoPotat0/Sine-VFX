@@ -3221,9 +3221,9 @@
  },
  "1367858734": {
   "Name": "point light effect (white)",
-  "Kind": "Beam",
+  "Kind": "Texture",
   "Tags": [
-   "Trail"
+   "Flare"
   ]
  },
  "1370232812": {
@@ -28213,7 +28213,7 @@
  },
  "6955806741": {
   "Name": "emsisslightning7",
-  "Kind": "Beam",
+  "Kind": "Texture",
   "Tags": [
    "Lightning"
   ]
@@ -29546,7 +29546,7 @@
  },
  "6955757898": {
   "Name": "bluelightning",
-  "Kind": "Beam",
+  "Kind": "Texture",
   "Tags": [
    "Lightning"
   ]
@@ -32091,9 +32091,9 @@
  },
  "7103213059": {
   "Name": "Soft ray 2",
-  "Kind": "Beam",
+  "Kind": "Texture",
   "Tags": [
-   "Trail"
+   "Rays"
   ]
  },
  "9563724604": {
@@ -47387,9 +47387,9 @@
  },
  "12363861216": {
   "Name": "lightrays_3",
-  "Kind": "Beam",
+  "Kind": "Texture",
   "Tags": [
-   "Trail"
+   "Rays"
   ]
  },
  "8214518612": {
@@ -60755,9 +60755,9 @@
  },
  "12386384198": {
   "Name": "BeamHalf beam",
-  "Kind": "Beam",
+  "Kind": "Texture",
   "Tags": [
-   "Trail"
+   "Rays"
   ]
  },
  "12362719770": {
@@ -61305,9 +61305,9 @@
  },
  "12363860994": {
   "Name": "lightrays_4",
-  "Kind": "Beam",
+  "Kind": "Texture",
   "Tags": [
-   "Trail"
+   "Rays"
   ]
  },
  "86104016672685": {
@@ -65974,9 +65974,9 @@
  },
  "12363860289": {
   "Name": "lightrays_7",
-  "Kind": "Beam",
+  "Kind": "Texture",
   "Tags": [
-   "Trail"
+   "Rays"
   ]
  },
  "12403118750": {
@@ -70481,9 +70481,9 @@
  },
  "12363860111": {
   "Name": "lightrays_8",
-  "Kind": "Beam",
+  "Kind": "Texture",
   "Tags": [
-   "Trail"
+   "Rays"
   ]
  },
  "12403078255": {
