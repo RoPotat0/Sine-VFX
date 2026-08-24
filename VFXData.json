@@ -1236,7 +1236,7 @@
   "Name": "Money Symbol",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Text"
   ],
   "Resolution": 420
  },
@@ -1357,7 +1357,7 @@
   "Name": "water wave effect",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ]
  },
  "281763734": {
@@ -1661,7 +1661,7 @@
   "Name": "Grass",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ground"
   ]
  },
  "394144370": {
@@ -1676,7 +1676,7 @@
   "Name": "Plant_Particles",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ground"
   ],
   "Quality": "high"
  },
@@ -1863,7 +1863,7 @@
   "Name": "Blast 4",
   "Kind": "Mesh",
   "Tags": [
-   "Other"
+   "Shockwave"
   ],
   "MeshId": "rbxassetid://437347603",
   "Size": "0.9822, 0.9822, 0.9822"
@@ -1903,7 +1903,7 @@
   "Name": "Blast",
   "Kind": "Mesh",
   "Tags": [
-   "Other"
+   "Shockwave"
   ],
   "MeshId": "rbxassetid://452960473",
   "Size": "2.1387, 0.7670, 6.6043"
@@ -3025,7 +3025,7 @@
   "Name": "BeamSpec Beam",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ]
  },
  "1196395249": {
@@ -3162,7 +3162,7 @@
   "Name": "sametrail",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Trail"
   ]
  },
  "1315202524": {
@@ -3694,7 +3694,7 @@
   "Name": "Light Beam",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ]
  },
  "2384354542": {
@@ -4055,7 +4055,7 @@
   "Name": "beam texture",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ]
  },
  "3211146752": {
@@ -4100,7 +4100,7 @@
   "Name": "BeamRain",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Quality": "high"
  },
@@ -4873,7 +4873,7 @@
   "Name": "Flipbook Beam 3",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -4983,7 +4983,7 @@
   "Name": "Slash_00000 (1)",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash"
   ]
  },
  "15265627476": {
@@ -5367,7 +5367,7 @@
   "Name": "Flame7",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Fire"
   ]
  },
  "90583164059397": {
@@ -7001,7 +7001,7 @@
   "Name": "Water",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Water"
   ]
  },
  "94891811694457": {
@@ -7671,7 +7671,8 @@
   "Name": "Flame Aura8",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Fire",
+   "Energy"
   ]
  },
  "12402918546": {
@@ -7737,7 +7738,7 @@
   "Name": "trail4",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Trail"
   ]
  },
  "93487822444578": {
@@ -7947,7 +7948,7 @@
   "Name": "Crunchy Energy FX",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -8126,7 +8127,7 @@
   "Name": "LE Ripple",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -8153,7 +8154,7 @@
   "Name": "glow petal",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Flare"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -8215,7 +8216,8 @@
   "Name": "watertrail_000",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Water",
+   "Trail"
   ],
   "Quality": "high"
  },
@@ -9228,7 +9230,7 @@
   "Name": "Trail",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Trail"
   ]
  },
  "12362873243": {
@@ -9711,7 +9713,7 @@
   "Name": "Frost_Shield_Threshold_01",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ice"
   ]
  },
  "114044688738635": {
@@ -10256,7 +10258,7 @@
   "Name": "yesshockwave",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ]
  },
  "12362770368": {
@@ -11269,7 +11271,7 @@
   "Name": "HalftoneImpact1",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Impact"
   ]
  },
  "94683404655233": {
@@ -11688,7 +11690,7 @@
   "Name": "psychocircle_00000",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -12290,7 +12292,7 @@
   "Name": "Speech_BUbble",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ]
  },
  "122262942464301": {
@@ -12822,7 +12824,7 @@
   "Name": "spiralidk",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Spiral"
   ],
   "Quality": "high"
  },
@@ -13007,7 +13009,7 @@
   "Name": "wavey-beam",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ]
  },
  "11568149153": {
@@ -13055,7 +13057,7 @@
   "Name": "BeamGlitchy Beam",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Quality": "high"
  },
@@ -13737,7 +13739,7 @@
   "Name": "Shockwave1",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Quality": "high"
  },
@@ -14051,7 +14053,7 @@
   "Name": "Cursed Energy Output",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -14235,7 +14237,7 @@
   "Name": "circlemob_00000",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -16137,7 +16139,7 @@
   "Name": "Flipbook Beam 7",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -17156,7 +17158,7 @@
   "Name": "Tx_SmokeTrail_06",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ]
  },
  "17401271931": {
@@ -17405,7 +17407,8 @@
   "Name": "FloorFlameAura",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Fire",
+   "Energy"
   ]
  },
  "6950204777": {
@@ -17572,7 +17575,7 @@
   "Name": "SlashTrail",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash"
   ]
  },
  "12364753261": {
@@ -17681,7 +17684,7 @@
   "Name": "Sword Trail v3",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Trail"
   ]
  },
  "18921717035": {
@@ -19807,7 +19810,7 @@
   "Name": "SwordSlashDissipate",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -19864,7 +19867,7 @@
   "Name": "Edge trail 1",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Trail"
   ],
   "Quality": "high"
  },
@@ -19986,7 +19989,7 @@
   "Name": "swirlybeam",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Spiral"
   ]
  },
  "9563733154": {
@@ -20382,7 +20385,7 @@
   "Name": "Trail",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Trail"
   ]
  },
  "92348770871137": {
@@ -21243,7 +21246,7 @@
   "Name": "Stylized Beam",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -21880,7 +21883,7 @@
   "Name": "Light Beam",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ]
  },
  "11037538385": {
@@ -22775,7 +22778,7 @@
   "Name": "Beam Texture",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ]
  },
  "11684646269": {
@@ -22807,7 +22810,7 @@
   "Name": "Wiggling Orb Overlay",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -23634,7 +23637,7 @@
   "Name": "Smokey Fading Line",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -23751,7 +23754,7 @@
   "Name": "Number Beam 2",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Quality": "high"
  },
@@ -24303,7 +24306,7 @@
   "Name": "pngtree-blue-snowflake-illustration-png-ima",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ice"
   ]
  },
  "15831917569": {
@@ -24696,7 +24699,8 @@
   "Name": "Flame Aura9",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Fire",
+   "Energy"
   ]
  },
  "139959661465737": {
@@ -25964,7 +25968,7 @@
   "Name": "beam decal",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Quality": "high"
  },
@@ -26180,7 +26184,7 @@
   "Name": "wavey-beam-test2",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ]
  },
  "12362737732": {
@@ -26325,7 +26329,7 @@
   "Name": "TrailBeam3",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Trail"
   ]
  },
  "108455854880435": {
@@ -27407,7 +27411,7 @@
   "Name": "BeamHigh pixels beam",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ]
  },
  "8944363782": {
@@ -28074,7 +28078,7 @@
   "Name": "mob_shockwave_00000",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -28634,7 +28638,8 @@
   "Name": "FlameTrail9",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Fire",
+   "Trail"
   ]
  },
  "119181977767268": {
@@ -28672,7 +28677,7 @@
   "Name": "Energy_2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -29374,7 +29379,8 @@
   "Name": "Chromatic Water shockwave",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water",
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -29499,7 +29505,7 @@
   "Name": "quickflame",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Fire"
   ]
  },
  "16878165349": {
@@ -29562,7 +29568,7 @@
   "Name": "trail27",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Trail"
   ]
  },
  "12403140363": {
@@ -29703,7 +29709,7 @@
   "Name": "flame_05",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Fire"
   ]
  },
  "124042304400681": {
@@ -29805,7 +29811,7 @@
   "Name": "Beam Texture",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ]
  },
  "15056677063": {
@@ -30342,7 +30348,7 @@
   "Name": "tech_symbol_2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Text"
   ]
  },
  "16502636622": {
@@ -30395,7 +30401,7 @@
   "Name": "watoursplash",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -31120,7 +31126,7 @@
   "Name": "ripple_4096_00000",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -31140,7 +31146,7 @@
   "Name": "BeamBlue beam",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ]
  },
  "110324134347385": {
@@ -31940,7 +31946,7 @@
   "Name": "waterr",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -32007,7 +32013,7 @@
   "Name": "DB_AURA2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -32577,7 +32583,7 @@
   "Name": "snowflakeflip",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ice"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -32609,7 +32615,7 @@
   "Name": "OriginalAura2x2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 2,
   "Resolution": 1024,
@@ -33489,7 +33495,7 @@
   "Name": "Lightning_Mark_Big_01",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Lightning"
   ]
  },
  "13992202083": {
@@ -33888,7 +33894,7 @@
   "Name": "water_stylised_explosion",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -35179,7 +35185,7 @@
   "Name": "Beam Texture",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ]
  },
  "77205512704639": {
@@ -35662,7 +35668,7 @@
   "Name": "Impact_Line_01",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Impact"
   ],
   "Grid": 2,
   "Resolution": 256
@@ -35827,7 +35833,7 @@
   "Name": "BeamScratching beam",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Quality": "high"
  },
@@ -35939,7 +35945,7 @@
   "Name": "Number Beam 3",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Quality": "high"
  },
@@ -35956,7 +35962,7 @@
   "Name": "beam (4)",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ]
  },
  "13026594575": {
@@ -36414,7 +36420,7 @@
   "Name": "Dust Particle 2",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Smoke"
   ]
  },
  "7994628963": {
@@ -36936,7 +36942,7 @@
   "Name": "teak lightning 3",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Lightning"
   ]
  },
  "140403429550984": {
@@ -37060,7 +37066,7 @@
   "Name": "Smoke_Trail_04_centerfade",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ]
  },
  "82842347842544": {
@@ -37930,7 +37936,7 @@
   "Name": "CursedEnergyFB1",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -38234,7 +38240,7 @@
   "Name": "Slicee",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ice"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -38439,7 +38445,7 @@
   "Name": "BeamThick Energy",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ]
  },
  "12362798355": {
@@ -38664,7 +38670,7 @@
   "Name": "Magic Circle01_",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -38903,7 +38909,7 @@
   "Name": "trail",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Trail"
   ]
  },
  "15414248015": {
@@ -38933,7 +38939,7 @@
   "Name": "Lower Res Snow",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ice"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -39111,7 +39117,7 @@
   "Name": "Beam.005",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ]
  },
  "92489502550990": {
@@ -39624,7 +39630,8 @@
   "Name": "TrailElectric24",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Lightning",
+   "Trail"
   ]
  },
  "16924888769": {
@@ -39715,7 +39722,7 @@
   "Name": "Beam Texture",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ]
  },
  "139413405433475": {
@@ -39894,7 +39901,7 @@
   "Name": "steam",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ]
  },
  "12362784177": {
@@ -40015,7 +40022,7 @@
   "Name": "mob_flare_00000",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Flare"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -40935,7 +40942,7 @@
   "Name": "Number Beam 4",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Quality": "high"
  },
@@ -41008,7 +41015,7 @@
   "Name": "Hit 2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Impact"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -41075,7 +41082,7 @@
   "Name": "Loading_Circle",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -41248,7 +41255,7 @@
   "Name": "Water",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ]
  },
  "12362669248": {
@@ -42032,7 +42039,7 @@
   "Name": "trail2",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Trail"
   ]
  },
  "9509570418": {
@@ -42707,7 +42714,7 @@
   "Name": "weird_swirly",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Swirl"
   ]
  },
  "128099270478317": {
@@ -42991,7 +42998,7 @@
   "Name": "JJKaura2 (2)",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ]
  },
  "98518043341114": {
@@ -43616,7 +43623,7 @@
   "Name": "glow triangle flip 2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Flare"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -43804,7 +43811,7 @@
   "Name": "impact_burst_medium",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Impact"
   ]
  },
  "15419166109": {
@@ -44968,7 +44975,7 @@
   "Name": "moon (1)",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Crescent"
   ]
  },
  "9147387925": {
@@ -45743,7 +45750,7 @@
   "Name": "ShockWave01_",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -45821,7 +45828,7 @@
   "Name": "LightningThing",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Lightning"
   ],
   "Grid": 2,
   "Resolution": 1024,
@@ -47263,7 +47270,7 @@
   "Name": "FadingFlare",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Flare"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -47421,7 +47428,7 @@
   "Name": "BeamLow res energy",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ]
  },
  "8223451413": {
@@ -48200,7 +48207,7 @@
   "Name": "waterflipbook2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -48600,7 +48607,7 @@
   "Name": "water",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ]
  },
  "5311021013": {
@@ -48649,7 +48656,7 @@
   "Name": "noise-beam",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Quality": "high"
  },
@@ -48792,7 +48799,7 @@
   "Name": "scattered horizontal rays",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Rays"
   ]
  },
  "119928385659701": {
@@ -48913,7 +48920,7 @@
   "Name": "STagses_Decal_Swordmark_01_Diffuse",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash"
   ]
  },
  "12362750379": {
@@ -49429,7 +49436,7 @@
   "Name": "Fire Arrow Detail",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Fire"
   ],
   "Quality": "high"
  },
@@ -51288,7 +51295,7 @@
   "Name": "FireyBeam #",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Fire"
   ],
   "Quality": "high"
  },
@@ -51303,7 +51310,7 @@
   "Name": "watertest1",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -51641,7 +51648,7 @@
   "Name": "darksmoke",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ]
  },
  "112873367340438": {
@@ -52350,7 +52357,7 @@
   "Name": "Constant flame [Flipbook Particle]",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Fire"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -52616,7 +52623,7 @@
   "Name": "GlowTrail",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Trail"
   ]
  },
  "129434355768283": {
@@ -53239,7 +53246,7 @@
   "Name": "waterfallpls",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Quality": "high"
  },
@@ -53529,7 +53536,8 @@
   "Name": "StylizedFlameTrail",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Fire",
+   "Trail"
   ]
  },
  "103750198039538": {
@@ -53564,7 +53572,7 @@
   "Name": "waterfall-lines",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Quality": "high"
  },
@@ -55142,7 +55150,7 @@
   "Name": "trail",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Trail"
   ]
  },
  "16039823176": {
@@ -55859,7 +55867,7 @@
   "Name": "Trail",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Trail"
   ]
  },
  "17320289910": {
@@ -57239,7 +57247,7 @@
   "Name": "SmokeStylized",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -57427,7 +57435,7 @@
   "Name": "BeamTechnology Beam",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ]
  },
  "15501868294": {
@@ -57756,7 +57764,7 @@
   "Name": "Weird Energy Line",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -57956,7 +57964,7 @@
   "Name": "SquigglyAura_Flippy (1)",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -58591,7 +58599,7 @@
   "Name": "water",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -58650,7 +58658,7 @@
   "Name": "moboutercircle_00000 (1)",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 512
@@ -59794,7 +59802,7 @@
   "Name": "TrailBeam",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Trail"
   ]
  },
  "90458001814741": {
@@ -59938,7 +59946,7 @@
   "Name": "flame_06",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Fire"
   ]
  },
  "99642020490770": {
@@ -60588,7 +60596,7 @@
   "Name": "NMM snas Trails",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Trail"
   ]
  },
  "138753847793938": {
@@ -60771,7 +60779,7 @@
   "Name": "moboutercircle_00000",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -60871,7 +60879,7 @@
   "Name": "ice_00000",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ice"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -60895,7 +60903,7 @@
   "Name": "Hit 1",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Impact"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -61202,7 +61210,7 @@
   "Name": "teak lightning",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Lightning"
   ]
  },
  "73763168499209": {
@@ -61324,7 +61332,7 @@
   "Name": "lightning-test",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Lightning"
   ]
  },
  "76056597100004": {
@@ -61884,7 +61892,8 @@
   "Name": "FloorFlameAura2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Fire",
+   "Energy"
   ]
  },
  "7948619931": {
@@ -62150,7 +62159,7 @@
   "Name": "BeamSame beam",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Quality": "high"
  },
@@ -62463,7 +62472,7 @@
   "Name": "Moon with more detail",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Crescent"
   ]
  },
  "15845909658": {
@@ -62876,7 +62885,7 @@
   "Name": "Clouds2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ]
  },
  "13344777062": {
@@ -65875,7 +65884,7 @@
   "Name": "BeamSpiral greyscaled",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Spiral"
   ]
  },
  "11037542511": {
@@ -65908,7 +65917,7 @@
   "Name": "trail2_00000",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Trail"
   ]
  },
  "85364955931039": {
@@ -66234,7 +66243,7 @@
   "Name": "mob_innershockwave_00000",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -66730,14 +66739,14 @@
   "Name": "Beam Texture",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ]
  },
  "135936851636730": {
   "Name": "mob_innershockwave_00000 (1)",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 512
@@ -67963,7 +67972,7 @@
   "Name": "Hit 3",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Impact"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -69181,7 +69190,7 @@
   "Name": "SlashTrail1",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash"
   ]
  },
  "83161168707438": {
@@ -69883,7 +69892,7 @@
   "Name": "BeamScratchy beam",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Quality": "high"
  },
@@ -70092,7 +70101,7 @@
   "Name": "JJk_aura",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -70576,7 +70585,7 @@
   "Name": "Complex beam 3",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ]
  },
  "11037530612": {
@@ -70839,7 +70848,7 @@
   "Name": "ripplevideo2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -71160,7 +71169,7 @@
   "Name": "Energy_1",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -71374,7 +71383,7 @@
   "Name": "Sword_Flipbook-removebg-1",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash"
   ],
   "Grid": 4,
   "Resolution": 512
@@ -71390,7 +71399,7 @@
   "Name": "Energytrilowquality (1)",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -71563,7 +71572,7 @@
   "Name": "2024-04-14_19-16-29 rainbowsmear_00000",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -71607,7 +71616,7 @@
   "Name": "Trails19",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Trail"
   ]
  },
  "12363861645": {
@@ -71686,7 +71695,8 @@
   "Name": "EnergyTrail1fixed",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy",
+   "Trail"
   ]
  },
  "16924714763": {
@@ -71922,7 +71932,8 @@
   "Name": "JJK_CURSED_ENERGY_FLAME",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Fire",
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -72124,7 +72135,7 @@
   "Name": "WaterFB1",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -72540,7 +72551,7 @@
   "Name": "circlemob_00000 (1)",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 512
@@ -72744,7 +72755,7 @@
   "Name": "stonefreetrail",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Trail"
   ]
  },
  "106339426978040": {
@@ -73686,7 +73697,8 @@
   "Name": "shockwave_liquid",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water",
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -73753,7 +73765,7 @@
   "Name": "Beam Texture",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ]
  },
  "11902304637": {
@@ -74034,7 +74046,7 @@
   "Name": "2024-03-31_15-25-23_Snowflake4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ice"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -75573,7 +75585,7 @@
   "Name": "dbz_aura_4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 2,
   "Resolution": 1024,
@@ -75652,7 +75664,7 @@
   "Name": "SaitamaKanjiShockwave4x4 (1)",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -76103,7 +76115,7 @@
   "Name": "leavesssnow (1)",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ice"
   ],
   "Grid": 4,
   "Resolution": 512
@@ -76236,7 +76248,7 @@
   "Name": "Beam.008",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ]
  },
  "132413275444841": {
@@ -76447,7 +76459,7 @@
   "Name": "PeakCatFireFlipbook",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Fire"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -76584,7 +76596,7 @@
   "Name": "Mirrored Painted Shockwave",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -76622,7 +76634,7 @@
   "Name": "energy stuff808",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 8,
   "Resolution": 2048,
@@ -76896,7 +76908,7 @@
   "Name": "Stylized Dark Fire Dispersing 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Fire"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -77007,7 +77019,7 @@
   "Name": "Colourful Disk Overlay Circle",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -77112,7 +77124,7 @@
   "Name": "Stylized Energy Burst55",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -77325,7 +77337,7 @@
   "Name": "Energy Vacuum 8x8",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -77343,7 +77355,7 @@
   "Name": "Pixelated Snowflake Dissolve 8x8",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ice"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -77389,7 +77401,7 @@
   "Name": "Snow Emoji 8x8",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ice"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -77465,7 +77477,7 @@
   "Name": "Dark Skull Smoke 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -77684,7 +77696,7 @@
   "Name": "Energy DB 34123",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 2,
   "Resolution": 1024,
@@ -77936,7 +77948,7 @@
   "Name": "Butterfly Glow",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Flare"
   ],
   "Grid": 2,
   "Resolution": 1024,
@@ -78216,7 +78228,7 @@
   "Name": "Detailed Energy Upward",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -78263,7 +78275,7 @@
   "Name": "Unique Chromatic Fog Effect 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -78437,7 +78449,7 @@
   "Name": "Grey Glow Squashed",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Flare"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -78475,7 +78487,7 @@
   "Name": "Snowflake 17",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ice"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -78504,7 +78516,7 @@
   "Name": "Loading Circle",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 8,
   "Resolution": 600
@@ -78673,7 +78685,7 @@
   "Name": "Text weird",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Text"
   ],
   "Grid": 8,
   "Resolution": 512
@@ -78682,7 +78694,8 @@
   "Name": "Erica Plasma Water 8x8",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water",
+   "Energy"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -79110,7 +79123,7 @@
   "Name": "Stylized Fire Dispersing 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Fire"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -79129,7 +79142,7 @@
   "Name": "Pixel Puff FX",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -79194,7 +79207,7 @@
   "Name": "Fading snowflake",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ice"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -79328,7 +79341,7 @@
   "Name": "Ghostly Energy",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -79533,7 +79546,8 @@
   "Name": "Grainy Bright Shockwave",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water",
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -79709,7 +79723,7 @@
   "Name": "Pixelated Snowflake 2 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ice"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -79993,7 +80007,7 @@
   "Name": "Chromatic Erica Spectral Fog 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -80068,7 +80082,7 @@
   "Name": "Energy Eyes",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -80286,7 +80300,7 @@
   "Name": "Pixelated Abstract Crescents 8x8",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Crescent"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -80622,7 +80636,8 @@
   "Name": "Dark Energy Shine Flare 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Flare",
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -80831,7 +80846,7 @@
   "Name": "Chromatic Ground Cracks 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ground"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -81059,7 +81074,7 @@
   "Name": "Reflective Energy2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -81134,7 +81149,7 @@
   "Name": "Energy Radial Disperse 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -81266,7 +81281,7 @@
   "Name": "Skull Smoke 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -81314,7 +81329,7 @@
   "Name": "Abstract Crescents 8x8",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Crescent"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -81540,7 +81555,7 @@
   "Name": "SpikeyCircleAttack",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 4088,
   "Quality": "very high"
@@ -81742,7 +81757,7 @@
   "Name": "Circle Halftone",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 604
  },
@@ -81750,7 +81765,7 @@
   "Name": "Erica Water Effect 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -81829,7 +81844,7 @@
   "Name": "Tornado Overlay",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Swirl"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -82176,7 +82191,7 @@
   "Name": "Violent Energy",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -82302,7 +82317,7 @@
   "Name": "Reflective Energy3415",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -82389,7 +82404,7 @@
   "Name": "Dark Solid Smoke Disperse 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -83030,7 +83045,7 @@
   "Name": "Crescent",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Crescent"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -83156,7 +83171,7 @@
   "Name": "Hollow matrix dice 8x8",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ice"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -83315,7 +83330,7 @@
   "Name": "Liquid Heart",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Grid": 4,
   "Resolution": 420
@@ -83405,7 +83420,7 @@
   "Name": "Erica Water Wave Blur 8x8",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -83449,7 +83464,7 @@
   "Name": "Thin Bezier Smoke Fog 8x8",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -83542,7 +83557,7 @@
   "Name": "Cut off explosion",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -83570,7 +83585,7 @@
   "Name": "Snowflake 19",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ice"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -83637,7 +83652,7 @@
   "Name": "Erica Water wave 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -83657,7 +83672,7 @@
   "Name": "Stylized Ball rot2888",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -83936,7 +83951,7 @@
   "Name": "CursedEnergy542",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -84128,7 +84143,7 @@
   "Name": "Chromatic Energy Radial Disperse 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -84249,7 +84264,7 @@
   "Name": "Fade_Ripple",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -84563,7 +84578,7 @@
   "Name": "Animated Text",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Text"
   ],
   "Resolution": 593,
   "Grid": 8
@@ -85138,7 +85153,7 @@
   "Name": "Pixel Explosion Smoke",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -85221,7 +85236,7 @@
   "Name": "grass1Other",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ground"
   ],
   "Resolution": 256
  },
@@ -85229,7 +85244,7 @@
   "Name": "Grass flipbook",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ground"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -85325,7 +85340,7 @@
   "Name": "Glowing Black Energy",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -85876,7 +85891,7 @@
   "Name": "Cool Grid Shining 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Grid"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -85895,7 +85910,7 @@
   "Name": "Fog Effect 8x8",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -86025,7 +86040,7 @@
   "Name": "Loading Arc",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Crescent"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -86325,7 +86340,7 @@
   "Name": "cursed energy rea3534",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -86407,7 +86422,7 @@
   "Name": "Crystal Fog",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Resolution": 512
  },
@@ -87103,7 +87118,7 @@
   "Name": "Chromatic Erica Rough Fog",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -87175,7 +87190,7 @@
   "Name": "Dbz_Aura",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Resolution": 420
  },
@@ -87183,7 +87198,8 @@
   "Name": "Wiggling Energy Shape Glow",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Flare",
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -87210,7 +87226,7 @@
   "Name": "cursed energy3421",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -88048,7 +88064,7 @@
   "Name": "Squashed Ripple Overlay",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -88331,7 +88347,7 @@
   "Name": "Unique Dark Energy Disperse 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -88474,7 +88490,7 @@
   "Name": "Pixel Splash 2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -88695,7 +88711,7 @@
   "Name": "TransmutationCircle",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -89282,7 +89298,7 @@
   "Name": "Thin Line Flare",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Flare"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -89540,7 +89556,7 @@
   "Name": "DBZ Aura",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Resolution": 422,
   "Grid": 4
@@ -91835,7 +91851,7 @@
   "Name": "Pixelated Money Sign 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Text"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -92146,7 +92162,7 @@
   "Name": "FuturisticCircle",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 512
  },
@@ -92949,7 +92965,7 @@
   "Name": "Crystal Fog 2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Resolution": 512
  },
@@ -93719,7 +93735,7 @@
   "Name": "Kalei Star",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Star"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -93813,7 +93829,7 @@
   "Name": "Chromatic Dark Energy Vacuum 8x8",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -93935,7 +93951,7 @@
   "Name": "Firework",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Fire"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -94272,7 +94288,7 @@
   "Name": "Looping LE Shockwave",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -94339,7 +94355,8 @@
   "Name": "Water Sphere Blob Melt 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water",
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -94747,7 +94764,7 @@
   "Name": "Firework Sparks",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Fire"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -94960,7 +94977,8 @@
   "Name": "Purple sword aura",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash",
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -95466,7 +95484,7 @@
   "Name": "Chromatic Blurry Smoke",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Resolution": 420
  },
@@ -95520,7 +95538,7 @@
   "Name": "Dark Cross Sword",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -95724,7 +95742,7 @@
   "Name": "Wispy Water 2 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -96189,7 +96207,7 @@
   "Name": "Gradient Symbol",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Text"
   ],
   "Resolution": 512
  },
@@ -96258,7 +96276,7 @@
   "Name": "Coloured Diagonal Smoke",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -96646,7 +96664,7 @@
   "Name": "ground crack",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ground"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -96812,7 +96830,7 @@
   "Name": "KiAura",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 2,
   "Resolution": 1024,
@@ -97350,7 +97368,7 @@
   "Name": "Pixelated Snowflake Spinning 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ice"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -97596,7 +97614,7 @@
   "Name": "Dark Impact",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Impact"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -97969,7 +97987,7 @@
   "Name": "energy",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -98108,7 +98126,7 @@
   "Name": "Energy",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 512
@@ -98771,7 +98789,7 @@
   "Name": "Glowing Snowflake Spinning 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ice"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -99138,7 +99156,7 @@
   "Name": "Noisy Star Shaped Explosion",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Star"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -99274,7 +99292,7 @@
   "Name": "Pixel Spiral Left",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Swirl"
   ],
   "Grid": 4,
   "Resolution": 592
@@ -99510,7 +99528,8 @@
   "Name": "Energy Shine Flare 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Flare",
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -99558,7 +99577,7 @@
   "Name": "Gradient Spiral",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Swirl"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -99568,7 +99587,7 @@
   "Name": "Ripple Expanding Circle",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -99633,7 +99652,7 @@
   "Name": "Thin realistic shockwave",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -100177,7 +100196,7 @@
   "Name": "Fading Shockwave",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -100274,7 +100293,7 @@
   "Name": "Atomic Floor Overlay",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ground"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -100387,7 +100406,7 @@
   "Name": "Erica Water Specs 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -100426,7 +100445,7 @@
   "Name": "LoadingCircle",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 512
  },
@@ -100925,7 +100944,7 @@
   "Name": "Pixelated Snowflake Spinning 2 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ice"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -101026,7 +101045,7 @@
   "Name": "snowflake2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ice"
   ],
   "Resolution": 360
  },
@@ -101123,7 +101142,7 @@
   "Name": "3D Cube Sliced 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ice"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -101254,7 +101273,7 @@
   "Name": "Snowflake 11",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ice"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -101447,7 +101466,7 @@
   "Name": "Pixel Splash",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -101625,7 +101644,7 @@
   "Name": "text kanji stuff1412",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Text"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -101741,7 +101760,7 @@
   "Name": "Bright Energy Disperse 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -102105,7 +102124,7 @@
   "Name": "Computer Text",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Text"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -102159,7 +102178,7 @@
   "Name": "text excla12",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Text"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -102337,7 +102356,7 @@
   "Name": "Bright Abstract Water 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -102677,7 +102696,7 @@
   "Name": "SwirlThingy",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Swirl"
   ],
   "Resolution": 512
  },
@@ -102714,7 +102733,7 @@
   "Name": "Energy Blurred",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 512
@@ -102733,7 +102752,7 @@
   "Name": "PlainCircle",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 512
  },
@@ -102900,7 +102919,7 @@
   "Name": "pixelated crossed swords",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -103129,7 +103148,7 @@
   "Name": "Shining Greyscaled Ripple",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -103169,7 +103188,7 @@
   "Name": "Erica Water Splash 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -103236,7 +103255,7 @@
   "Name": "Cursed Energy Disperse 8x8",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 8,
   "Resolution": 2048,
@@ -103266,7 +103285,7 @@
   "Name": "XY axis hit effect 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Impact"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -103442,7 +103461,7 @@
   "Name": "Fading sword",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -103788,7 +103807,7 @@
   "Name": "Waterfall",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Resolution": 256
  },
@@ -104347,7 +104366,7 @@
   "Name": "Pixelated Snowflake 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ice"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -104406,7 +104425,7 @@
   "Name": "Strange noisy water",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -104416,7 +104435,7 @@
   "Name": "Gradient Unique Triangle UI 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "GUI"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -104482,7 +104501,7 @@
   "Name": "Shockwave 34343",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -104579,7 +104598,7 @@
   "Name": "Wispy Water 1 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -104619,7 +104638,7 @@
   "Name": "Dark Energy Vacuum 8x8",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -104629,7 +104648,7 @@
   "Name": "Cursed Energy45452",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Resolution": 1402,
   "Quality": "high",
@@ -104666,7 +104685,7 @@
   "Name": "Cartoony Worm Fog 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -104794,7 +104813,7 @@
   "Name": "Energy Blob",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -104917,7 +104936,7 @@
   "Name": "Arc Shrinking",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Crescent"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -105487,7 +105506,7 @@
   "Name": "Chromatic Erica Holo Dust 8x8",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -105497,7 +105516,7 @@
   "Name": "Curse_Energy__Maybe_00000",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -106082,7 +106101,7 @@
   "Name": "Web Shockwave 2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -106290,7 +106309,7 @@
   "Name": "Dissolving strange splash",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -106692,7 +106711,8 @@
   "Name": "Wiggling fading energy shockwave",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle",
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -107034,7 +107054,7 @@
   "Name": "Chromatic Bright Energy Disperse 4x4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -107093,7 +107113,7 @@
   "Name": "Pixel Fog",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Resolution": 512
  },
@@ -107206,7 +107226,7 @@
   "Name": "cursed energy2231",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -107380,7 +107400,7 @@
   "Name": "Downward Energy",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -107497,7 +107517,7 @@
   "Name": "Erica Holo Dust 8x8",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -107657,7 +107677,7 @@
   "Name": "Snowflake 8",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ice"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -107666,7 +107686,7 @@
   "Name": "Medium realistic Energy burst",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -107743,7 +107763,7 @@
   "Name": "Snowflake 15",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ice"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -107847,7 +107867,7 @@
   "Name": "Snowflake",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ice"
   ],
   "Grid": 8,
   "Resolution": 4096,
@@ -107911,7 +107931,7 @@
   "Name": "Fractured Shockwave",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -108544,7 +108564,7 @@
   "Name": "BeamEnergy wave",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Resolution": 256
  },
@@ -108570,7 +108590,7 @@
   "Name": "Number Beam 5",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -108761,7 +108781,7 @@
   "Name": "BeamBackwards water drag",
   "Kind": "Beam",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Resolution": 256
  },
@@ -108821,7 +108841,8 @@
   "Name": "Beam Slash 2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash",
+   "Energy"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -109113,7 +109134,8 @@
   "Name": "Beam Slash 1",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash",
+   "Energy"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -109415,7 +109437,7 @@
   "Name": "Ola Slash 3",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -109435,7 +109457,8 @@
   "Name": "Energy Splash",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water",
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 2048,
@@ -109455,7 +109478,7 @@
   "Name": "Energy 3",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 2048,
@@ -109465,7 +109488,7 @@
   "Name": "Energy 4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 2048,
@@ -109485,7 +109508,7 @@
   "Name": "Energy 2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 2048,
@@ -109495,7 +109518,7 @@
   "Name": "TV Static Swirl",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Swirl"
   ],
   "Grid": 4,
   "Resolution": 2048,
@@ -109505,7 +109528,7 @@
   "Name": "Animated Lens Flare",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Flare"
   ],
   "Resolution": 2048,
   "Quality": "very high",
@@ -109525,7 +109548,7 @@
   "Name": "Basic Noise Star",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Star"
   ],
   "Resolution": 2048,
   "Quality": "very high",
@@ -109545,7 +109568,7 @@
   "Name": "Ground crack",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ground"
   ],
   "Resolution": 2048,
   "Quality": "very high",
@@ -109555,7 +109578,7 @@
   "Name": "Regular Shockwave",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 8,
   "Resolution": 2048,
@@ -109575,7 +109598,7 @@
   "Name": "Dissolving Energy",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Resolution": 2048,
   "Quality": "very high",
@@ -109595,7 +109618,7 @@
   "Name": "Cartoon Swirl",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Swirl"
   ],
   "Grid": 4,
   "Resolution": 2048,
@@ -109605,7 +109628,7 @@
   "Name": "Foggy Cloud 3",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Grid": 4,
   "Resolution": 2048,
@@ -109615,7 +109638,7 @@
   "Name": "Hollow Chromatic Star",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Star"
   ],
   "Resolution": 2048,
   "Quality": "very high",
@@ -109635,7 +109658,7 @@
   "Name": "Energy 1",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 2048,
@@ -109655,7 +109678,7 @@
   "Name": "Thaw Cloud",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Resolution": 2048,
   "Quality": "very high",
@@ -109665,7 +109688,7 @@
   "Name": "Energy 6",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 2048,
@@ -109675,7 +109698,7 @@
   "Name": "Thaw Cloud 2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Resolution": 2048,
   "Quality": "very high",
@@ -109695,7 +109718,7 @@
   "Name": "Ripple Shockwave",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 2048,
@@ -109715,7 +109738,7 @@
   "Name": "Weird Flame",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Fire"
   ],
   "Grid": 4,
   "Resolution": 2048,
@@ -109725,7 +109748,7 @@
   "Name": "Energy 5",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 2048,
@@ -109735,7 +109758,7 @@
   "Name": "Portal Star",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Star"
   ],
   "Resolution": 2048,
   "Quality": "very high",
@@ -109745,7 +109768,7 @@
   "Name": "Noisy Cloud",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Grid": 4,
   "Resolution": 2048,
@@ -109755,7 +109778,7 @@
   "Name": "Star Blur",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Star"
   ],
   "Grid": 8,
   "Resolution": 2048,
@@ -109765,7 +109788,7 @@
   "Name": "Foggy Cloud",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Grid": 4,
   "Resolution": 2048,
@@ -109775,7 +109798,7 @@
   "Name": "Bright Dissolving Star",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Star"
   ],
   "Resolution": 2048,
   "Quality": "very high",
@@ -109785,7 +109808,7 @@
   "Name": "Fractal Shockwave",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 8,
   "Resolution": 2048,
@@ -109805,7 +109828,7 @@
   "Name": "Foggy Cloud Two",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Grid": 4,
   "Resolution": 2048,
@@ -109835,7 +109858,7 @@
   "Name": "LevelUp Text",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Text"
   ],
   "Grid": 4,
   "Resolution": 2048,
@@ -109845,7 +109868,7 @@
   "Name": "Glitch Chromatic Circle",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 2048,
   "Quality": "very high",
@@ -109865,7 +109888,7 @@
   "Name": "Simple Spiked Impact",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Impact"
   ],
   "Grid": 4,
   "Resolution": 2048,
@@ -109885,7 +109908,7 @@
   "Name": "No Fractal Cloud",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Grid": 4,
   "Resolution": 2048,
@@ -109905,7 +109928,7 @@
   "Name": "Hollow Fractal Star",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Star"
   ],
   "Grid": 4,
   "Resolution": 2048,
@@ -109915,7 +109938,7 @@
   "Name": "Upwards Aura",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 6,
   "Resolution": 2048,
@@ -109945,7 +109968,8 @@
   "Name": "Energy Circle Shockwave",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle",
+   "Energy"
   ],
   "Resolution": 2048,
   "Quality": "very high",
@@ -109955,7 +109979,7 @@
   "Name": "Energy 7",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 2048,
@@ -109965,7 +109989,7 @@
   "Name": "Alchemy Circle Fractal",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 2048,
@@ -109985,7 +110009,8 @@
   "Name": "Energy Swirl",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Swirl",
+   "Energy"
   ],
   "Grid": 8,
   "Resolution": 2048,
@@ -110005,7 +110030,7 @@
   "Name": "TDS Star Indicator",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Star"
   ],
   "Resolution": 2048,
   "Quality": "very high",
@@ -110025,7 +110050,7 @@
   "Name": "Foggy cloud 4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Grid": 4,
   "Resolution": 2048,
@@ -110073,7 +110098,7 @@
   "Name": "Ola Slash 7",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -110083,7 +110108,7 @@
   "Name": "Maroon Ember 2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Fire"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -110093,7 +110118,7 @@
   "Name": "Cross Impact",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Impact"
   ],
   "Grid": 2,
   "Resolution": 512
@@ -110121,7 +110146,8 @@
   "Name": "Water Orb",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water",
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -110131,7 +110157,7 @@
   "Name": "Ola Shockwave 1",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -110180,7 +110206,7 @@
   "Name": "Bright Thick Aura",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -110190,7 +110216,7 @@
   "Name": "Nyght Flame",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Fire"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -110220,7 +110246,7 @@
   "Name": "Thaw Flare 1",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Flare"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -110230,7 +110256,7 @@
   "Name": "Hit 2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Impact"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -110250,7 +110276,7 @@
   "Name": "Ola Shockwave 7",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -110297,7 +110323,7 @@
   "Name": "SlashFlipbook",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash"
   ],
   "Grid": 4,
   "Resolution": 4096,
@@ -110317,7 +110343,7 @@
   "Name": "Linear Shockwave 4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -110326,7 +110352,7 @@
   "Name": "Maroon Ground Crack",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Ground"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -110336,7 +110362,7 @@
   "Name": "Ola Slash 8",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -110365,7 +110391,8 @@
   "Name": "SmokeyCircle",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke",
+   "Circle"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -110404,7 +110431,7 @@
   "Name": "Linear Shockwave 1",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -110423,7 +110450,7 @@
   "Name": "slashspace2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -110442,7 +110469,7 @@
   "Name": "Lightning Tendrils",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Lightning"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -110461,7 +110488,7 @@
   "Name": "Spinning Circle",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -110480,7 +110507,7 @@
   "Name": "Lightning Strike 2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Lightning"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -110500,7 +110527,7 @@
   "Name": "Thin Half Paint Circle",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -110518,7 +110545,7 @@
   "Name": "Ola Slash 4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -110538,7 +110565,7 @@
   "Name": "Water Rush",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -110558,7 +110585,7 @@
   "Name": "ember_",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Fire"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -110567,7 +110594,7 @@
   "Name": "Lightning Tendril",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Lightning"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -110577,7 +110604,7 @@
   "Name": "CircleboomV2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 4096,
@@ -110587,7 +110614,7 @@
   "Name": "circleboom2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 4096,
@@ -110597,7 +110624,7 @@
   "Name": "Star Field",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Star"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -110606,7 +110633,7 @@
   "Name": "circleboomV3",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 4096,
@@ -110635,7 +110662,7 @@
   "Name": "Anime Star Nyght",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Star"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -110654,7 +110681,7 @@
   "Name": "Inverted Star Nyght",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Star"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -110663,7 +110690,7 @@
   "Name": "Ola Shockwave 5",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -110692,7 +110719,7 @@
   "Name": "Expanding Circle Nyght",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -110702,7 +110729,7 @@
   "Name": "Ola Shockwave 3",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -110711,7 +110738,7 @@
   "Name": "Linear Shockwave 2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -110750,7 +110777,7 @@
   "Name": "Lightning Tendrils 2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Lightning"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -110770,7 +110797,7 @@
   "Name": "Three Slashes",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -110780,7 +110807,7 @@
   "Name": "Water Rush 2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -110840,7 +110867,7 @@
   "Name": "Slash 2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -110850,7 +110877,7 @@
   "Name": "Slash",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -110860,7 +110887,7 @@
   "Name": "Paint Circle",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -110869,7 +110896,7 @@
   "Name": "Ola Shockwave 6",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -110888,7 +110915,7 @@
   "Name": "Ola Crescent",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Crescent"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -110907,7 +110934,7 @@
   "Name": "Thick Aura",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 512
@@ -110916,7 +110943,7 @@
   "Name": "Ola Shockwave 8",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -110925,7 +110952,7 @@
   "Name": "Lightning Strike 3",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Lightning"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -110935,7 +110962,7 @@
   "Name": "Fishy Lightning",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Lightning"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -110955,7 +110982,7 @@
   "Name": "Lightning Zigzag",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Lightning"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -110965,7 +110992,7 @@
   "Name": "Thaw star",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Star"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -110985,7 +111012,7 @@
   "Name": "Lightning",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Lightning"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -111005,7 +111032,7 @@
   "Name": "Stylized Dust",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Smoke"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -111015,7 +111042,7 @@
   "Name": "Normal Star",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Star"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -111024,7 +111051,7 @@
   "Name": "Glow Specs",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Flare"
   ],
   "Grid": 2,
   "Resolution": 1024,
@@ -111054,7 +111081,7 @@
   "Name": "Slash 3",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -111064,7 +111091,7 @@
   "Name": "Blurred Spikey Shockwave",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -111082,7 +111109,7 @@
   "Name": "Ola Shockwave 9",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -111091,7 +111118,7 @@
   "Name": "Fading Glow",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Flare"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -111100,7 +111127,7 @@
   "Name": "Thaw swirl",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Swirl"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -111110,7 +111137,7 @@
   "Name": "Thin Paint Circle",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -111129,7 +111156,7 @@
   "Name": "Half Paint Circle",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -111147,7 +111174,7 @@
   "Name": "Nyght Smooth Crescent",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Crescent"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -111157,7 +111184,7 @@
   "Name": "Ola Slash 2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -111167,7 +111194,7 @@
   "Name": "BlacknWhite Circle",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -111177,7 +111204,8 @@
   "Name": "Thaw energy swirl",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Swirl",
+   "Energy"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -111197,7 +111225,7 @@
   "Name": "Nyght Fiery Crescent",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Crescent"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -111256,7 +111284,7 @@
   "Name": "Fancy Bubble",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -111266,7 +111294,7 @@
   "Name": "Lines Star",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Star"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -111305,7 +111333,7 @@
   "Name": "Linear Shockwave 6",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -111314,7 +111342,7 @@
   "Name": "Ola Slash 6",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -111324,7 +111352,8 @@
   "Name": "Maroon Firey Slash",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Fire",
+   "Slash"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -111354,7 +111383,7 @@
   "Name": "Linear Shockwave 3",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -111363,7 +111392,7 @@
   "Name": "Noisy Fading Glow",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Flare"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -111372,7 +111401,7 @@
   "Name": "Glow Flipbook",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Flare"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -111382,7 +111411,7 @@
   "Name": "Thaw flare 2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Flare"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -111401,7 +111430,7 @@
   "Name": "Thaw Star",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Star"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -111410,7 +111439,7 @@
   "Name": "Ola Slash 5",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -111420,7 +111449,7 @@
   "Name": "Blocky Rain",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Grid": 2,
   "Resolution": 1024,
@@ -111440,7 +111469,7 @@
   "Name": "Thaw Circle 1",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -111450,7 +111479,7 @@
   "Name": "Ola Shockwave 4",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -111459,7 +111488,7 @@
   "Name": "Thaw Circle 2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -111469,7 +111498,7 @@
   "Name": "Ola Shockwave 11",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -111498,7 +111527,7 @@
   "Name": "Flickered Star",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Star"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -111526,7 +111555,7 @@
   "Name": "Linear Shockwave 5",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -111554,7 +111583,7 @@
   "Name": "Ola Shockwave 2",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -111563,7 +111592,7 @@
   "Name": "Vortex Nyght",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Swirl"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -111582,7 +111611,7 @@
   "Name": "Blurred Glowing Slash",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -111592,7 +111621,7 @@
   "Name": "Maroon Ember 1",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Fire"
   ],
   "Grid": 8,
   "Resolution": 1024,
@@ -111602,7 +111631,7 @@
   "Name": "circleboom3",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 4096,
@@ -111612,7 +111641,7 @@
   "Name": "Linear Shockwave 7",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -111621,7 +111650,7 @@
   "Name": "Shrinking Star",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Star"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -111641,7 +111670,7 @@
   "Name": "Ola Shockwave 10",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -111660,7 +111689,7 @@
   "Name": "Ola Slash 9",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -111670,7 +111699,7 @@
   "Name": "Duplicated Star",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Star"
   ],
   "Resolution": 1024,
   "Quality": "high"
@@ -111689,7 +111718,7 @@
   "Name": "Nyght Expanding Circle",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Circle"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -111709,7 +111738,7 @@
   "Name": "Ola Slash 1",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Slash"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -111738,7 +111767,7 @@
   "Name": "Water Wave",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "Grid": 4,
   "Resolution": 1024,
@@ -116010,7 +116039,7 @@
   "Name": "WaterWheel",
   "Kind": "Mesh",
   "Tags": [
-   "Other"
+   "Water"
   ],
   "MeshId": "rbxassetid://4776842084",
   "TextureId": "rbxassetid://4776839420",
@@ -119876,7 +119905,7 @@
   "Name": "Aura_103",
   "Kind": "Texture",
   "Tags": [
-   "Other"
+   "Energy"
   ],
   "Quality": "high"
  },
@@ -122737,5 +122766,32 @@
   "Tags": [
    "Water"
   ]
+ },
+ "136867373491158": {
+  "Name": "Blast Cone",
+  "Kind": "Mesh",
+  "Tags": [
+   "Wind"
+  ],
+  "MeshId": "rbxassetid://136867373491158",
+  "Size": "10.8291, 3.8726, 10.8500"
+ },
+ "16006576221": {
+  "Name": "Shockwave Disc",
+  "Kind": "Mesh",
+  "Tags": [
+   "Shockwave"
+  ],
+  "MeshId": "rbxassetid://16006576221",
+  "Size": "347.3362, 232.2043, 347.3362"
+ },
+ "13567208057": {
+  "Name": "Spike",
+  "Kind": "Mesh",
+  "Tags": [
+   "Spikes"
+  ],
+  "MeshId": "rbxassetid://13567208057",
+  "Size": "50.0000, 9.9618, 50.0000"
  }
 }
