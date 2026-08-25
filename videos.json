@@ -1,0 +1,12 @@
+{
+  "_comment": "Showcase strip. Put .mp4 files in docs/media/ and list them here. They autoplay muted on loop, so keep them short (5 to 15s) and small (a few MB each). Order here is the order on the page. Delete an entry to remove it.",
+  "videos": [
+    { "src": "media/3D.mp4",    "title": "3d Particles (beziers craters...)" },
+    { "src": "media/Presets.mp4", "title": "Presets" },
+    { "src": "media/module.mp4",     "title": "Runtime Module" },
+    { "src": "media/graph.mp4",     "title": "Graph and Gradient" },
+    { "src": "media/meshflipbooks.mp4",     "title": "Mesh Flipbooks" },
+    { "src": "media/Assetlib.mp4",     "title": "Asset Library (14k+ Textures)" },
+    { "src": "media/themes.mp4",     "title": "settings and themes" }
+  ]
+}
