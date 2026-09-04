@@ -9,6 +9,21 @@ Discord](https://discord.com/channels/1501090480828715028/1534366571093295277)**
 [server](https://discord.gg/krQE8tGsUz) and check there first for the latest.
 :::
 
+## Join the community
+
+<iframe
+  src="https://discord.com/widget?id=1501090480828715028&theme=dark"
+  width="100%"
+  height="380"
+  allowtransparency="true"
+  frameborder="0"
+  loading="lazy"
+  sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+  style="border-radius:12px;max-width:420px;"
+></iframe>
+
+Can't see the widget? Join directly at **[discord.gg/krQE8tGsUz](https://discord.gg/krQE8tGsUz)**.
+
 ## Written tutorials
 
 - **[Your first effect](/first-effect)** - turn a part into a burst of glowing
