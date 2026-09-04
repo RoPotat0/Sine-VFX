@@ -1,49 +1,35 @@
 # Tools
 
-The **Tools** menu holds SineVFX's batch editors - the ones that reshape, rescale, retime,
-and recolour whole selections at once. Open it from the **Tools** entry on the
-SineVFX menu; each tool opens as its own window.
+The **Tools** menu holds SineVFX's batch editors, the ones that reshape, rescale, retime,
+recolour, and export whole selections at once. Open it from the **Tools** entry on the SineVFX
+menu; each opens as its own window and works on your current selection of transformed effects
+(emitters, trails, and beams).
 
-| Tool                       | What it does                                                          |
-| -------------------------- | -------------------------------------------------------------------- |
-| **[Shifter](#shifter)**    | Nudge / shift properties across a multi-selection.                   |
-| **[Resizer](#resizer)**    | Scale a whole VFX proportionally - every size channel at once.       |
-| **[Retimer](#retimer)**    | Re-time an effect - speed it up or slow it down as a unit.           |
-| **[Copier](#copier)**      | Copy settings from one effect onto others.                           |
-| **[Code](#code)**          | Get the code / snippet to reproduce or emit the effect.              |
-| **[Color](/tools/color)**  | Full colour picker, palettes, replace & shift - see its own page.    |
+| Tool                            | What it does                                                    |
+| ------------------------------- | -------------------------------------------------------------- |
+| **[Shifter](/tools/shifter)**   | Slide a property up or down across a whole multi-selection.     |
+| **[Resizer](/tools/resizer)**   | Scale an effect proportionally, every size channel together.    |
+| **[Retimer](/tools/retimer)**   | Speed up or slow down an effect's timing as a unit.             |
+| **[Copier](/tools/copier)**     | Copy a property (or set) from one effect and paste onto others. |
+| **[Code](/tools/code)**         | Get the ready-to-paste code that fires the selected effect.     |
+| **[Color](/tools/color)**       | Full colour picker plus batch Replace / Shift across effects.   |
 
-All of these operate on your **current selection** of transformed effects, so the usual
-workflow is: select many, open a tool, apply once.
+## The batch workflow
 
-## Shifter
+The pattern is the same for every tool:
 
-Shift properties across every selected effect together, with persistence guards so a batch
-edit stays consistent. Use it to nudge a shared value (say, brightness or a height offset)
-across a group without touching each one by hand.
+1. **Select** one or many transformed effects.
+2. **Open** the tool.
+3. **Apply** once, and it lands on the whole selection together.
 
-## Resizer
+Because these edits key off each effect's kind (emitter / trail / beam), a mixed selection is
+handled correctly, each object edited through its own settings.
 
-Scale a VFX **proportionally**. Rather than editing size channels one at a time, the Resizer
-multiplies all of an effect's size-related properties together so it grows or shrinks as a
-coherent whole - keeping the look intact at a new scale.
+## Related windows
 
-## Retimer
+A few supporting windows help while you tune:
 
-Re-time an effect as a unit - stretch or compress its timing so the whole thing plays slower
-or faster while preserving the shape of its curves.
-
-## Copier
-
-Copy the SineVFX settings from one transformed effect and apply them to others, so you can
-propagate a look across many objects quickly.
-
-## Code
-
-Pull the code snippet for an effect - handy when wiring it into your game with the
-[runtime API](/shipping/api), or to reproduce/emit it from a script.
-
-## Color
-
-The Color tool is big enough to warrant its own page - a 2D picker, palettes, and
-replace/shift operations across many instance types. See **[Color](/tools/color)**.
+- **[Texture Library](/windows/library)** - apply textures to selected emitters.
+- **[Paths](/windows/paths)** - preview predicted particle trajectories.
+- **Particle Counter** - watch particle counts while tuning performance.
+- **Trail Preview** - preview trail shapes.

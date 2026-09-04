@@ -13,6 +13,17 @@ local VFX = require(game.ReplicatedStorage.SineVFX)
 Do this from a **client** context (LocalScript or a module required by one) - effects render
 per-client. See [client vs. server](/shipping/module#client-vs-server).
 
+The runtime also registers itself on `shared`, so once the module has been required anywhere
+you can call it without holding the return value:
+
+```lua
+shared.sv.emit(target)
+shared.sv.enable(target)
+shared.sv.disable(target)
+```
+
+Both styles do the same thing; use whichever suits your code.
+
 ## The three functions
 
 You pass the instance that holds (or contains) your transformed effect(s). The module finds

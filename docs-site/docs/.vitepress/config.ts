@@ -37,8 +37,10 @@ export default defineConfig({
       provider: 'local',
     },
 
-    // Top navigation removed by request.
-    nav: [],
+    // Single link back to the main site, sitting by the Discord icon.
+    nav: [
+      { text: 'sinevfx.xyz', link: 'https://sinevfx.xyz' },
+    ],
 
     sidebar: {
       '/': [
@@ -52,9 +54,18 @@ export default defineConfig({
           ],
         },
         {
+          text: 'Transformable objects',
+          items: [
+            { text: 'Overview', link: '/effects/transformable' },
+            { text: 'Part → 3D emitter', link: '/effects/part' },
+            { text: 'Trail', link: '/effects/trail' },
+            { text: 'Beam', link: '/effects/beam' },
+            { text: 'Camera', link: '/effects/camera' },
+          ],
+        },
+        {
           text: 'Effects',
           items: [
-            { text: 'Transformable objects', link: '/effects/transformable' },
             { text: 'Transform', link: '/windows/transform' },
             { text: 'Presets', link: '/effects/presets' },
           ],
@@ -73,6 +84,11 @@ export default defineConfig({
           text: 'Tools',
           items: [
             { text: 'Overview', link: '/tools/overview' },
+            { text: 'Shifter', link: '/tools/shifter' },
+            { text: 'Resizer', link: '/tools/resizer' },
+            { text: 'Retimer', link: '/tools/retimer' },
+            { text: 'Copier', link: '/tools/copier' },
+            { text: 'Code', link: '/tools/code' },
             { text: 'Color', link: '/tools/color' },
           ],
         },

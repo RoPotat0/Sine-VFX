@@ -1,48 +1,36 @@
 # Transformable objects
 
 SineVFX works by **transforming** ordinary Roblox instances into editable effects. Four kinds
-of instance can be transformed, and each becomes a specific kind of effect.
+of object are supported, each with its own page:
 
-Select one (or many) and run [Transform](/windows/transform).
+| Object                                  | Becomes                                             |
+| --------------------------------------- | --------------------------------------------------- |
+| **[Part](/effects/part)**               | A 3D particle emitter (the part *is* the particle)  |
+| **[Trail](/effects/trail)**             | A graphable transformed trail                       |
+| **[Beam](/effects/beam)**               | A graphable transformed beam                        |
+| **[Camera](/effects/camera)**           | A global camera effect (shake / FOV / blur)         |
 
-## Part → 3D particle emitter
+Select one (or several), then run [Transform](/windows/transform).
 
-This is SineVFX's signature. Select any **BasePart** (a Part, MeshPart, union, etc.) and it
-becomes a **3D particle emitter** where **each particle looks like that part**.
+## How it works in general
 
-- The part's shape, material, colour, textures, and even its **children** (meshes, decals,
-  attachments, nested effects) ride along and become the particle's appearance.
-- The original part stays in place as the emitter's root marker (it turns invisible); only the
-  spawned particles render.
-- So instead of being limited to flat particle textures, you can emit **real 3D geometry** as
-  particles: rocks, shards, leaves, glowing meshes, whatever the part is.
+Transforming an object tags it as a SineVFX effect and lays down a **`Properties` folder** of
+grouped settings that the [Properties window](/windows/properties) edits. Every channel can be
+a scalar or a lifetime **[graph](/windows/graph-editor)**, and every effect responds to the
+same **emit / enable / disable** verbs in the [Emit window](/windows/emit) and at
+[runtime](/shipping/api).
 
-You can even nest a part inside another emitter's template to build layered effects.
-
-## Trail → transformed trail
-
-Select a **Trail** and it becomes a SineVFX-editable trail, with its properties exposed to the
-[graph editor](/windows/graph-editor) so you can drive them over the effect's life.
-
-## Beam → transformed beam
-
-Select a **Beam** and it becomes a SineVFX-editable beam, again with graphable properties.
-
-## Camera → camera effect
-
-Select the **Camera** and it becomes a global [camera effect](/effects/camera) (shake, FOV,
-blur). It has no position in the world and no particle count; it acts on the view.
+Running Transform again, or **Untransform**, returns the plain instance. Studio's **Ctrl+Z**
+reverts a transform cleanly.
 
 ## What isn't transformed directly
 
-You don't transform a `ParticleEmitter` itself, or lights, or sounds. The Part-to-emitter
-model gives you the particle system, and the [presets](/effects/presets) (Lightning, Orbit,
-Bezier, Debris, Crater, and the base Beam / Trail) are pre-built transformed effects you can
-drop in and edit.
+You don't transform a `ParticleEmitter`, a light, or a sound. The [Part](/effects/part) model
+gives you the particle system, and the [presets](/effects/presets) are pre-built transformed
+effects (Lightning, Orbit, Bezier, Debris, Crater, and base Beam / Trail) you drop in and
+edit.
 
-## Notes
-
-- Selecting a **Folder or Model** and emitting it fires every transformed effect inside it, so
-  you can group a multi-part effect and drive it as one.
-- Running Transform again on something already transformed (or **Untransform**) returns the
-  plain instance. See [Transform](/windows/transform).
+::: tip
+Group several transformed effects under a Folder or Model and emitting the container fires all
+of them, so a multi-part effect plays as one.
+:::

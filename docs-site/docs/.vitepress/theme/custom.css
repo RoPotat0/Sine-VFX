@@ -1,5 +1,5 @@
 /* ───────────────────────────────────────────────────────────
-   SineVFX docs theme — palette + fonts mirrored from sinevfx.xyz
+   SineVFX docs theme - palette + fonts mirrored from sinevfx.xyz
    Cantora One for display headings · Nunito for body.
    ─────────────────────────────────────────────────────────── */
 
@@ -44,7 +44,9 @@
 /* Dark surfaces (docs are dark-only, matching the site) */
 .dark {
   --vp-c-bg:         #04050a;
-  --vp-c-bg-alt:     #070910;
+  /* Keep the sidebar (left) the SAME colour as the content (right) - no light/dark split */
+  --vp-c-bg-alt:     #04050a;
+  --vp-sidebar-bg-color: #04050a;
   --vp-c-bg-elv:     #0b0e16;
   --vp-c-bg-soft:    #0b0e16;
 
@@ -143,5 +145,44 @@ h1, h2, h3 { line-height: 1.15; }
 .vp-doc th { color: var(--sv-text); }
 .vp-doc tr { background: transparent; }
 
-/* Logo sizing */
-.VPNavBarTitle .logo { height: 26px; border-radius: 6px; }
+/* ── Nav bar: bigger logo + Cantora One wordmark ──────────── */
+.VPNavBarTitle .logo {
+  height: 40px;
+  border-radius: 8px;
+}
+.VPNavBarTitle .text {
+  font-family: var(--sv-display) !important;
+  font-weight: 400 !important;
+  font-size: 22px !important;
+  letter-spacing: 0.01em;
+  color: var(--sv-text);
+}
+/* Give the taller logo room */
+.VPNavBar .title { height: var(--vp-nav-height); }
+
+/* ── Scrollbars: thin, themed, consistent ─────────────────── */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(111, 191, 252, 0.35) transparent;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(111, 191, 252, 0.22);
+  border-radius: 100vh;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(111, 191, 252, 0.45);
+  background-clip: padding-box;
+}
+.VPSidebar::-webkit-scrollbar { width: 8px; }
+
+/* Sidebar active-link accent bar (from the preset theme) */
+.VPSidebarItem.is-active > .item .text { color: var(--sv-blue); }
