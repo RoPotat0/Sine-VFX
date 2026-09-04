@@ -2,20 +2,19 @@ import { defineConfig } from 'vitepress'
 
 const title = 'SineVFX'
 const description = 'The VFX-focused properties editor and runtime for Roblox Studio.'
-const site = 'https://docs.sinevfx.xyz'
+const site = 'https://sinevfx.xyz/docs'
 
 export default defineConfig({
   title,
   description,
   lang: 'en-US',
-  srcDir: 'docs',
   base: '/docs/',
   appearance: 'dark',
   cleanUrls: true,
   lastUpdated: true,
 
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/docs/favicon.png' }],
     ['meta', { name: 'theme-color', content: '#6fbffc' }],
     ['meta', { name: 'og:type', content: 'website' }],
     ['meta', { name: 'og:site_name', content: title }],
