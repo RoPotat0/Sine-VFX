@@ -16,12 +16,17 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/docs/sine.png' }],
     ['meta', { name: 'theme-color', content: '#6fbffc' }],
+    // Distinct embed for the docs (separate title/description from the main site)
     ['meta', { name: 'og:type', content: 'website' }],
-    ['meta', { name: 'og:site_name', content: title }],
-    ['meta', { name: 'og:title', content: title }],
-    ['meta', { name: 'og:description', content: description }],
+    ['meta', { name: 'og:site_name', content: 'SineVFX Docs' }],
+    ['meta', { name: 'og:title', content: 'SineVFX Docs' }],
+    ['meta', { name: 'og:url', content: site }],
+    ['meta', { name: 'og:description', content: 'Guides, tutorials, and reference for the SineVFX Roblox Studio VFX plugin.' }],
     ['meta', { name: 'og:image', content: `${site}/banner.png` }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:title', content: 'SineVFX Docs' }],
+    ['meta', { name: 'twitter:description', content: 'Guides, tutorials, and reference for the SineVFX Roblox Studio VFX plugin.' }],
+    ['meta', { name: 'twitter:image', content: `${site}/banner.png` }],
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
     ['link', {
