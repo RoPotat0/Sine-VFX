@@ -42,4 +42,3 @@ SineVFX includes a handful of supporting windows that open contextually:
 - **Trail Preview** - preview trail shapes.
 - **Asset Library / Asset Upload** - the [texture library](/windows/library) and uploading
   your own textures.
-- **Presets** - browse and insert [presets](/effects/presets).

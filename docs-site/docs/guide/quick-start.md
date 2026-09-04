@@ -14,8 +14,6 @@ the viewport, with entries for **Emit**, **Library**, **Tools**, **Paths**, **Mo
 Add a **Part** to the Workspace and shape it however you want your particle to look, colour
 and material included. That part is going to *become* the particle.
 
-Prefer a head start? Drop in one of the [presets](/effects/presets) instead.
-
 ## 3. Transform it
 
 Select the part. A **Transform** button appears near the controls, click it. The part becomes

@@ -22,4 +22,4 @@ across a mixed selection lands each value in the right place.
 ## Related
 
 - [Shifter](/tools/shifter) - slide a value instead of copying it.
-- [Presets](/effects/presets) - start many effects from the same base instead.
+- [Tools overview](/tools/overview) - the rest of the batch editors.

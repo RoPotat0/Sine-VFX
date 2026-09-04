@@ -76,8 +76,6 @@ enabling/disabling held effects and playing for all players.
 
 ## Where to go next
 
-- Try building the same idea from a **[preset](/effects/presets)** to see how a finished effect
-  is structured.
 - Batch-edit a whole scene of effects with the **[Tools](/tools/overview)**.
 - Watch video walkthroughs in the **[#tutorials
   channel](https://discord.com/channels/1501090480828715028/1534366571093295277)** on the

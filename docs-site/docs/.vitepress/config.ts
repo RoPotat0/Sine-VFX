@@ -51,23 +51,19 @@ export default defineConfig({
             { text: 'Installation', link: '/guide/installation' },
             { text: 'Quick start', link: '/guide/quick-start' },
             { text: 'Core concepts', link: '/guide/concepts' },
+            { text: 'Keybinds', link: '/guide/keybinds' },
           ],
         },
         {
-          text: 'Transformable objects',
+          text: 'Objects & effects',
           items: [
             { text: 'Overview', link: '/effects/transformable' },
-            { text: 'Part → 3D emitter', link: '/effects/part' },
+            { text: 'Transform', link: '/windows/transform' },
+            { text: '3D particle', link: '/effects/part' },
             { text: 'Trail', link: '/effects/trail' },
             { text: 'Beam', link: '/effects/beam' },
             { text: 'Camera', link: '/effects/camera' },
-          ],
-        },
-        {
-          text: 'Effects',
-          items: [
-            { text: 'Transform', link: '/windows/transform' },
-            { text: 'Presets', link: '/effects/presets' },
+            { text: 'Emittable objects', link: '/effects/emittable' },
           ],
         },
         {
@@ -76,8 +72,8 @@ export default defineConfig({
             { text: 'Properties', link: '/windows/properties' },
             { text: 'Graph editor', link: '/windows/graph-editor' },
             { text: 'Emit & preview', link: '/windows/emit' },
-            { text: 'Texture Library', link: '/windows/library' },
             { text: 'Paths', link: '/windows/paths' },
+            { text: 'Asset Library', link: '/windows/library' },
           ],
         },
         {
@@ -88,8 +84,8 @@ export default defineConfig({
             { text: 'Resizer', link: '/tools/resizer' },
             { text: 'Retimer', link: '/tools/retimer' },
             { text: 'Copier', link: '/tools/copier' },
-            { text: 'Code', link: '/tools/code' },
             { text: 'Color', link: '/tools/color' },
+            { text: 'Code', link: '/tools/code' },
           ],
         },
         {

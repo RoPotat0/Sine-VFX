@@ -29,7 +29,7 @@ handled correctly, each object edited through its own settings.
 
 A few supporting windows help while you tune:
 
-- **[Texture Library](/windows/library)** - apply textures to selected emitters.
+- **[Asset Library](/windows/library)** - apply textures to selected emitters.
 - **[Paths](/windows/paths)** - preview predicted particle trajectories.
 - **Particle Counter** - watch particle counts while tuning performance.
 - **Trail Preview** - preview trail shapes.

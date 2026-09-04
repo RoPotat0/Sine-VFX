@@ -63,8 +63,8 @@ them and reproduce the effect. SineVFX **generates that code for you** - the
 `VFX.emit / enable / disable` and it does the rest. Re-plant it whenever you want the shipped
 copy to match your latest edits.
 
-## Presets
+## Emittable objects
 
-[Presets](/effects/presets) are ready-made transformed effects - Lightning, Orbit, Bezier,
-Debris, Crater, and the base Beam / Trail / ParticleEmitter - that you drop in and tweak,
-so you're never starting from a blank emitter.
+Alongside the transformed effects, SineVFX can drive plain Roblox effect instances too, so an
+existing `ParticleEmitter`, `Beam`, `Trail`, `Light`, or `Sound` responds to the same
+emit / enable / disable controls. See [Emittable objects](/effects/emittable).

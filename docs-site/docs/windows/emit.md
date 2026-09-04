@@ -1,49 +1,56 @@
-# Emit
+# Emit & preview
 
-The **Emit window** is your live preview. It fires transformed effects right in edit mode so
-you can see exactly what ships - no Play button, no round-trips.
+The **Emit window** is your live preview. It fires effects right in edit mode so you can see
+exactly what ships, no Play button, no round-trips.
 
-Open it from the **Emit** entry on the SineVFX menu.
+Open it from the **Emit** entry on the SineVFX menu (default keybind `R` to emit, `T` to
+enable, see [Keybinds](/guide/keybinds)).
 
-## The three verbs
+## The controls
 
-| Action      | What it does                                                          |
-| ----------- | -------------------------------------------------------------------- |
-| **Emit**    | Fire a one-shot play over the effect's duration. Hold to repeat.     |
-| **Enable**  | Turn the effect on and hold it until you disable it.                 |
-| **Disable** | Turn it off (with a short fade-out where it applies).                |
+| Control      | What it does                                                          |
+| ------------ | -------------------------------------------------------------------- |
+| **Emit**     | Fire a one-shot play over the effect's duration.                     |
+| **Enable**   | Turn the effect on and hold it until you disable it.                 |
+| **Repeat**   | Keep firing on a timer until you stop (see below).                   |
+| **Disable**  | Turn it off (with a short fade-out where it applies).                |
 
-These are the same three verbs you'll call at [runtime](/shipping/api), so what you preview
-is what your game does.
+Emit / Enable / Disable are the same verbs you'll call at [runtime](/shipping/api), so what you
+preview is what your game does.
 
-## Repeat and timing
+## Repeat
 
-- **Hold Emit** to repeat the burst continuously.
-- **EmitDelay** and **EmitDuration** control the timing of a repeat cycle - the delay before
-  a play and how long the effect stays enabled over the cycle.
-- Beams, Trails, and Lights are wired into the same repeat loop, so mixed selections play
-  together.
+**Repeat** loops the effect automatically instead of you clicking Emit over and over. It keeps
+firing a play on an interval and runs until you stop it (it can also finish the current cycle
+before stopping, so a burst never gets cut off mid-play).
+
+- The interval is the **Repeat Timer**, set in **Settings → Emission** (0 to 10s).
+- **EmitDelay** and **EmitDuration** on the effect control the timing within a cycle: the delay
+  before a play, and how long it stays enabled over the cycle.
+- [Beams, Trails, Lights, Sounds](/effects/emittable), and 3D particles are all wired into the
+  same repeat loop, so a mixed selection repeats together.
 
 ## Working with selections
 
-The Emit window acts on your current selection of transformed effects. Select several and
-they emit/enable together - handy for composing a multi-part effect (a flash + debris + a
-beam) and previewing it as one.
+The Emit window acts on your current selection. Select several effects and they emit / enable /
+repeat together, handy for composing a multi-part effect (a flash + debris + a beam) and
+previewing it as one. It drives both transformed effects and plain
+[emittable objects](/effects/emittable).
 
 ## Floating slider panel
 
-The window includes a floating slider panel for quickly dialing timing values without
-diving into the full Properties tree - good for fast iteration while you watch the effect.
+The window includes a floating slider panel for quickly dialing timing values without diving
+into the full Properties tree, good for fast iteration while you watch the effect.
 
 ## Cameras
 
-Transformed [Camera Effects](/effects/camera) appear here too - Emit and Enable drive their
-shake / FOV / blur exactly like a particle effect. See the
-[Camera Effect](/effects/camera) page for its play model (hold vs. pulse).
+Transformed [camera effects](/effects/camera) appear here too, Emit and Enable drive their
+shake / FOV / blur exactly like a particle effect. See the [Camera](/effects/camera) page for
+its play model (hold vs. pulse).
 
 ## Tips
 
 - Keep this window open while editing in [Properties](/windows/properties) or the
   [graph editor](/windows/graph-editor) so every change plays back instantly.
-- Use **Enable** (not repeated Emit) when tuning a continuous effect like a persistent aura
-  or beam.
+- Use **Enable** (not **Repeat**) when tuning a continuous effect like a persistent aura or
+  beam.

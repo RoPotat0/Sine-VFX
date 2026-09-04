@@ -24,7 +24,7 @@ values, and hitting Play over and over. SineVFX replaces that loop:
 
 Particle bursts, beams and trails, orbiting and path-driven effects, lightning, impacts, and
 anything you can build from Roblox's effect instances. SineVFX ships with a set of ready-made
-[presets](/effects/presets) so you never start from a blank emitter.
+built-in effects to build from, so you are never starting from a blank emitter.
 
 ## Where to go next
 

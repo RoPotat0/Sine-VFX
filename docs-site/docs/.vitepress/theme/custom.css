@@ -4,8 +4,8 @@
    ─────────────────────────────────────────────────────────── */
 
 :root {
-  --sv-bg:      #04050a;
-  --sv-card:    #0b0e16;
+  --sv-bg:      #0e121c;
+  --sv-card:    #151a26;
   --sv-card-2:  #0f131e;
   --sv-line:    rgba(255, 255, 255, 0.06);
   --sv-line-2:  rgba(255, 255, 255, 0.1);
@@ -43,24 +43,24 @@
 
 /* Dark surfaces (docs are dark-only, matching the site) */
 .dark {
-  --vp-c-bg:         #04050a;
-  /* Keep the sidebar (left) the SAME colour as the content (right) - no light/dark split */
-  --vp-c-bg-alt:     #04050a;
-  --vp-sidebar-bg-color: #04050a;
-  --vp-c-bg-elv:     #0b0e16;
-  --vp-c-bg-soft:    #0b0e16;
+  /* Lighter than pure black, and the SAME on sidebar (left) and content (right) */
+  --vp-c-bg:         #0e121c;
+  --vp-c-bg-alt:     #0e121c;
+  --vp-sidebar-bg-color: #0e121c;
+  --vp-c-bg-elv:     #151a26;
+  --vp-c-bg-soft:    #151a26;
 
   --vp-c-text-1:     #f4f6fd;
-  --vp-c-text-2:     #a8b1cd;
-  --vp-c-text-3:     #6f7999;
+  --vp-c-text-2:     #b3bcd6;
+  --vp-c-text-3:     #7c86a4;
 
-  --vp-c-divider:    rgba(255, 255, 255, 0.08);
-  --vp-c-border:     rgba(255, 255, 255, 0.1);
-  --vp-c-gutter:     #04050a;
+  --vp-c-divider:    rgba(255, 255, 255, 0.09);
+  --vp-c-border:     rgba(255, 255, 255, 0.11);
+  --vp-c-gutter:     #0e121c;
 
-  --vp-c-default-soft: rgba(255, 255, 255, 0.05);
+  --vp-c-default-soft: rgba(255, 255, 255, 0.06);
 
-  --vp-code-block-bg: #070910;
+  --vp-code-block-bg: #090c14;
 }
 
 /* Force dark even if system is light (site is dark-only) */
@@ -145,19 +145,26 @@ h1, h2, h3 { line-height: 1.15; }
 .vp-doc th { color: var(--sv-text); }
 .vp-doc tr { background: transparent; }
 
-/* ── Nav bar: bigger logo + Cantora One wordmark ──────────── */
-.VPNavBarTitle .logo {
-  height: 40px;
-  border-radius: 8px;
+/* ── Nav bar: taller bar, bigger logo + Cantora One wordmark ── */
+:root { --vp-nav-height: 76px; }
+
+.VPNavBarTitle .logo,
+.VPNavBarTitle img {
+  height: 52px !important;
+  width: auto !important;
+  border-radius: 10px;
 }
-.VPNavBarTitle .text {
-  font-family: var(--sv-display) !important;
+.VPNavBarTitle .text,
+.VPNavBarTitle a .text {
+  font-family: 'Cantora One', var(--sv-display) !important;
   font-weight: 400 !important;
-  font-size: 22px !important;
-  letter-spacing: 0.01em;
-  color: var(--sv-text);
+  font-size: 30px !important;
+  line-height: 1 !important;
+  letter-spacing: 0.02em;
+  color: var(--sv-text) !important;
+  padding-left: 10px;
 }
-/* Give the taller logo room */
+.VPNavBarTitle { height: var(--vp-nav-height); }
 .VPNavBar .title { height: var(--vp-nav-height); }
 
 /* ── Scrollbars: thin, themed, consistent ─────────────────── */
@@ -182,7 +189,16 @@ h1, h2, h3 { line-height: 1.15; }
   background: rgba(111, 191, 252, 0.45);
   background-clip: padding-box;
 }
-.VPSidebar::-webkit-scrollbar { width: 8px; }
+
+/* Hide the left sidebar's scrollbar entirely (still scrolls) */
+.VPSidebar {
+  scrollbar-width: none;
+}
+.VPSidebar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
 
 /* Sidebar active-link accent bar (from the preset theme) */
 .VPSidebarItem.is-active > .item .text { color: var(--sv-blue); }

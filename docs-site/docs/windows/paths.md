@@ -14,7 +14,7 @@ current velocity, acceleration, spread, and lifetime settings. As you change tho
 This is especially useful for:
 
 - **Directional effects** - aiming a stream of particles precisely.
-- **Bezier / orbit presets** - seeing the curve a particle rides.
+- **Bezier / orbit effects** - seeing the curve a particle rides.
 - **Tuning spread and acceleration** - understanding how wide or how fast an emission fans
   out.
 
