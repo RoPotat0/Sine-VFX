@@ -149,7 +149,8 @@ h1, h2, h3 { line-height: 1.15; }
 :root { --vp-nav-height: 64px; }
 
 /* Keep the nav above the sidebar so sidebar text never draws over the logo on scroll */
-.VPNav { z-index: 61; }
+.VPNav { z-index: 65 !important; }
+.VPNavBar { z-index: 65 !important; }
 
 .VPNavBarTitle .logo,
 .VPNavBarTitle img.VPImage {
