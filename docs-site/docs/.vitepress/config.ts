@@ -9,12 +9,12 @@ export default defineConfig({
   description,
   lang: 'en-US',
   base: '/docs/',
-  appearance: 'dark',
+  appearance: 'force-dark',
   cleanUrls: true,
   lastUpdated: true,
 
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: '/docs/favicon.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/docs/sine.png' }],
     ['meta', { name: 'theme-color', content: '#6fbffc' }],
     ['meta', { name: 'og:type', content: 'website' }],
     ['meta', { name: 'og:site_name', content: title }],
@@ -22,7 +22,6 @@ export default defineConfig({
     ['meta', { name: 'og:description', content: description }],
     ['meta', { name: 'og:image', content: `${site}/banner.png` }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    // Cantora One for display headings, Nunito for body — matches sinevfx.xyz
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
     ['link', {
@@ -32,39 +31,40 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    logo: '/logo.png',
+    logo: '/sine.png',
 
     search: {
       provider: 'local',
     },
 
-    nav: [
-      { text: 'Guide', link: '/guide/introduction' },
-      { text: 'Windows', link: '/windows/overview' },
-      { text: 'Tools', link: '/tools/overview' },
-      { text: 'Shipping', link: '/shipping/module' },
-      { text: 'sinevfx.xyz', link: 'https://sinevfx.xyz' },
-    ],
+    // Top navigation removed by request.
+    nav: [],
 
     sidebar: {
       '/': [
         {
           text: 'Getting started',
           items: [
-            { text: 'Introduction', link: '/guide/introduction' },
+            { text: 'Introduction', link: '/' },
             { text: 'Installation', link: '/guide/installation' },
             { text: 'Quick start', link: '/guide/quick-start' },
             { text: 'Core concepts', link: '/guide/concepts' },
           ],
         },
         {
-          text: 'The interface',
+          text: 'Effects',
           items: [
-            { text: 'The Hub', link: '/windows/overview' },
+            { text: 'Transformable objects', link: '/effects/transformable' },
             { text: 'Transform', link: '/windows/transform' },
+            { text: 'Presets', link: '/effects/presets' },
+          ],
+        },
+        {
+          text: 'Editing',
+          items: [
             { text: 'Properties', link: '/windows/properties' },
             { text: 'Graph editor', link: '/windows/graph-editor' },
-            { text: 'Emit', link: '/windows/emit' },
+            { text: 'Emit & preview', link: '/windows/emit' },
             { text: 'Texture Library', link: '/windows/library' },
             { text: 'Paths', link: '/windows/paths' },
           ],
@@ -77,10 +77,10 @@ export default defineConfig({
           ],
         },
         {
-          text: 'Effects',
+          text: 'Tutorials',
           items: [
-            { text: 'Presets', link: '/effects/presets' },
-            { text: 'Camera Effect', link: '/effects/camera' },
+            { text: 'Overview', link: '/tutorials/' },
+            { text: 'Your first effect', link: '/tutorials/first-effect' },
           ],
         },
         {

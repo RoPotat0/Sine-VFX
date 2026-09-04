@@ -1,47 +1,42 @@
----
-layout: home
+# Introduction
 
-hero:
-  name: SineVFX
-  text: Craft Roblox VFX without leaving Studio.
-  tagline: A VFX-focused properties editor with graph-driven curves, live preview, and a one-click runtime you ship with your game.
-  image:
-    src: /sine.png
-    alt: SineVFX
-  actions:
-    - theme: brand
-      text: Get started
-      link: /guide/introduction
-    - theme: alt
-      text: Quick start
-      link: /guide/quick-start
-    - theme: alt
-      text: Join the Discord
-      link: https://discord.gg/krQE8tGsUz
+**SineVFX** is a visual effects authoring plugin for **Roblox Studio**. It gives you a
+dedicated, VFX-focused editor on top of Roblox's native effect instances (`ParticleEmitter`,
+`Beam`, `Trail`, lights, and more) and adds what Studio's own property panel is missing:
+values that change over a particle's lifetime as smooth **graphs**, **live preview** in edit
+mode, **batch tools** for editing many objects at once, and a **runtime** you drop into your
+game so what you author is what your players see.
 
-features:
-  - icon: 🎛️
-    title: Transform anything
-    details: Turn any Beam, Trail, ParticleEmitter, Light, or even the Camera into a SineVFX-editable effect — in place, no new parts.
-    link: /windows/transform
-  - icon: 📈
-    title: Graph everything
-    details: Drive any numeric property over a particle's lifetime with a full bezier curve editor, envelopes, and live preview.
-    link: /windows/graph-editor
-  - icon: ▶️
-    title: Preview instantly
-    details: Emit and enable effects right in edit mode. Repeat, hold, and pulse — see exactly what ships before you ship it.
-    link: /windows/emit
-  - icon: 🧰
-    title: Batch tools
-    details: Shifter, Resizer, Retimer, Copier, Code, and Color — reshape, rescale, retime, and recolour whole selections at once.
-    link: /tools/overview
-  - icon: 🎥
-    title: Camera effects
-    details: Shake, FOV punch, and blur as a first-class transformed effect — graphed and previewable like everything else.
-    link: /effects/camera
-  - icon: 📦
-    title: Ship it
-    details: Plant one runtime module and call VFX.emit in your game. What you preview is what your players see.
-    link: /shipping/module
----
+## Why use it
+
+Building good VFX in Studio normally means fighting the number-sequence pickers, guessing at
+values, and hitting Play over and over. SineVFX replaces that loop:
+
+- **See it while you build it.** Emit and enable effects directly in edit mode.
+- **Shape values as curves, not stair-steps.** Any numeric channel can be driven by a smooth
+  bezier graph with envelopes.
+- **Work on many objects at once.** Select a whole pile of emitters and shift, resize,
+  retime, or recolour them in one action.
+- **Ship what you see.** One generated module reproduces your effects at runtime with a tiny
+  `VFX.emit(...)` call.
+
+## What you can make
+
+Particle bursts, beams and trails, orbiting and path-driven effects, lightning, impacts, and
+anything you can build from Roblox's effect instances. SineVFX ships with a set of ready-made
+[presets](/effects/presets) so you never start from a blank emitter.
+
+## Where to go next
+
+- **[Installation](/guide/installation)** puts the plugin in your Studio.
+- **[Quick start](/guide/quick-start)** takes a plain emitter to a graphed, previewable
+  effect in a few minutes.
+- **[Transformable objects](/effects/transformable)** lists everything SineVFX can turn into
+  an editable effect.
+- **[Tutorials](/tutorials/)** walk through building real effects step by step.
+- **[Shipping](/shipping/module)** covers planting the runtime and calling it from your game.
+
+::: tip New here?
+Start with **[Installation](/guide/installation)**, then the
+**[Quick start](/guide/quick-start)**.
+:::

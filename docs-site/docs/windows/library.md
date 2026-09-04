@@ -1,23 +1,23 @@
 # Texture Library
 
 The **Library** is a browsable collection of particle textures you can apply to selected
-emitters with a click — no hunting for asset IDs.
+emitters with a click - no hunting for asset IDs.
 
-Open it from the **Library** entry on the [Hub](/windows/overview).
+Open it from the **Library** entry on the SineVFX menu.
 
 ## Using it
 
-1. Select one or more transformed [ParticleEmitters](/windows/properties).
+1. Select one or more transformed emitters.
 2. Open the Library.
 3. Click a texture to **apply it to the whole selection** at once.
 
-Great for trying looks fast — sparks, smoke, glows, flipbook sheets — without leaving your
+Great for trying looks fast - sparks, smoke, glows, flipbook sheets - without leaving your
 flow.
 
 ## Uploading your own
 
 SineVFX also supports bringing your own textures into the library so your custom sprites sit
-alongside the built‑in set and apply the same way.
+alongside the built-in set and apply the same way.
 
 ## Tips
 

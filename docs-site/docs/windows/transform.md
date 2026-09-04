@@ -3,51 +3,35 @@
 **Transform** is the gateway into SineVFX. Before you can graph or preview an effect, you
 transform its instance so the plugin can manage it.
 
+When your selection contains something [transformable](/effects/transformable), a floating
+**Transform** button appears near the Emit controls. Click it to transform the selection.
+
 ## What transforming does
 
-Select a supported instance and run Transform. SineVFX:
+Transforming an instance tags it as a SineVFX effect and lays down a **`Properties` folder**
+of grouped settings that the [Properties window](/windows/properties) edits. What you get
+depends on what you transformed:
 
-1. **Tags** the instance so it's recognised as a SineVFX effect.
-2. Adds a **`Properties` folder** onto the instance holding the extended, graphable
-   settings that the [Properties window](/windows/properties) edits.
+- **A Part** becomes a **3D particle emitter** - the part itself becomes what each particle
+  looks like. See [Transformable objects](/effects/transformable) for the full picture.
+- **A Trail** or **Beam** becomes a graphable transformed ribbon.
+- **The Camera** becomes a global [camera effect](/effects/camera).
 
-This is done **in place**. No new parts are created, nothing is reparented, and the object
-stays exactly where it was. A transformed Beam is still that same Beam — it just carries
-SineVFX's settings now.
-
-## Supported instances
-
-| Instance          | Becomes                     |
-| ----------------- | --------------------------- |
-| `ParticleEmitter` | Transformed particle effect |
-| `Beam`            | Transformed beam            |
-| `Trail`           | Transformed trail           |
-| `PointLight` / `SpotLight` / `SurfaceLight` | Transformed light |
-| `Highlight`       | Transformed highlight       |
-| `Sound`           | Transformed sound           |
-| `Camera`          | [Camera Effect](/effects/camera) |
-
-You can select and transform **many instances at once**.
+For a Part, the original stays put as the emitter root (it turns invisible), and a clone of it
+(with its children) becomes the **RenderPart** template that particles are spawned from.
 
 ## Untransforming
 
-Running Transform again on an already‑transformed instance (or using **Untransform**)
-removes the tag and the `Properties` folder, returning the plain Roblox instance. Your
-underlying Beam/Trail/emitter is untouched.
+Run Transform again on something already transformed, or use **Untransform**, to remove the
+tag and template and return the plain instance. Studio's **Ctrl+Z** also reverts a transform
+cleanly, since the original content is detached rather than destroyed.
 
-::: warning
-Untransforming discards the SineVFX‑specific settings stored in the `Properties` folder
-(graphs, envelopes, extended options). The native properties of the instance remain.
+::: tip
+You can select and transform **many** instances at once. Grouping several transformed effects
+under a Folder or Model lets you emit them all together.
 :::
-
-## The Camera is special
-
-Transforming the `Camera` gives you a global **[Camera Effect](/effects/camera)** — shake,
-FOV punch, and blur — rather than a spatial particle effect. It behaves like any other
-transformed effect (emit / enable / disable, graphed channels) but with no count and no
-position in the world. See its [dedicated page](/effects/camera).
 
 ## Next
 
-With something transformed, open the [Properties window](/windows/properties) to start
-editing it.
+With something transformed, open the [Properties window](/windows/properties) to edit it, then
+[Emit](/windows/emit) to preview.
