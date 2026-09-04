@@ -9,7 +9,7 @@ drop it straight into your game.
 2. Open **Tools → Code**.
 3. Copy the snippet it shows and paste it into a **LocalScript**.
 
-The snippet uses the [runtime module](/shipping/module) you plant with **Module**. It looks
+The snippet uses the [runtime module](/module) you plant with **Module**. It looks
 like this:
 
 ```lua
@@ -25,11 +25,11 @@ too once the module is required somewhere.
 
 ## Notes
 
-- Plant the [runtime module](/shipping/module) first, or the `require` has nothing to load.
+- Plant the [runtime module](/module) first, or the `require` has nothing to load.
 - Call it from the **client** (a LocalScript); effects render per-client. See the
-  [Runtime API](/shipping/api).
+  [Runtime API](/api).
 
 ## Related
 
-- [The runtime module](/shipping/module) - plant it before using the code.
-- [Runtime API](/shipping/api) - full details on emit / enable / disable.
+- [The runtime module](/module) - plant it before using the code.
+- [Runtime API](/api) - full details on emit / enable / disable.

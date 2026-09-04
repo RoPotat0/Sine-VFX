@@ -1,6 +1,6 @@
 # Copier
 
-**Copier** works like the [Shifter](/tools/shifter), but with **Copy / Paste** instead of a
+**Copier** works like the [Shifter](/shifter), but with **Copy / Paste** instead of a
 slider. Copy a property (or set of them) from one effect and paste it onto others, to propagate
 a look across many objects.
 
@@ -21,5 +21,5 @@ across a mixed selection lands each value in the right place.
 
 ## Related
 
-- [Shifter](/tools/shifter) - slide a value instead of copying it.
-- [Tools overview](/tools/overview) - the rest of the batch editors.
+- [Shifter](/shifter) - slide a value instead of copying it.
+- [Tools overview](/overview) - the rest of the batch editors.

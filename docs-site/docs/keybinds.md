@@ -9,7 +9,7 @@ act on your **live selection**, so they work whether or not the matching window 
 | ----------- | ------------- | -------------------------------------------------------- |
 | **Emit**    | `R`           | Fire a one-shot emit on the selected effect(s).          |
 | **Enable**  | `T`           | Toggle enable/hold on the selected effect(s).            |
-| **Library** | `B`           | Open the [Asset Library](/windows/library).              |
+| **Library** | `B`           | Open the [Asset Library](/library).              |
 | **Presets** | `` ` ``       | Open the presets browser.                                |
 
 ## Rebinding
@@ -32,4 +32,4 @@ SineVFX's shortcuts never collide with Studio's own modifier shortcuts.
 - Shortcuts are ignored while a text box is focused or while you're capturing a new bind.
 - They read the current selection every time, so selecting different effects changes what they
   act on.
-- See [Settings & themes](/reference/settings) for the rest of the configuration.
+- See [Settings & themes](/settings) for the rest of the configuration.

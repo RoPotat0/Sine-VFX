@@ -17,14 +17,14 @@ Studio caches plugin modules. After an update you can end up with stale UI (a du
 
 ## In-game effects don't match what I see in Studio
 
-The [runtime module](/shipping/module) is a **snapshot** taken when you plant it. If you've
+The [runtime module](/module) is a **snapshot** taken when you plant it. If you've
 edited effects since, the shipped module is out of date.
 
 **Fix:** open **Module** and **re-plant** it. Then test again.
 
 ## `emit` / `enable` does nothing in-game (and warns)
 
-Effects render **per-client**. Calling the [runtime API](/shipping/api) from a **server**
+Effects render **per-client**. Calling the [runtime API](/api) from a **server**
 script warns and won't render.
 
 **Fix:** call it from a **LocalScript** (or a client module). To show an effect to all
@@ -34,14 +34,14 @@ players, have the server fire a RemoteEvent and call `VFX.emit` on each client.
 
 `VFX.emit(target)` looks for **tagged** SineVFX effects under the `target` you pass.
 
-- Make sure the effect was actually **[transformed](/windows/transform)** (it needs the tag
+- Make sure the effect was actually **[transformed](/transform)** (it needs the tag
   and `Properties` folder).
 - Pass the instance that **contains** the effect, or the effect instance itself.
 - Use `WaitForChild` so you're not referencing an effect before it replicates.
 
 ## Transforming the Camera - what happens at runtime?
 
-The [Camera Effect](/effects/camera) is a global view effect. In a shipped game it acts on
+The [Camera Effect](/camera) is a global view effect. In a shipped game it acts on
 whatever camera it's pointed at - typically the local player's `CurrentCamera`. Drive it
 from the client like any other effect.
 

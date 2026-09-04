@@ -22,7 +22,7 @@ particle art.
 
 Select the part and click **Transform**. It becomes a 3D particle emitter: the part goes
 invisible and will now spawn copies of itself. (Details in
-[Transformable objects](/effects/transformable).)
+[Transformable objects](/transformable).)
 
 ## 3. Set the emission
 
@@ -36,7 +36,7 @@ Open the **Emit** window and hit **Emit** to see a burst. Adjust until the shape
 
 ## 4. Graph the fade
 
-In **Properties**, find **Transparency** and open its **[graph editor](/windows/graph-editor)**.
+In **Properties**, find **Transparency** and open its **[graph editor](/graph-editor)**.
 
 - Set the start (time `0`) fully visible.
 - Set the end (time `1`) fully transparent.
@@ -51,7 +51,7 @@ Do the same for **Size**: large at birth, shrinking toward `0` at death. Add a s
 
 ## 6. Colour it (optional)
 
-Open **[Tools → Color](/tools/color)** to fine-tune the colour, or give it a colour sequence
+Open **[Tools → Color](/color)** to fine-tune the colour, or give it a colour sequence
 so it shifts over its life (bright core to a cooler tail, for example).
 
 ## 7. Preview the whole thing
@@ -71,12 +71,12 @@ local burst = workspace:WaitForChild("MyBurst")   -- your transformed part
 VFX.emit(burst)
 ```
 
-Done. See [The runtime module](/shipping/module) and the [Runtime API](/shipping/api) for
+Done. See [The runtime module](/module) and the [Runtime API](/api) for
 enabling/disabling held effects and playing for all players.
 
 ## Where to go next
 
-- Batch-edit a whole scene of effects with the **[Tools](/tools/overview)**.
+- Batch-edit a whole scene of effects with the **[Tools](/overview)**.
 - Watch video walkthroughs in the **[#tutorials
   channel](https://discord.com/channels/1501090480828715028/1534366571093295277)** on the
   Discord.

@@ -1,7 +1,7 @@
 # 3D particle
 
 SineVFX's signature effect. Select any **BasePart** (a Part, MeshPart, union, and so on) and
-[Transform](/windows/transform) turns it into a **3D particle** emitter, where **each particle
+[Transform](/transform) turns it into a **3D particle** emitter, where **each particle
 looks like that part**.
 
 ## What happens on transform
@@ -16,7 +16,7 @@ shards, leaves, glowing meshes, whatever the part is.
 
 ## Editing it
 
-Open the [Properties window](/windows/properties). A 3D particle exposes grouped channels such
+Open the [Properties window](/properties). A 3D particle exposes grouped channels such
 as:
 
 - **Appearance** - how each particle looks (colour, transparency, size, LightEmission /
@@ -26,7 +26,7 @@ as:
 - **Particles / Flipbook** - texture and sprite-sheet options (see below).
 - **Collision, Optimization** - physics and performance.
 
-Any numeric channel can be driven by a lifetime **[graph](/windows/graph-editor)**.
+Any numeric channel can be driven by a lifetime **[graph](/graph-editor)**.
 
 ## Flipbooks and mesh flipbooks
 
@@ -45,15 +45,15 @@ timeline as everything else.
 A part placed inside another emitter's RenderPart template can itself be transformed into a
 nested 3D particle, so you can layer effects (a glowing core that also sheds sparks, for
 example). Nested `ParticleEmitter` / `Beam` / `Trail` / `Light` / `Sound` inside the template
-can also fire on spawn (see [Emittable objects](/effects/emittable)).
+can also fire on spawn (see [Emittable objects](/emittable)).
 
 ## Preview and ship
 
-Preview with the [Emit window](/windows/emit), then plant the
-[runtime module](/shipping/module) and fire it with `VFX.emit(part)`. See the
-[Runtime API](/shipping/api).
+Preview with the [Emit window](/emit), then plant the
+[runtime module](/module) and fire it with `VFX.emit(part)`. See the
+[Runtime API](/api).
 
 ## Related
 
-- [Transform](/windows/transform) - how to run it.
-- [Emittable objects](/effects/emittable) - everything the Emit window can drive.
+- [Transform](/transform) - how to run it.
+- [Emittable objects](/emittable) - everything the Emit window can drive.

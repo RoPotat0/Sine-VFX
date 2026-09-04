@@ -3,19 +3,19 @@
 **Transform** is the gateway into SineVFX. Before you can graph or preview an effect, you
 transform its instance so the plugin can manage it.
 
-When your selection contains something [transformable](/effects/transformable), a floating
+When your selection contains something [transformable](/transformable), a floating
 **Transform** button appears near the Emit controls. Click it to transform the selection.
 
 ## What transforming does
 
 Transforming an instance tags it as a SineVFX effect and lays down a **`Properties` folder**
-of grouped settings that the [Properties window](/windows/properties) edits. What you get
+of grouped settings that the [Properties window](/properties) edits. What you get
 depends on what you transformed:
 
 - **A Part** becomes a **3D particle emitter** - the part itself becomes what each particle
-  looks like. See [Transformable objects](/effects/transformable) for the full picture.
+  looks like. See [Transformable objects](/transformable) for the full picture.
 - **A Trail** or **Beam** becomes a graphable transformed ribbon.
-- **The Camera** becomes a global [camera effect](/effects/camera).
+- **The Camera** becomes a global [camera effect](/camera).
 
 For a Part, the original stays put as the emitter root (it turns invisible), and a clone of it
 (with its children) becomes the **RenderPart** template that particles are spawned from.
@@ -33,5 +33,5 @@ under a Folder or Model lets you emit them all together.
 
 ## Next
 
-With something transformed, open the [Properties window](/windows/properties) to edit it, then
-[Emit](/windows/emit) to preview.
+With something transformed, open the [Properties window](/properties) to edit it, then
+[Emit](/emit) to preview.

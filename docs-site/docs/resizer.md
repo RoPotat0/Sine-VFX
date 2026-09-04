@@ -18,5 +18,5 @@ shrinks as a coherent whole and keeps its look at the new scale.
 
 ## Related
 
-- [Retimer](/tools/retimer) - the timing equivalent (speed instead of size).
-- [Shifter](/tools/shifter) - shift a single property rather than scaling all sizes.
+- [Retimer](/retimer) - the timing equivalent (speed instead of size).
+- [Shifter](/shifter) - shift a single property rather than scaling all sizes.

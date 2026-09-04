@@ -28,15 +28,15 @@ built-in effects to build from, so you are never starting from a blank emitter.
 
 ## Where to go next
 
-- **[Installation](/guide/installation)** puts the plugin in your Studio.
-- **[Quick start](/guide/quick-start)** takes a plain emitter to a graphed, previewable
+- **[Installation](/installation)** puts the plugin in your Studio.
+- **[Quick start](/quick-start)** takes a plain emitter to a graphed, previewable
   effect in a few minutes.
-- **[Transformable objects](/effects/transformable)** lists everything SineVFX can turn into
+- **[Transformable objects](/transformable)** lists everything SineVFX can turn into
   an editable effect.
-- **[Tutorials](/tutorials/)** walk through building real effects step by step.
-- **[Shipping](/shipping/module)** covers planting the runtime and calling it from your game.
+- **[Tutorials](/tutorials)** walk through building real effects step by step.
+- **[Shipping](/module)** covers planting the runtime and calling it from your game.
 
 ::: tip New here?
-Start with **[Installation](/guide/installation)**, then the
-**[Quick start](/guide/quick-start)**.
+Start with **[Installation](/installation)**, then the
+**[Quick start](/quick-start)**.
 :::

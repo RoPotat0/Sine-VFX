@@ -5,7 +5,7 @@ punch**, and **blur** - graphed and previewable exactly like any particle effect
 
 ## Transforming the camera
 
-Select `workspace.Camera` and run [Transform](/windows/transform). SineVFX tags the Camera
+Select `workspace.Camera` and run [Transform](/transform). SineVFX tags the Camera
 and adds a `Properties` folder to it **in place** - no new parts, just like transforming a
 Beam or Trail. It becomes a **global** effect: there's no position in the world and no
 particle count - it's a single effect that acts on the view.
@@ -47,18 +47,18 @@ The camera effect uses the same **emit / enable / disable** verbs as everything 
 - **Enable with Rate > 0** - **pulses** a play every `1 / Rate` seconds.
 
 **Rate is read live**, so changing it while the effect is enabled switches instantly between
-hold and pulse. The [Emit window's](/windows/emit) duration controls how long the effect
+hold and pulse. The [Emit window's](/emit) duration controls how long the effect
 stays enabled over a repeat cycle.
 
 ## Previewing
 
-Transformed cameras show up in the [Emit window](/windows/emit) - Emit and Enable drive the
+Transformed cameras show up in the [Emit window](/emit) - Emit and Enable drive the
 shake / FOV / blur just like a particle effect, live in edit mode. The camera writes ride
 your normal navigation and zoom, so you can keep flying the viewport while it shakes.
 
 ## Shipping it
 
-The camera effect ships in the [runtime module](/shipping/module) like everything else -
+The camera effect ships in the [runtime module](/module) like everything else -
 re-plant the module after editing so the generated code includes your camera driver. At
 runtime the effect acts on whatever camera it's told to (typically the local player's
 `CurrentCamera`).

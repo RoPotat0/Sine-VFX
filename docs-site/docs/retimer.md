@@ -19,5 +19,5 @@ class together.
 
 ## Related
 
-- [Resizer](/tools/resizer) - the size equivalent.
-- [Graph editor](/windows/graph-editor) - reshape individual curves rather than scaling timing.
+- [Resizer](/resizer) - the size equivalent.
+- [Graph editor](/graph-editor) - reshape individual curves rather than scaling timing.

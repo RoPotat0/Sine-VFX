@@ -4,7 +4,7 @@ The **graph editor** (the Curve window) is what sets SineVFX apart. It drives an
 channel with a smooth **bezier curve** over the effect's lifetime, with an optional
 **envelope** for randomised spread - far beyond Roblox's coarse number-sequence keypoints.
 
-Open it from any graph-capable channel in the [Properties window](/windows/properties).
+Open it from any graph-capable channel in the [Properties window](/properties).
 
 ## Reading the graph
 
@@ -47,7 +47,7 @@ exact curve you drew.
 
 ## Tips
 
-- Keep the [Emit window](/windows/emit) running while you shape a curve - you'll feel the
+- Keep the [Emit window](/emit) running while you shape a curve - you'll feel the
   difference every handle makes.
 - Use envelopes sparingly; a little spread reads as "alive," a lot reads as "noisy."
 - For sharp pops (impact flashes), use near-vertical linear segments; for soft fades, pull

@@ -145,27 +145,33 @@ h1, h2, h3 { line-height: 1.15; }
 .vp-doc th { color: var(--sv-text); }
 .vp-doc tr { background: transparent; }
 
-/* ── Nav bar: taller bar, bigger logo + Cantora One wordmark ── */
-:root { --vp-nav-height: 76px; }
+/* ── Nav bar: bigger logo + Cantora One wordmark ───────────── */
+:root { --vp-nav-height: 64px; }
+
+/* Keep the nav above the sidebar so sidebar text never draws over the logo on scroll */
+.VPNav { z-index: 61; }
 
 .VPNavBarTitle .logo,
-.VPNavBarTitle img {
-  height: 52px !important;
+.VPNavBarTitle img.VPImage {
+  height: 44px !important;
   width: auto !important;
-  border-radius: 10px;
+  border-radius: 9px;
 }
-.VPNavBarTitle .text,
-.VPNavBarTitle a .text {
+/* The wordmark is a bare <span> inside a.title (no .text class in this VitePress build) */
+.VPNavBarTitle .title span,
+.VPNavBarTitle a.title > span {
   font-family: 'Cantora One', var(--sv-display) !important;
   font-weight: 400 !important;
-  font-size: 30px !important;
+  font-size: 28px !important;
   line-height: 1 !important;
   letter-spacing: 0.02em;
   color: var(--sv-text) !important;
   padding-left: 10px;
 }
-.VPNavBarTitle { height: var(--vp-nav-height); }
-.VPNavBar .title { height: var(--vp-nav-height); }
+.VPNavBarTitle .title {
+  display: flex;
+  align-items: center;
+}
 
 /* ── Scrollbars: thin, themed, consistent ─────────────────── */
 * {

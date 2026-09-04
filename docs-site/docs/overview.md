@@ -7,12 +7,12 @@ menu; each opens as its own window and works on your current selection of transf
 
 | Tool                            | What it does                                                    |
 | ------------------------------- | -------------------------------------------------------------- |
-| **[Shifter](/tools/shifter)**   | Slide a property up or down across a whole multi-selection.     |
-| **[Resizer](/tools/resizer)**   | Scale an effect proportionally, every size channel together.    |
-| **[Retimer](/tools/retimer)**   | Speed up or slow down an effect's timing as a unit.             |
-| **[Copier](/tools/copier)**     | Copy a property (or set) from one effect and paste onto others. |
-| **[Code](/tools/code)**         | Get the ready-to-paste code that fires the selected effect.     |
-| **[Color](/tools/color)**       | Full colour picker plus batch Replace / Shift across effects.   |
+| **[Shifter](/shifter)**   | Slide a property up or down across a whole multi-selection.     |
+| **[Resizer](/resizer)**   | Scale an effect proportionally, every size channel together.    |
+| **[Retimer](/retimer)**   | Speed up or slow down an effect's timing as a unit.             |
+| **[Copier](/copier)**     | Copy a property (or set) from one effect and paste onto others. |
+| **[Code](/code)**         | Get the ready-to-paste code that fires the selected effect.     |
+| **[Color](/color)**       | Full colour picker plus batch Replace / Shift across effects.   |
 
 ## The batch workflow
 
@@ -29,7 +29,7 @@ handled correctly, each object edited through its own settings.
 
 A few supporting windows help while you tune:
 
-- **[Asset Library](/windows/library)** - apply textures to selected emitters.
-- **[Paths](/windows/paths)** - preview predicted particle trajectories.
+- **[Asset Library](/library)** - apply textures to selected emitters.
+- **[Paths](/paths)** - preview predicted particle trajectories.
 - **Particle Counter** - watch particle counts while tuning performance.
 - **Trail Preview** - preview trail shapes.

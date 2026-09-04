@@ -18,18 +18,18 @@ and material included. That part is going to *become* the particle.
 
 Select the part. A **Transform** button appears near the controls, click it. The part becomes
 a **3D particle emitter**: it turns invisible and now spawns copies of itself as particles.
-See [Transformable objects](/effects/transformable) for what else can be transformed.
+See [Transformable objects](/transformable) for what else can be transformed.
 
 ## 4. Edit its properties
 
 Open the **Properties** window. The effect's channels are grouped into a collapsible tree,
 Appearance, Emission, Shape, and so on. Change a value and it updates live. See
-[Properties](/windows/properties).
+[Properties](/properties).
 
 ## 5. Graph a value over the lifetime
 
 Find a channel that supports a graph (for example **Transparency** or **Size**) and open its
-**[graph editor](/windows/graph-editor)**. Drag the anchor points, pull the bezier handles for
+**[graph editor](/graph-editor)**. Drag the anchor points, pull the bezier handles for
 smooth curves, and add an **envelope** for randomised spread. This is how you get motion that
 feels alive instead of linear.
 
@@ -37,7 +37,7 @@ feels alive instead of linear.
 
 Open the **Emit** window and hit **Emit** to fire a one-shot, or **Enable** to hold the effect
 on. You're seeing the real thing, in edit mode, no Play button required. See
-[Emit](/windows/emit).
+[Emit](/emit).
 
 ## 7. Ship it
 
@@ -53,10 +53,10 @@ VFX.disable(myEffect)   -- turn it off
 ```
 
 What you previewed is what your players get. Full details in
-[The runtime module](/shipping/module) and the [Runtime API](/shipping/api).
+[The runtime module](/module) and the [Runtime API](/api).
 
 ::: tip Next steps
-- Learn the [core concepts](/guide/concepts) behind transforms, graphs, and the runtime.
-- Work through the [tutorials](/tutorials/).
-- Batch-edit whole selections with the [Tools](/tools/overview).
+- Learn the [core concepts](/concepts) behind transforms, graphs, and the runtime.
+- Work through the [tutorials](/tutorials).
+- Batch-edit whole selections with the [Tools](/overview).
 :::

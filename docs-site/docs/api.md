@@ -1,6 +1,6 @@
 # Runtime API
 
-Once the [runtime module](/shipping/module) is planted at `ReplicatedStorage.SineVFX`, you
+Once the [runtime module](/module) is planted at `ReplicatedStorage.SineVFX`, you
 drive effects from your game with three functions - the same **emit / enable / disable**
 verbs you use to preview in Studio.
 
@@ -11,7 +11,7 @@ local VFX = require(game.ReplicatedStorage.SineVFX)
 ```
 
 Do this from a **client** context (LocalScript or a module required by one) - effects render
-per-client. See [client vs. server](/shipping/module#client-vs-server).
+per-client. See [client vs. server](/module#client-vs-server).
 
 The runtime also registers itself on `shared`, so once the module has been required anywhere
 you can call it without holding the return value:
@@ -73,7 +73,7 @@ VFX.disable(character.Aura)
 
 ## Camera effects
 
-[Transformed cameras](/effects/camera) respond to the same three verbs. Point the API at the
+[Transformed cameras](/camera) respond to the same three verbs. Point the API at the
 tagged Camera (or an instance containing it) and it drives the shake / FOV / blur. Remember
 that FOV/blur/shake act on the client's view, so call it locally.
 
@@ -90,6 +90,6 @@ Because rendering is per-client, to show an effect to everyone:
   won't render - rendering is client-side.
 - **Re-plant after edits.** The module is a snapshot; re-plant it when you change effects so
   the runtime matches your latest authoring. See
-  [the runtime module](/shipping/module#re-plant-after-edits).
+  [the runtime module](/module#re-plant-after-edits).
 - **Wait for replication.** Use `WaitForChild` for effects that may not have replicated to
   the client yet.

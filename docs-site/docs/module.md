@@ -20,14 +20,14 @@ date, a re-plant is the fix.
 ## What gets planted
 
 The generated module bundles SineVFX's particle/ribbon simulation and the
-[Camera Effect](/effects/camera) driver, plus a small public surface:
+[Camera Effect](/camera) driver, plus a small public surface:
 
 ```lua
 local VFX = require(game.ReplicatedStorage.SineVFX)
 ```
 
 exposing `VFX.emit`, `VFX.enable`, and `VFX.disable`. See the full
-[Runtime API](/shipping/api).
+[Runtime API](/api).
 
 ## Client vs. server
 
@@ -45,4 +45,4 @@ A typical setup:
 - From a LocalScript, `require` the module and call `VFX.emit(effectInstance)` when the
   effect should play (on a hit, a cast, a pickup, etc.).
 
-Continue to the [Runtime API](/shipping/api) for the exact functions and arguments.
+Continue to the [Runtime API](/api) for the exact functions and arguments.

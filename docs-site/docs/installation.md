@@ -38,7 +38,7 @@ future updates.
 3. Click the **SineVFX** button to launch it.
 
 The SineVFX toolbar button opens the plugin, and its floating controls appear in the
-viewport. From there, head to the [Quick start](/guide/quick-start).
+viewport. From there, head to the [Quick start](/quick-start).
 
 ## Updating
 
@@ -47,7 +47,7 @@ viewport. From there, head to the [Quick start](/guide/quick-start).
 
 If the UI ever looks broken after an update, fully **disable and re-enable** the plugin (or
 restart Studio) to clear Studio's module cache. See
-[FAQ & troubleshooting](/reference/faq).
+[FAQ & troubleshooting](/faq).
 
 ## Requirements
 

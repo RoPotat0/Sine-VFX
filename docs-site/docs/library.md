@@ -4,7 +4,7 @@ The **Asset Library** is a browsable collection of **over 14,000 assets** you ca
 selected effects with a click, no hunting for asset IDs.
 
 Open it from the **Library** entry on the SineVFX menu (default keybind `B`, see
-[Keybinds](/guide/keybinds)).
+[Keybinds](/keybinds)).
 
 ## Using it
 
@@ -21,8 +21,8 @@ alongside the built-in 14k+ and apply the same way.
 
 ## Tips
 
-- Combine the library with the [graph editor](/windows/graph-editor): pick an asset, then shape
+- Combine the library with the [graph editor](/graph-editor): pick an asset, then shape
   its transparency and size curves for the final look.
-- For animated sprite sheets, set the **Flipbook** options in [Properties](/windows/properties)
-  after applying the texture, or use [mesh flipbooks](/effects/part#flipbooks-and-mesh-flipbooks)
+- For animated sprite sheets, set the **Flipbook** options in [Properties](/properties)
+  after applying the texture, or use [mesh flipbooks](/part#flipbooks-and-mesh-flipbooks)
   for animated 3D particles.

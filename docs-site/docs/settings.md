@@ -40,5 +40,5 @@ SineVFX includes a handful of supporting windows that open contextually:
 - **Confirm / Notice** - confirmations and messages.
 - **Particle Counter** - keep an eye on particle counts while tuning performance.
 - **Trail Preview** - preview trail shapes.
-- **Asset Library / Asset Upload** - the [texture library](/windows/library) and uploading
+- **Asset Library / Asset Upload** - the [texture library](/library) and uploading
   your own textures.

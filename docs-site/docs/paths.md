@@ -9,7 +9,7 @@ Toggle it from the **Paths** entry on the SineVFX menu.
 
 With Paths on, SineVFX visualises the flight path a particle would take given the emitter's
 current velocity, acceleration, spread, and lifetime settings. As you change those values in
-[Properties](/windows/properties), the predicted paths update to match.
+[Properties](/properties), the predicted paths update to match.
 
 This is especially useful for:
 

@@ -21,5 +21,5 @@ handled correctly, each shifted through its own settings.
 
 ## Related
 
-- [Copier](/tools/copier) - copy/paste a property instead of sliding it.
-- [Resizer](/tools/resizer) / [Retimer](/tools/retimer) - proportional size and timing scaling.
+- [Copier](/copier) - copy/paste a property instead of sliding it.
+- [Resizer](/resizer) / [Retimer](/retimer) - proportional size and timing scaling.
