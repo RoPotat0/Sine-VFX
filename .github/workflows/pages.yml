@@ -1,0 +1,63 @@
+name: Deploy site + docs
+
+# Assembles the existing static site (in /docs) at the root and builds the
+# VitePress documentation (in /docs-site) into the /docs sub-path, then
+# publishes the combined result to GitHub Pages.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build VitePress docs
+        working-directory: docs-site
+        run: |
+          npm install
+          npm run build
+
+      - name: Assemble site
+        run: |
+          rm -rf _site
+          mkdir -p _site
+          # Main static website at the root (keeps its CNAME → sinevfx.xyz)
+          cp -r docs/. _site/
+          # Documentation under /docs
+          rm -rf _site/docs
+          mkdir -p _site/docs
+          cp -r docs-site/docs/.vitepress/dist/. _site/docs/
+
+      - uses: actions/configure-pages@v4
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
