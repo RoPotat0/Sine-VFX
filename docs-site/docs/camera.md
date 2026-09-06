@@ -1,14 +1,24 @@
-# Camera Effect
+# Screen Effect
 
-SineVFX can transform the **Camera** itself into a first-class effect - **shake**, **FOV
+SineVFX turns a **Screen Effect** into a first-class, view-wide effect - **shake**, **FOV
 punch**, and **blur** - graphed and previewable exactly like any particle effect.
 
-## Transforming the camera
+::: tip Formerly the "Camera Effect"
+This used to transform `workspace.Camera` directly, but Roblox never serializes the Camera,
+so the effect vanished on save/reopen. It now lives on a **Configuration** instead, which
+persists cleanly. The URL stays `/camera`; the effect is the same shake / FOV / blur.
+:::
 
-Select `workspace.Camera` and run [Transform](/transform). SineVFX tags the Camera
-and adds a `Properties` folder to it **in place** - no new parts, just like transforming a
-Beam or Trail. It becomes a **global** effect: there's no position in the world and no
-particle count - it's a single effect that acts on the view.
+## Transforming a Screen Effect
+
+Insert a **Configuration** (Model > Advanced, or any Configuration instance), select it, and
+run [Transform](/transform). SineVFX tags it and adds a `Properties` folder **in
+place** - no new parts, just like transforming a Beam or Trail. It becomes a **global** effect:
+there's no position in the world and no particle count - it's a single effect that acts on the
+view.
+
+It's **not a singleton**: transform as many Screen Effects as you like and the runtime sums
+their contributions.
 
 ## The three sub-effects
 
@@ -52,8 +62,8 @@ stays enabled over a repeat cycle.
 
 ## Previewing
 
-Transformed cameras show up in the [Emit window](/emit) - Emit and Enable drive the
-shake / FOV / blur just like a particle effect, live in edit mode. The camera writes ride
+Transformed Screen Effects show up in the [Emit window](/emit) - Emit and Enable drive
+the shake / FOV / blur just like a particle effect, live in edit mode. The camera writes ride
 your normal navigation and zoom, so you can keep flying the viewport while it shakes.
 
 ## Shipping it

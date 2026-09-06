@@ -13,6 +13,25 @@ everything else.
 - Nested content rides along into a render template, the same way a
   [Part emitter](/part) keeps its children.
 
+## Property reference
+
+Every channel is a native `Trail` property that SineVFX exposes to the
+[graph editor](/graph-editor), so most can animate over the effect's life.
+
+| Property           | Meaning                                                                     |
+| ------------------ | --------------------------------------------------------------------------- |
+| **Color**          | Trail colour along its length / over lifetime.                              |
+| **Transparency**   | Opacity along the trail · `0` solid, `1` invisible (usually fades to the tail). |
+| **WidthScale**     | Multiplier on the trail's width from head to tail.                          |
+| **Lifetime**       | How long each segment of the ribbon persists before it disappears.          |
+| **Texture**        | Optional image tiled along the trail.                                       |
+| **TextureLength**  | World length of one texture tile.                                           |
+| **TextureMode**    | How the texture repeats: Stretch, Wrap, or Static.                          |
+| **MinLength**      | Minimum travel distance before a new segment is drawn (smooths jitter).     |
+| **FaceCamera**     | If on, the ribbon always turns to face the viewer.                          |
+| **EmitDelay**      | Delay before the trail starts on emit.                                      |
+| **EmitDuration**   | How long a single emit/enable cycle runs.                                   |
+
 ## Editing
 
 Open [Properties](/properties) to tune the channels, [graph](/graph-editor)

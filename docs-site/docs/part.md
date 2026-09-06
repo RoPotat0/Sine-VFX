@@ -28,6 +28,71 @@ as:
 
 Any numeric channel can be driven by a lifetime **[graph](/graph-editor)**.
 
+## Property reference
+
+Every channel below is a native `ParticleEmitter` property that SineVFX groups and exposes to
+the [graph editor](/graph-editor). Anything marked *lifetime* varies over a particle's
+own life; the emit-timing channels are SineVFX playback additions.
+
+### Appearance
+
+| Property           | Meaning                                                                         |
+| ------------------ | ------------------------------------------------------------------------------- |
+| **Color**          | Particle tint over lifetime (multiplies the part's own colour/textures).        |
+| **Transparency**   | Opacity over lifetime · `0` solid, `1` invisible. Usually a fade-in/out curve.  |
+| **Size**           | Particle scale over lifetime.                                                    |
+| **Squash**         | Stretches the particle along its motion · `>0` elongates, `<0` flattens.        |
+| **LightEmission**  | How much the particle ignores scene darkness · `1` = self-lit glow.             |
+| **LightInfluence** | How much scene lighting tints the particle · `0` unlit, `1` fully lit.          |
+| **Brightness**     | Overall emissive intensity multiplier.                                          |
+| **Orientation**    | How each particle faces (face camera, velocity-aligned, etc.).                  |
+| **ZOffset**        | Push the particle toward/away from the camera to fix draw-order/overlap.        |
+
+### Emission
+
+| Property               | Meaning                                                                    |
+| ---------------------- | -------------------------------------------------------------------------- |
+| **Rate**               | Particles spawned per second while enabled.                                |
+| **Lifetime**           | How long each particle lives (min,max seconds).                            |
+| **Speed**              | Initial launch speed (min,max).                                            |
+| **SpreadAngle**        | Cone spread of launch directions, in degrees (X,Y).                        |
+| **Acceleration**       | Constant force applied to live particles (e.g. gravity).                   |
+| **Drag**               | Air resistance that slows particles over their life.                       |
+| **Rotation**           | Initial 2D spin of each particle (min,max degrees).                        |
+| **RotSpeed**           | Ongoing spin rate (min,max degrees/sec).                                   |
+| **VelocityInheritance**| Fraction of the emitter's own motion each particle inherits.               |
+| **LockedToPart**       | If on, particles ride with the emitter instead of the world.              |
+| **EmitCount**          | How many particles a single **Emit** burst spawns.                         |
+| **EmitDelay**          | Delay before the effect starts on emit.                                    |
+| **EmitDuration**       | How long a single emit/enable cycle runs.                                  |
+
+### Shape / EmitterShape
+
+| Property        | Meaning                                                                        |
+| --------------- | ------------------------------------------------------------------------------ |
+| **Shape**       | Emitter volume: Box, Sphere, Cylinder, or Disc.                                |
+| **ShapeStyle**  | Whether particles spawn on the shape's **Surface** or throughout its **Volume**. |
+| **ShapeInOut**  | Launch direction: Outward, Inward, or InAndOut relative to the shape.          |
+| **ShapePartial**| Blends between the emitter's normal direction and the shape direction.         |
+
+### Particles / Flipbook
+
+| Property             | Meaning                                                                     |
+| -------------------- | --------------------------------------------------------------------------- |
+| **Texture**          | The image used per particle (ignored when the part supplies real geometry). |
+| **FlipbookLayout**   | Sprite-sheet grid (e.g. 2x2, 4x4, 8x8) that defines the frames.             |
+| **FlipbookMode**     | How frames advance: over lifetime, at a set rate, or randomised.            |
+| **FlipbookFramerate**| Playback speed when the mode is rate-based.                                  |
+
+For **mesh flipbooks**, these same controls swap through a sequence of meshes over lifetime
+instead of 2D frames (see above).
+
+### Collision & Optimization
+
+These groups hold the physics and performance switches - particle collision behaviour, and
+culling/limit settings that keep large emitters cheap. Leave them at defaults unless an effect
+needs to bounce off the world or you're trimming cost on a heavy emitter.
+
 ## Flipbooks and mesh flipbooks
 
 A **flipbook** plays a sprite sheet across a particle's life so a single particle animates
