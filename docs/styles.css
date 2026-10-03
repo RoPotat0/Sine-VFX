@@ -580,6 +580,65 @@ font-variant-numeric: tabular-nums;
 .steps .t { font: 650 22px/1.35 var(--sans); letter-spacing: -.02em; }
 
 /* ── footer ──────────────────────────────────────────────────────── */
+/* ── about (Creator Store description) ───────────────────────────── */
+#about .wrap { text-align: center; }
+.about-lead {
+max-width: 620px; margin: -18px auto 30px; color: var(--muted);
+font-size: 17px; line-height: 1.6;
+}
+.features {
+list-style: none; padding: 0; margin: 0 auto; max-width: 900px;
+display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px;
+text-align: left;
+}
+.features li {
+background: var(--card); border-radius: var(--r-sm); backdrop-filter: blur(14px);
+padding: 11px 14px 11px 34px; position: relative;
+font-size: 14.5px; line-height: 1.45; color: var(--text); overflow-wrap: anywhere;
+}
+.features li::before {
+content: ""; position: absolute; left: 14px; top: 17px;
+width: 7px; height: 7px; border-radius: 50%; background: var(--blue);
+}
+.about-foot { margin-top: 24px; color: var(--dim); font-size: 14px; }
+
+/* ── reviews ─────────────────────────────────────────────────────── */
+#reviews .wrap { text-align: center; }
+.rating {
+max-width: 520px; margin: 0 auto 34px; display: flex; align-items: center; gap: 20px;
+background: var(--card); border-radius: var(--r); padding: 18px 22px; backdrop-filter: blur(14px);
+}
+.rpct { font: 400 46px/1 var(--display); color: var(--green); }
+.rmeta { flex: 1; text-align: left; display: flex; flex-direction: column; gap: 8px; }
+.rmeta > span { color: var(--muted); font-size: 13.5px; }
+.rbar { height: 8px; border-radius: 99px; background: rgba(255,107,107,.35); overflow: hidden; }
+.rbar span { display: block; height: 100%; background: var(--green); border-radius: 99px; }
+.reviews {
+display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 12px;
+text-align: left;
+}
+.review {
+background: var(--card); border-radius: var(--r); padding: 16px 18px;
+backdrop-filter: blur(14px); display: flex; flex-direction: column; gap: 10px;
+}
+.review header { display: flex; align-items: center; gap: 10px; }
+.ravatar {
+flex: 0 0 auto; width: 34px; height: 34px; border-radius: 50%;
+display: grid; place-items: center; background: var(--btn-h);
+font: 400 15px/1 var(--display); color: var(--blue-2);
+}
+.rwho { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.rwho b { font-size: 14.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rwho time { font-size: 12px; color: var(--dim); }
+.rrec { font-size: 12px; font-weight: 700; padding: 3px 9px; border-radius: 99px; white-space: nowrap; }
+.rrec.up { color: var(--green); background: rgba(34,224,95,.1); }
+.rrec.down { color: var(--bad); background: rgba(255,107,107,.1); }
+.review p { color: var(--muted); font-size: 14.5px; line-height: 1.55; overflow-wrap: anywhere; }
+.review .rreply { border-left: 2px solid var(--blue); padding-left: 10px; font-size: 13.5px; }
+.rmore { margin-top: 22px; }
+.rsrc { display: block; margin-top: 18px; color: var(--dim); font-size: 14px; }
+.rsrc:hover { color: var(--text); }
+
 footer { padding: 36px 0 64px; border-top: 1px solid var(--line); margin-top: 24px; }
 footer .wrap { display: flex; align-items: center; justify-content: center; gap: 22px; flex-wrap: wrap; }
 footer a {
