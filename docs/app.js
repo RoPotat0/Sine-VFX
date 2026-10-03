@@ -355,17 +355,10 @@
       .catch(() => render([]));
   })();
 
-  /* ── Creator Store: description + reviews ─────────────────────────
-     store.json is refreshed by scripts/fetch-store.mjs in the Pages
-     workflow (the browser can't call Roblox's APIs itself). Both
-     sections stay hidden if the file is missing.                     */
+  /* ── Creator Store description → "What's inside" ─────────────────
+     Stays hidden if neither the live listing nor store.json loads.  */
   (() => {
-    const about = $("#about"), revs = $("#reviews");
-    const storeUrl = CFG.pay && CFG.pay.creatorStore;
-    $$("[data-store-reviews]").forEach(el => {
-      if (storeUrl) el.href = storeUrl.replace(/\/?$/, "/reviews");
-      else el.style.display = "none";
-    });
+    const about = $("#about");
 
     const renderAbout = (desc) => {
       if (!about || !desc) return;
@@ -384,46 +377,16 @@
       about.hidden = false;
     };
 
-    const renderReviews = (votes, list) => {
-      if (!revs || !votes) return;
-      $("[data-rating-pct]").textContent = votes.percent + "%";
-      $("[data-rating-bar]").style.width = votes.percent + "%";
-      $("[data-rating-text]").textContent =
-        `recommend it · ${votes.up} 👍 / ${votes.down} 👎 · ${votes.total} votes`;
-
-      const box = $("[data-reviews]"), more = $("[data-reviews-more]");
-      const fmt = new Intl.DateTimeFormat(undefined, { month: "short", day: "numeric", year: "numeric" });
-      const card = r =>
-        `<article class="review">
-          <header>
-            <span class="ravatar">${esc((r.user || "?").charAt(0).toUpperCase())}</span>
-            <span class="rwho"><b>${esc(r.user)}</b><time>${fmt.format(new Date(r.date))}</time></span>
-            <span class="rrec ${r.recommended ? "up" : "down"}">${r.recommended ? "Recommends" : "Doesn't recommend"}</span>
-          </header>
-          <p>${esc(r.text)}</p>
-          ${r.reply ? `<p class="rreply"><b>RoPotat0:</b> ${esc(r.reply)}</p>` : ""}
-        </article>`;
-      // Longer reviews first, they say more than "good".
-      const sorted = [...(list || [])].sort((a, b) => (b.text.length > 40) - (a.text.length > 40) || b.date - a.date);
-      let shown = 0;
-      const PAGE = 6;
-      const showMore = () => {
-        box.insertAdjacentHTML("beforeend", sorted.slice(shown, shown + PAGE).map(card).join(""));
-        shown += PAGE;
-        more.hidden = shown >= sorted.length;
-      };
-      more.addEventListener("click", showMore);
-      showMore();
-      revs.hidden = false;
-    };
-
-    fetch("store.json", { cache: "no-cache" })
-      .then(r => r.ok ? r.json() : Promise.reject(r.status))
-      .then(d => {
-        renderAbout(d.description);
-        renderReviews(d.votes, d.reviews);
-        // sections were hidden when the reveal observer ran; show them directly
-        $$("#about .reveal, #reviews .reveal").forEach(el => el.classList.add("in"));
+    const json = (url, opts) => fetch(url, opts).then(r => r.ok ? r.json() : Promise.reject(r.status));
+    // Live from the Creator Store (through roproxy, since Roblox blocks CORS);
+    // falls back to the snapshot the deploy saves if that's down.
+    json("https://apis.roproxy.com/toolbox-service/v1/items/details?assetIds=96645663824840")
+      .then(d => d.data[0].asset.description)
+      .catch(() => json("store.json", { cache: "no-cache" }).then(d => d.description))
+      .then(desc => {
+        renderAbout(desc);
+        // the section was hidden when the reveal observer ran; show it directly
+        $$("#about .reveal").forEach(el => el.classList.add("in"));
       })
       .catch(() => {});
   })();
