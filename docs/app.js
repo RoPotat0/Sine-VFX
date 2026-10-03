@@ -355,42 +355,6 @@
       .catch(() => render([]));
   })();
 
-  /* ── Creator Store description → "What's inside" ─────────────────
-     Stays hidden if neither the live listing nor store.json loads.  */
-  (() => {
-    const about = $("#about");
-
-    const renderAbout = (desc) => {
-      if (!about || !desc) return;
-      const lines = desc.split(/\r?\n/).map(l => l.trim()).filter(Boolean)
-        .filter(l => !/^~.*~$/.test(l));                 // drop the "~Sine VFX~" title line
-      const lead = [], feats = [], foot = [];
-      for (const l of lines) {
-        if (/^[-•*]\s*/.test(l)) feats.push(l.replace(/^[-•*]\s*/, ""));
-        else if (/^features:?$/i.test(l)) continue;
-        else (feats.length ? foot : lead).push(l);
-      }
-      const cap = s => (s.charAt(0).toUpperCase() + s.slice(1)).replace(/,(?=\S)/g, ", ");
-      $("[data-about-lead]").textContent = lead.join(" ");
-      $("[data-features]").innerHTML = feats.map(f => `<li>${esc(cap(f))}</li>`).join("");
-      $("[data-about-foot]").textContent = foot.join(" ");
-      about.hidden = false;
-    };
-
-    const json = (url, opts) => fetch(url, opts).then(r => r.ok ? r.json() : Promise.reject(r.status));
-    // Live from the Creator Store (through roproxy, since Roblox blocks CORS);
-    // falls back to the snapshot the deploy saves if that's down.
-    json("https://apis.roproxy.com/toolbox-service/v1/items/details?assetIds=96645663824840")
-      .then(d => d.data[0].asset.description)
-      .catch(() => json("store.json", { cache: "no-cache" }).then(d => d.description))
-      .then(desc => {
-        renderAbout(desc);
-        // the section was hidden when the reveal observer ran; show it directly
-        $$("#about .reveal").forEach(el => el.classList.add("in"));
-      })
-      .catch(() => {});
-  })();
-
   function esc(s) {
     return String(s).replace(/[&<>"']/g, c =>
       ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));

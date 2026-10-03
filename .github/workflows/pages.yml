@@ -8,8 +8,6 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
-  schedule:
-    - cron: "0 6 * * *"   # daily, to refresh Creator Store reviews/description
 
 permissions:
   contents: read
@@ -29,9 +27,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-
-      - name: Fetch Creator Store reviews + description
-        run: node scripts/fetch-store.mjs
 
       - name: Build VitePress docs
         working-directory: docs-site
