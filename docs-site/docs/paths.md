@@ -15,6 +15,8 @@ This is especially useful for:
 
 - **Directional effects** - aiming a stream of particles precisely.
 - **Bezier / orbit effects** - seeing the curve a particle rides.
+- **Lightning bolts** - a [Lightning](/lightning) emitter draws its route plus a frozen
+  sample of the actual bolt, branches included.
 - **Tuning spread and acceleration** - understanding how wide or how fast an emission fans
   out.
 

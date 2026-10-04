@@ -65,6 +65,7 @@ export default defineConfig({
             { text: 'Overview', link: '/transformable' },
             { text: 'Transform', link: '/transform' },
             { text: '3D particle', link: '/part' },
+            { text: 'Lightning', link: '/lightning' },
             { text: 'Trail', link: '/trail' },
             { text: 'Beam', link: '/beam' },
             { text: 'Light', link: '/light' },

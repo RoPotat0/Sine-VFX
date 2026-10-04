@@ -25,6 +25,7 @@ as:
 - **Shape / EmitterShape** - where and in what direction particles spawn.
 - **Particles / Flipbook** - texture and sprite-sheet options (see below).
 - **Collision, Optimization** - physics and performance.
+- **Lightning** - turns each particle into a bolt (see [Lightning mode](#lightning-mode)).
 
 Any numeric channel can be driven by a lifetime **[graph](/graph-editor)**.
 
@@ -105,6 +106,13 @@ animate its geometry (a tumbling debris shape, a morphing blob) rather than just
 Set these up in the emitter's mesh-flipbook settings, and they play back over the same lifetime
 timeline as everything else.
 
+## Lightning mode
+
+Switch on **Lightning** (in the Lightning section of Properties) and each particle becomes a
+**lightning bolt** instead of a flying part. The bolt is built from jagged segments of the
+RenderPart and supports branches, crackle, growing strikes, routes between targets, and
+striking surfaces. See [Lightning](/lightning) for the full guide and property reference.
+
 ## Nesting
 
 A part placed inside another emitter's RenderPart template can itself be transformed into a
@@ -121,4 +129,5 @@ Preview with the [Emit window](/emit), then plant the
 ## Related
 
 - [Transform](/transform) - how to run it.
+- [Lightning](/lightning) - turn a 3D particle into a lightning bolt.
 - [Emittable objects](/emittable) - everything the Emit window can drive.
