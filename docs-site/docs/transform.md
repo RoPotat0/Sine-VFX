@@ -15,7 +15,9 @@ depends on what you transformed:
 - **A Part** becomes a **3D particle emitter** - the part itself becomes what each particle
   looks like. See [Transformable objects](/transformable) for the full picture.
 - **A Trail** or **Beam** becomes a graphable transformed ribbon.
-- **The Camera** becomes a global [camera effect](/camera).
+- **A Light**, **Highlight** or **Decal** becomes a copy emitter (see [Light](/light),
+  [Highlight](/highlight), [Decal](/decal)).
+- **A Configuration** becomes a [Screen Effect](/camera).
 
 For a Part, the original stays put as the emitter root (it turns invisible), and a clone of it
 (with its children) becomes the **RenderPart** template that particles are spawned from.

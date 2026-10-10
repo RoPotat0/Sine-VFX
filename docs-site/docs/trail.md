@@ -29,6 +29,7 @@ Every channel is a native `Trail` property that SineVFX exposes to the
 | **TextureMode**    | How the texture repeats: Stretch, Wrap, or Static.                          |
 | **MinLength**      | Minimum travel distance before a new segment is drawn (smooths jitter).     |
 | **FaceCamera**     | If on, the ribbon always turns to face the viewer.                          |
+| **TimeScale**      | Playback speed. `1` normal, `2` twice as fast, `0.5` slow motion, `0` frozen. |
 | **EmitDelay**      | Delay before the trail starts on emit.                                      |
 | **EmitDuration**   | How long a single emit/enable cycle runs.                                   |
 

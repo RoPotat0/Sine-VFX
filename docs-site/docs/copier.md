@@ -10,8 +10,11 @@ a look across many objects.
 2. Select the target effects.
 3. **Paste**, and they take on the copied value.
 
-Like the other tools, Copier keys each object by kind (emitter / trail / beam), so pasting
-across a mixed selection lands each value in the right place.
+Like the other tools, Copier keys each object by kind, so pasting across a mixed selection
+lands each value in the right place. Rows cover 3D particles (including Lightning, StrikeSurface,
+EditableMesh and Raycast), transformed trails and beams, [Decals](/decal), and
+[Screen Effects](/camera) (Shake, FOV, Blur, ColorGrade, Bloom, Distance including its picked
+Object, and ImpactFrames, which copies the frames themselves).
 
 ## When to use it
 

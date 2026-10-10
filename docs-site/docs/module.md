@@ -19,8 +19,9 @@ date, a re-plant is the fix.
 
 ## What gets planted
 
-The generated module bundles SineVFX's particle/ribbon simulation and the
-[Camera Effect](/camera) driver, plus a small public surface:
+The generated module bundles SineVFX's particle/ribbon simulation, the [Lightning](/lightning)
+bolts, the [Light](/light) / [Highlight](/highlight) / [Decal](/decal) copy emitters and the
+[Screen Effect](/camera) driver, plus a small public surface:
 
 ```lua
 local VFX = require(game.ReplicatedStorage.SineVFX)

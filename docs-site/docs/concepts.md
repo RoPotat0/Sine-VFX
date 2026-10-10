@@ -8,7 +8,8 @@ place.
 SineVFX doesn't invent its own effect objects. Instead it **transforms** native Roblox
 instances into editable effects. The headline case is a **Part**, which becomes a **3D
 particle emitter** whose particles look like that part. You can also transform a **Trail**, a
-**Beam**, or the **Camera**. See [Transformable objects](/transformable) for the full
+**Beam**, a **Light**, a **Highlight**, a **Decal**, or a **Configuration** (which becomes a
+[Screen Effect](/camera)). See [Transformable objects](/transformable) for the full
 list.
 
 Transforming an instance:

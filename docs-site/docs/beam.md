@@ -30,6 +30,7 @@ Every channel is a native `Beam` property that SineVFX exposes to the
 | **TextureSpeed**   | How fast the texture scrolls along the beam (great for energy/flow looks).    |
 | **TextureMode**    | How the texture repeats: Stretch, Wrap, or Static.                            |
 | **FaceCamera**     | If on, the beam always turns to face the viewer.                             |
+| **TimeScale**      | Playback speed (also speeds up TextureSpeed). `1` normal, `0` frozen.         |
 | **EmitDelay**      | Delay before the beam starts on emit.                                         |
 | **EmitDuration**   | How long a single emit/enable cycle runs.                                     |
 

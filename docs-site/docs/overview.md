@@ -2,8 +2,9 @@
 
 The **Tools** menu holds SineVFX's batch editors, the ones that reshape, rescale, retime,
 recolour, and export whole selections at once. Open it from the **Tools** entry on the SineVFX
-menu; each opens as its own window and works on your current selection of transformed effects
-(emitters, trails, and beams).
+menu; each opens as its own window and works on your current selection: plain effects, 3D
+particles (including [Lightning](/lightning)), transformed trails and beams,
+[Screen Effects](/camera) and [Decals](/decal).
 
 | Tool                            | What it does                                                    |
 | ------------------------------- | -------------------------------------------------------------- |
@@ -22,8 +23,15 @@ The pattern is the same for every tool:
 2. **Open** the tool.
 3. **Apply** once, and it lands on the whole selection together.
 
-Because these edits key off each effect's kind (emitter / trail / beam), a mixed selection is
-handled correctly, each object edited through its own settings.
+Because these edits key off each effect's kind (emitter / trail / beam / screen effect /
+decal...), a mixed selection is handled correctly, each object edited through its own
+settings, and each tool only lists the rows that apply to what's selected.
+
+### Only what you selected
+
+The tools only touch what you selected. Selecting a 3D particle edits **that emitter**, not
+the effects nested inside it (select a nested effect directly to edit it). Containers like a
+Model, Folder, plain Part or Attachment still reach everything inside them.
 
 ## Related windows
 
@@ -31,5 +39,6 @@ A few supporting windows help while you tune:
 
 - **[Asset Library](/library)** - apply textures to selected emitters.
 - **[Paths](/paths)** - preview predicted particle trajectories.
-- **Particle Counter** - watch particle counts while tuning performance.
+- **Particle Counter** - watch particle counts while tuning performance. It also counts the
+  live copies spawned by transformed Lights, Highlights and Decals.
 - **Trail Preview** - preview trail shapes.

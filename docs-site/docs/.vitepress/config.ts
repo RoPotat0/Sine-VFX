@@ -70,6 +70,7 @@ export default defineConfig({
             { text: 'Beam', link: '/beam' },
             { text: 'Light', link: '/light' },
             { text: 'Highlight', link: '/highlight' },
+            { text: 'Decal', link: '/decal' },
             { text: 'Screen Effect', link: '/camera' },
             { text: 'Emittable objects', link: '/emittable' },
           ],

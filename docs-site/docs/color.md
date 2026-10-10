@@ -30,6 +30,7 @@ The Color tool collects colour targets across many instance types in one pass:
 - `Trail`
 - `UIGradient`
 - `BasePart`
+- Transformed [Decals](/decal) (their Color graph)
 
 So a single Replace or Shift can sweep an entire multi-part effect - particles, beams,
 trails, and the parts they're attached to - together.

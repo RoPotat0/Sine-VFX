@@ -19,9 +19,22 @@ windows and controls larger or smaller.
 SineVFX is fully themeable - colours for surfaces, text, accents, and effect states are all
 driven by a theme.
 
+- **Built-in themes** - **Green**, **Red**, **Purple**, **Yellow/Orange**, **Grey/Blue** and
+  **Greyish** ship with the plugin and are listed first. They're read-only, so make a new theme
+  if you want to tweak one.
 - **Theme Editor** - edit the active theme's colours live.
 - **Import Theme** - bring in a theme someone shared.
 - **Export Theme** - share your theme as a portable string/file.
+
+Switching themes, applying a theme and dragging colours in the Theme Editor all recolour the
+open windows **in place**, without rebuilding them, so there's no lag or flicker.
+
+## Windows
+
+- **Dim Unfocused** - fades out windows you aren't working in, so the one you're using stands
+  out.
+- Windows fade in and out smoothly when you open and close them.
+- Window sizes stay correct when you change the UI scale.
 
 The docs site you're reading uses the plugin's own blue-on-near-black palette as its
 starting point.

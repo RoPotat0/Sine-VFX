@@ -64,7 +64,17 @@ touch.
 | **ForkDepth**  | 1 = branches come off the main bolt. 2 = branches grow their own smaller branches too.                       |
 | **ForkLength** | Branch size compared to what it grows from (0.4 = 40%). Branches are thinner and calmer by the same amount.  |
 
+| **EditableMesh** | Draws each bolt as **one EditableMesh** instead of one part per segment. Far fewer parts and much faster with lots of bolts. Off by default. |
+
 ForkDepth and ForkLength only show once ForkChance is above 0.
+
+::: tip EditableMesh mode
+EditableMesh bolts use Color, Gradient, Transparency, Material, Width and Highlight, but
+ignore meshes and decals on the RenderPart. In a **published** game, EditableMesh only works if
+the game owner is ID-verified and has **Enable Mesh / Image APIs** turned on in the Creator
+Dashboard. If it isn't available (or the device is low on memory), bolts quietly fall back to
+normal segment parts, so it's always safe to turn on.
+:::
 
 ### Appearance
 
@@ -116,6 +126,8 @@ Rate, Lifetime, EmitCount, EmitDelay and EmitDuration work as they do for any 3D
 - **Energy beam:** Style Scroll, Waves 3, ScrollSpeed 2, ForkChance 0, Amplitude 0.08.
 - **Chain lightning:** Route Custom, RoutePick InOrder, add your targets, RouteSmooth 0.3.
 - **Hanging arc:** Sag 0.2, SagShape 1, EndFree 0, low Roughness.
+- **Lightning storm:** high Rate, Segments `12, 28`, and **EditableMesh** on to keep the part
+  count down.
 
 ## Previewing with Paths
 

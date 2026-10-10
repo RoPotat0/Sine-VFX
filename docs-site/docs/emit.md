@@ -37,16 +37,33 @@ repeat together, handy for composing a multi-part effect (a flash + debris + a b
 previewing it as one. It drives both transformed effects and plain
 [emittable objects](/emittable).
 
+### What fires
+
+Firing reaches **everything** inside your selection: select a Model or Folder and every effect
+in it plays. Inside a [3D particle](/part), everything fires **except the RenderPart
+template** (the runtime fires that per particle), so a [Screen Effect](/camera) or Sound placed
+next to the RenderPart plays when you emit the emitter.
+
+The **Count / Delay / Duration** fields only edit effects you selected directly, the same rule
+as [Properties](/properties#what-gets-edited).
+
+### The loop checkbox
+
+The loop (Enable) checkbox mirrors the selection's real **Enabled** state live. Turn an effect
+on from Properties, a script or another window and the box follows. A mixed selection shows a
+mixed box.
+
 ## Floating slider panel
 
 The window includes a floating slider panel for quickly dialing timing values without diving
 into the full Properties tree, good for fast iteration while you watch the effect.
 
-## Cameras
+## Screen Effects, Lights, Highlights, Decals
 
-Transformed [camera effects](/camera) appear here too, Emit and Enable drive their
-shake / FOV / blur exactly like a particle effect. See the [Camera](/camera) page for
-its play model (hold vs. pulse).
+Transformed [Screen Effects](/camera) appear here too: Emit and Enable drive their shake, FOV,
+blur, colour grade, bloom and impact frames exactly like a particle effect. See the
+[Screen Effect](/camera) page for its play model (hold vs. pulse). Transformed
+[Lights](/light), [Highlights](/highlight) and [Decals](/decal) fire their copies the same way.
 
 ## Tips
 

@@ -15,7 +15,8 @@ and **repeat** them, and they all ship through the [runtime](/api) the same way.
 | **Trail**                           | Toggles `Enabled` (enable/hold).                          |
 | **Light** (Point / Spot / Surface)  | Toggles `Enabled` (enable/hold).                          |
 | **Sound**                           | Plays the sound.                                          |
-| **Camera** (transformed)            | Drives the [camera effect](/camera).              |
+| **Transformed Light / Highlight / Decal** | Spawns animated copies. See [Light](/light), [Highlight](/highlight), [Decal](/decal). |
+| **Screen Effect** (transformed)     | Drives the [Screen Effect](/camera).                      |
 
 So a selection can mix transformed effects and plain instances, and SineVFX handles each by its
 kind.
@@ -38,7 +39,15 @@ them fire automatically as each particle spawns:
 - **EnableOnSpawn** - sets nested `ParticleEmitter` / `Beam` / `Trail` / `Light` `.Enabled` to
   true (and plays a nested Sound) when a particle spawns.
 
+Transformed Lights, Highlights and Decals nested in the template burst on spawn too.
+
 That's how a single part-particle can carry its own sparks, glow, and sound with it.
+
+::: tip Template vs. siblings
+Only the **RenderPart template** fires per particle. Anything else inside the 3D particle
+(next to the RenderPart, not in it) fires once when you emit / enable the emitter itself,
+which is the place for a Screen Effect or a one-off Sound.
+:::
 
 ## Shipping
 

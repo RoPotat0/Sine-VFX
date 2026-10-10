@@ -10,8 +10,10 @@ across many effects.
 2. Open **Tools → Shifter**.
 3. Pick the property and drag the slider. Every selected effect shifts together, live.
 
-Because Shifter keys each object by kind, a mixed selection of emitters, trails, and beams is
-handled correctly, each shifted through its own settings.
+Because Shifter keys each object by kind, a mixed selection is handled correctly, each shifted
+through its own settings. It covers plain effects, 3D particles (including Lightning and
+Raycast Distance), transformed trails and beams, [Screen Effects](/camera) (shake, FOV, blur,
+ColorGrade, Bloom, impact frames, Distance) and [Decals](/decal).
 
 ## When to use it
 

@@ -10,6 +10,10 @@ shrinks as a coherent whole and keeps its look at the new scale.
 2. Open **Tools → Resizer**.
 3. Set the scale factor. Every size channel is multiplied together across the selection.
 
+Beyond plain effects it also scales 3D particles (including Lightning Width and Length, and
+Raycast Distance / Lift), transformed trails and beams, and [Screen Effects](/camera) (shake
+Position and the Distance Near / Far range).
+
 ## When to use it
 
 - Fitting an effect to a bigger or smaller object.

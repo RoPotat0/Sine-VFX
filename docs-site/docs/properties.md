@@ -20,13 +20,30 @@ Class  ▸  Group  ▸  Property
 **Appearance** is ordered first for every class, since it's what you reach for most. Collapse
 groups you're not using to keep the panel tidy.
 
+## What gets edited
+
+The window edits the effects you **actually selected**:
+
+- Selecting an effect (or its `Properties` folder or RenderPart) edits that effect.
+- Selecting a plain Part, Model or Folder does **not** pull in transformed effects hidden
+  inside it. Select the effect itself.
+- Effects nested inside a [3D particle](/part) are only edited when you pick them directly in
+  the Explorer, so tweaking an emitter never silently changes what's inside it.
+- Plain `ParticleEmitter`s still show up through their containers, as before.
+
+Firing is different: the [Emit window](/emit) still fires everything inside your selection.
+
 ## Editing values
 
 - **Numbers** - type a value, or scrub. Changes apply live.
 - **Colours** - open the [Color tools](/color) for a full picker, palettes, and
   replace/shift operations.
-- **Toggles** - checkboxes for booleans. Some rows reveal or hide sub-rows depending on a
-  toggle (for example a group only shows its options when its master toggle is on).
+- **Toggles** - checkboxes for booleans (a filled box is on, a dimmer fill means a mixed
+  multi-selection). Some rows reveal or hide sub-rows depending on a toggle or value: a group
+  only shows its options when its master toggle is on, and some rows only appear once a related
+  value isn't zero (e.g. Lightning's ForkDepth appears once ForkChance is above 0).
+- **Tooltips** - hover any row's label for a plain-language description, often with a
+  "try X" range.
 - **Number sequences** - a value that varies over lifetime. Type it as `top,bottom` to set a
   value with an envelope, or open the **[graph editor](/graph-editor)** for full
   curve control.

@@ -71,11 +71,22 @@ task.wait(3)
 VFX.disable(character.Aura)
 ```
 
-## Camera effects
+## Screen Effects
 
-[Transformed cameras](/camera) respond to the same three verbs. Point the API at the
-tagged Camera (or an instance containing it) and it drives the shake / FOV / blur. Remember
-that FOV/blur/shake act on the client's view, so call it locally.
+[Screen Effects](/camera) respond to the same three verbs. Point the API at the tagged
+Configuration (or an instance containing it) and it drives the shake, FOV, blur, colour grade,
+bloom and impact frames. They act on the client's view, so call it locally.
+
+## Lights, Highlights and Decals
+
+Transformed [Lights](/light), [Highlights](/highlight) and [Decals](/decal) work the same way:
+`VFX.emit` spawns a burst of copies, `VFX.enable` keeps spawning at their Rate, `VFX.disable`
+stops.
+
+## What a call reaches
+
+`VFX.emit(target)` fires every SineVFX effect under `target`. Inside a [3D particle](/part) it
+fires everything except the RenderPart template, which fires per spawned particle instead.
 
 ## Playing for all players
 

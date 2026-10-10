@@ -23,6 +23,7 @@ get flashes, pulses, and glows that fire on cue like any other effect.
 | **Emission**   | **Enabled**     | Master toggle. Drives the runtime the same as the Emit window's Enable. |
 |                | **Rate**        | Copies spawned per second while enabled (`0` = one held play).       |
 |                | **Lifetime**    | How long each light copy lives before it fades out and is destroyed. |
+|                | **TimeScale**   | Playback speed. `1` normal, `2` twice as fast, `0.5` slow motion, `0` frozen. |
 |                | **EmitCount**   | How many copies a single **Emit** burst spawns.                     |
 | **Appearance** | **Brightness**  | Light intensity over the copy's life (graph). Shape it for a flash-and-fade. |
 |                | **Range**       | Light reach in studs over life (graph).                             |
@@ -54,5 +55,5 @@ your light driver.
 
 ## Related
 
-- [Highlight](/highlight) - the other transformable adornment effect.
+- [Highlight](/highlight) and [Decal](/decal) - the other copy-style emitters.
 - [Emittable objects](/emittable) - plain lights can also fire without transforming.

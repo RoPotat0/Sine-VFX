@@ -21,6 +21,7 @@ flashes, power-ups, selection pulses.
 | **Emission**   | **Enabled**             | Master toggle. Drives the runtime like the Emit window's Enable. |
 |                | **Rate**                | Copies spawned per second while enabled (`0` = one held play). |
 |                | **Lifetime**            | How long each highlight copy lasts before it clears.          |
+|                | **TimeScale**           | Playback speed. `1` normal, `2` twice as fast, `0` frozen.   |
 |                | **EmitCount**           | How many copies a single **Emit** burst spawns.              |
 | **Appearance** | **FillColor**           | Inner fill colour over life (colour graph).                   |
 |                | **OutlineColor**        | Outline colour over life (colour graph).                      |
@@ -50,4 +51,4 @@ so the generated code includes your highlight driver.
 
 ## Related
 
-- [Light](/light) - the other transformable adornment effect.
+- [Light](/light) and [Decal](/decal) - the other copy-style emitters.
