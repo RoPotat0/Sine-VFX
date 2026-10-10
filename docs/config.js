@@ -6,7 +6,7 @@ window.SVFX_CONFIG = {
   discord: "https://discord.gg/krQE8tGsUz",
 
   price: "$7.99",
-  version: "v1.5.5",     // shown in the "latest" stat (static — edit it on each release)
+  version: "v1.6.5",     // shown in the "latest" stat (static — edit it on each release)
   users: "1600+",       // buyer/user count shown on the site (static — just edit this number)
 
   pay: {
