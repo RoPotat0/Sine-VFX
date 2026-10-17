@@ -6,10 +6,10 @@ window.SVFX_CONFIG = {
   discord: "https://discord.gg/krQE8tGsUz",
 
   price: "$7.99",
-  version: "v1.7.5",     // fallback for the "latest" stat if version.json can't load (the real value comes from versionUrl)
-  // THE one file to edit on each release: version.json at the repo root. This site's "latest" stat AND the
+  version: "v1.7.5",     // fallback for the "latest" stat if version.txt can't load (the real value comes from versionUrl)
+  // THE one file to edit on each release: version.txt at the repo root. This site's "latest" stat AND the
   // plugin's "Update available" window both read it. Edit it on GitHub, commit, done.
-  versionUrl: "https://raw.githubusercontent.com/RoPotat0/Sine-VFX/main/version.json",
+  versionUrl: "https://raw.githubusercontent.com/RoPotat0/Sine-VFX/main/version.txt",
   users: "1600+",       // buyer/user count shown on the site (static — just edit this number)
 
   pay: {
