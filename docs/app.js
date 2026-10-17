@@ -198,7 +198,14 @@
     countTo($('[data-stat="installs"]'), CFG.users);
     // Version is a static value from config now (no longer pulled from GitHub releases).
     const vEl = $('[data-stat="version"]');
-    if (vEl && CFG.version) vEl.textContent = CFG.version;
+    if (vEl && CFG.version) vEl.textContent = CFG.version;   // fallback until version.json loads
+    // The real latest version comes from version.json in the repo (the same file the plugin checks for updates).
+    if (vEl && CFG.versionUrl) {
+      fetch(CFG.versionUrl, { cache: 'no-cache' })
+        .then((r) => (r.ok ? r.json() : null))
+        .then((d) => { if (d && d.version) vEl.textContent = 'v' + String(d.version).replace(/^v/i, ''); })
+        .catch(() => {});
+    }
   })();
 
   /* ── showcase: an endless, freely scrolling strip ─────────────────
