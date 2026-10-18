@@ -9,7 +9,7 @@ window.SVFX_CONFIG = {
   // The "latest" stat shows "v" + whatever version.txt (repo root) says. THE one file to edit on each release:
   // this site AND the plugin's "Update available" window both read it.
   versionUrl: "https://raw.githubusercontent.com/RoPotat0/Sine-VFX/main/version.txt",
-  users: "1600+",       // buyer/user count shown on the site (static — just edit this number)
+  users: "1650+",       // buyer/user count shown on the site (static — just edit this number)
 
   pay: {
     // Sine VFX is sold two ways:
