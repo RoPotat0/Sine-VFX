@@ -17,8 +17,21 @@ Class  ▸  Group  ▸  Property
   **Particles**, **Flipbook**, **EmitterShape**, **Collision**, **Optimization**.
 - **Property** - the individual channel you edit.
 
-**Appearance** is ordered first for every class, since it's what you reach for most. Collapse
-groups you're not using to keep the panel tidy.
+**Appearance** is ordered first for every class, since it's what you reach for most, and
+**Addons** is always last. Collapse groups you're not using to keep the panel tidy.
+
+## Addons
+
+Optional sections stay out of the way until you want them. The **Addons** section at the bottom
+has an **Add** dropdown: pick an addon to add its section, and pick it again to remove it. Addons
+already on the selection are highlighted in the list.
+
+| Effect                       | Addons                                                      |
+| ---------------------------- | ----------------------------------------------------------- |
+| **[3D particle](/part)**     | Shape, Raycast, Bezier, Flipbook, Nested, Collision         |
+| **[Screen Effect](/camera)** | Shake, FOV, Blur, ColorGrade, Bloom, ImpactFrames, Distance |
+
+Trails, Beams, Lights, Highlights and Decals have no addons.
 
 ## What gets edited
 

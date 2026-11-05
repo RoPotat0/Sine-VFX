@@ -20,7 +20,7 @@ particle art.
 
 ## 2. Transform it
 
-Select the part and click **Transform**. It becomes a 3D particle emitter: the part goes
+Select the part and click **Transform** at the top of the [Properties window](/properties). It becomes a 3D particle emitter: the part goes
 invisible and will now spawn copies of itself. (Details in
 [Transformable objects](/transformable).)
 
@@ -51,7 +51,7 @@ Do the same for **Size**: large at birth, shrinking toward `0` at death. Add a s
 
 ## 6. Colour it (optional)
 
-Open **[Tools → Color](/color)** to fine-tune the colour, or give it a colour sequence
+Open **[Color](/color)** from the hub to fine-tune the colour, or give it a colour sequence
 so it shifts over its life (bright core to a cooler tail, for example).
 
 ## 7. Preview the whole thing

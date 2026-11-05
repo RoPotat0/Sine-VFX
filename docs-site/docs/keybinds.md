@@ -32,4 +32,4 @@ SineVFX's shortcuts never collide with Studio's own modifier shortcuts.
 - Shortcuts are ignored while a text box is focused or while you're capturing a new bind.
 - They read the current selection every time, so selecting different effects changes what they
   act on.
-- See [Settings & themes](/settings) for the rest of the configuration.
+- See [Settings](/settings) for the rest of the configuration.

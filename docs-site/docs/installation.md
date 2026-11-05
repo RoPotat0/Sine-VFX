@@ -45,6 +45,9 @@ viewport. From there, head to the [Quick start](/quick-start).
 - **Creator Store:** updates apply automatically.
 - **Shirt version:** grab the latest file from the Discord when a new version ships.
 
+When a newer version is out, SineVFX shows an **Update available** window. Choose **Later**, or
+**Skip version** to stop being told about that one.
+
 If the UI ever looks broken after an update, fully **disable and re-enable** the plugin (or
 restart Studio) to clear Studio's module cache. See
 [FAQ & troubleshooting](/faq).

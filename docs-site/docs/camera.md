@@ -18,8 +18,8 @@ adds a `Properties` folder **in place**, just like transforming a Beam or Trail.
 view, so there's no particle count.
 
 It's **not a singleton**: transform as many Screen Effects as you like and the runtime sums
-their contributions. Each sub-effect has its own on/off toggle, and its settings only show once
-that toggle is on.
+their contributions. Each sub-effect is an [addon](/properties#addons): pick it from the **Add**
+dropdown in the **Addons** section to show its settings, and pick it again to remove it.
 
 ::: tip Put it where the action is
 A Screen Effect can sit anywhere, including inside a [3D particle](/part) or a model. Emitting

@@ -5,9 +5,8 @@ A few minutes, start to finish.
 
 ## 1. Launch SineVFX
 
-Open the **Plugins** tab and click **SineVFX**. Its floating controls appear in the corner of
-the viewport, with entries for **Emit**, **Library**, **Tools**, **Paths**, **Module**, and
-**Settings**.
+Open the **Plugins** tab and click **SineVFX**. Its [hub](/settings#the-hub) appears in the
+corner of the viewport: one bar with an icon for every tool. Hover an icon to see what it does.
 
 ## 2. Pick something to turn into particles
 
@@ -16,13 +15,14 @@ and material included. That part is going to *become* the particle.
 
 ## 3. Transform it
 
-Select the part. A **Transform** button appears near the controls, click it. The part becomes
+Open the **Properties** window and select the part. A **Transform** button appears beside the
+search bar, click it. The part becomes
 a **3D particle emitter**: it turns invisible and now spawns copies of itself as particles.
 See [Transformable objects](/transformable) for what else can be transformed.
 
 ## 4. Edit its properties
 
-Open the **Properties** window. The effect's channels are grouped into a collapsible tree,
+The **Properties** window now shows the effect's channels, grouped into a collapsible tree,
 Appearance, Emission, Shape, and so on. Change a value and it updates live. See
 [Properties](/properties).
 

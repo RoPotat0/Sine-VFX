@@ -80,6 +80,8 @@ export default defineConfig({
           items: [
             { text: 'Properties', link: '/properties' },
             { text: 'Graph editor', link: '/graph-editor' },
+            { text: 'Gradient editor', link: '/gradient-editor' },
+            { text: 'Color Wheel', link: '/color-wheel' },
             { text: 'Emit & preview', link: '/emit' },
             { text: 'Paths', link: '/paths' },
             { text: 'Asset Library', link: '/library' },
@@ -114,7 +116,8 @@ export default defineConfig({
         {
           text: 'Reference',
           items: [
-            { text: 'Settings & themes', link: '/settings' },
+            { text: 'Settings', link: '/settings' },
+            { text: 'Themes', link: '/themes' },
             { text: 'FAQ & troubleshooting', link: '/faq' },
           ],
         },

@@ -7,7 +7,7 @@ shrinks as a coherent whole and keeps its look at the new scale.
 ## Using it
 
 1. Select the transformed effects to scale.
-2. Open **Tools → Resizer**.
+2. Open **Resizer** from the [hub](/settings#the-hub).
 3. Set the scale factor. Every size channel is multiplied together across the selection.
 
 Beyond plain effects it also scales 3D particles (including Lightning Width and Length, and

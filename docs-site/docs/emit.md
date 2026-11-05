@@ -3,7 +3,7 @@
 The **Emit window** is your live preview. It fires effects right in edit mode so you can see
 exactly what ships, no Play button, no round-trips.
 
-Open it from the **Emit** entry on the SineVFX menu (default keybind `R` to emit, `T` to
+Open it from the **Emit** icon on the [hub](/settings#the-hub) (default keybind `R` to emit, `T` to
 enable, see [Keybinds](/keybinds)).
 
 ## The controls
@@ -19,6 +19,8 @@ Emit / Enable / Disable are the same verbs you'll call at [runtime](/api), so wh
 preview is what your game does.
 
 ## Repeat
+
+Hold the **Emit** icon on the hub to repeat without opening the window.
 
 **Repeat** loops the effect automatically instead of you clicking Emit over and over. It keeps
 firing a play on an interval and runs until you stop it (it can also finish the current cycle

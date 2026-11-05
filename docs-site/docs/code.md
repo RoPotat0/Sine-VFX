@@ -6,7 +6,7 @@ drop it straight into your game.
 ## Using it
 
 1. Select a transformed effect.
-2. Open **Tools → Code**.
+2. Open **Code** from the [hub](/settings#the-hub).
 3. Copy the snippet it shows and paste it into a **LocalScript**.
 
 The snippet uses the [runtime module](/module) you plant with **Module**. It looks

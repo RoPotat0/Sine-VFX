@@ -3,8 +3,9 @@
 **Transform** is the gateway into SineVFX. Before you can graph or preview an effect, you
 transform its instance so the plugin can manage it.
 
-When your selection contains something [transformable](/transformable), a floating
-**Transform** button appears near the Emit controls. Click it to transform the selection.
+When your selection contains something [transformable](/transformable), an accent
+**Transform** button appears beside the search bar in the [Properties window](/properties). Click
+it to transform the selection.
 
 ## What transforming does
 

@@ -16,7 +16,8 @@ Open it from any graph-capable channel in the [Properties window](/properties).
 ## Editing the curve
 
 - **Drag an anchor** to move it in time and value.
-- **Add an anchor** by clicking on the curve; **delete** the selected one with the Delete
+- **Add an anchor** by clicking, or drag from empty space to place one and keep moving it;
+  **delete** the selected one with the Delete
   button (or right-click).
 - **Bezier handles** - each anchor has tangent handles. Pull them out for smooth, eased
   segments; collapse a handle to zero for a straight (linear) segment.
@@ -24,6 +25,10 @@ Open it from any graph-capable channel in the [Properties window](/properties).
 
 A segment with zero-length handles is **linear**; give the handles length and it becomes a
 **curved** segment, sampled smoothly for playback.
+
+## Moving the view
+
+Hold **Space** and drag to pan.
 
 ## Envelopes
 

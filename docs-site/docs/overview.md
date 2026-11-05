@@ -1,8 +1,7 @@
 # Tools
 
-The **Tools** menu holds SineVFX's batch editors, the ones that reshape, rescale, retime,
-recolour, and export whole selections at once. Open it from the **Tools** entry on the SineVFX
-menu; each opens as its own window and works on your current selection: plain effects, 3D
+SineVFX's batch editors reshape, rescale, retime, recolour, and export whole selections at
+once. Each has its own icon on the [hub](/settings#the-hub) and opens as its own window and works on your current selection: plain effects, 3D
 particles (including [Lightning](/lightning)), transformed trails and beams,
 [Screen Effects](/camera) and [Decals](/decal).
 

@@ -6,7 +6,7 @@ place. Your game code then calls a tiny API and the module reproduces the effect
 
 ## Planting the module
 
-1. Open the **Module** entry on the SineVFX menu.
+1. Open **Module** from the [hub](/settings#the-hub).
 2. Plant the module. SineVFX writes it to **`ReplicatedStorage.SineVFX`**.
 
 That's it - the module is self-contained. Ship your place and the effects go with it.

@@ -7,7 +7,7 @@ class together.
 ## Using it
 
 1. Select the transformed effects to retime.
-2. Open **Tools → Retimer**.
+2. Open **Retimer** from the [hub](/settings#the-hub).
 3. Set the time factor. Timing channels (lifetimes, durations, rates) scale together across the
    selection.
 

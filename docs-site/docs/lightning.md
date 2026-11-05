@@ -1,6 +1,6 @@
 # Lightning
 
-**Lightning mode** turns a [3D particle](/part) into a **lightning bolt**. Each particle
+Setting a [3D particle](/part)'s **Type** to **Lightning** turns it into a **lightning bolt**. Each particle
 becomes a jagged bolt made of copies of the emitter's RenderPart. You get zig-zags, branches,
 crackle, growing strikes, and bolts that hit surfaces. Everything is still driven by the same
 emitter, so Rate, Lifetime, EmitCount and the [graph editor](/graph-editor) work as usual.
@@ -8,10 +8,10 @@ emitter, so Rate, Lifetime, EmitCount and the [graph editor](/graph-editor) work
 ## Turning it on
 
 1. Select a 3D particle emitter (or [Transform](/transform) a part into one).
-2. In [Properties](/properties), open the **Lightning** section and switch on **Lightning**.
+2. In [Properties](/properties), set **Type** at the top of **Appearance** to **Lightning**.
 3. [Emit](/emit) it. Each particle is now a bolt shooting out along the emitter's direction.
 
-Once Lightning is on, the Properties window hides the settings that don't apply to a bolt
+Once the Type is Lightning, the Properties window hides the settings that don't apply to a bolt
 (Size, Speed, Rotation, Acceleration, Flipbook, Nested and so on). The bolt settings
 appear inside the normal sections, so you'll find them where you'd expect: thickness under
 **Appearance**, growth under **Emission**, zig-zag shape under **Shape**.
@@ -46,7 +46,7 @@ finds one, the bolt ends exactly on that surface and stays attached to the part 
 nothing is in range, that bolt doesn't fire at all. Point the emitter down for lightning
 that hits the ground.
 
-Plain **Collisions** also works: the bolt and its branches stop at the first surface they
+The **Collision** addon also works: the bolt and its branches stop at the first surface they
 touch.
 
 ## Property reference
@@ -55,7 +55,6 @@ touch.
 
 | Property       | Meaning                                                                                                     |
 | -------------- | ----------------------------------------------------------------------------------------------------------- |
-| **Lightning**  | The on/off toggle. Turns each 3D particle into a bolt.                                                      |
 | **Style**      | How the bolt moves. **Jitter** snaps to a new random shape (classic lightning). **Scroll** sends a smooth wave flowing along it (energy beam). **JitterScroll** does both. |
 | **JitterRate** | How many times per second the bolt snaps to a new shape (graph). 10-20 crackles, 30+ is frantic, 0 freezes it. In Scroll it only re-rolls the branches. |
 | **ScrollSpeed**| *Scroll styles.* How fast the wiggle travels along the bolt, in waves per second. Negative flows the other way. |

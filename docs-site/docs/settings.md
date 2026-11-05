@@ -1,48 +1,74 @@
-# Settings & themes
+# Settings
 
-Open **Settings** from the SineVFX menu to configure the plugin's look and
+Open **Settings** from the [hub](#the-hub) to configure the plugin's look and
 behaviour. Settings persist between sessions.
 
-## Button Layout
+## The hub
 
-Choose which **corner** the SineVFX button (FAB) sits in - bottom-right (default), bottom-left,
-top-right, or top-left. The menu strip and tool windows anchor themselves relative to the
-FAB, so everything follows.
+The **hub** is SineVFX's one floating bar of icons. The button at its corner end expands and
+collapses it. A tool's icon is bright while its window is open, and hovering one shows what it
+does.
 
-## UI scale
+In order, the icons are **Emit** (hold to repeat), [Library](/library), **Particle Counter**,
+[Shifter](/shifter), [Copier](/copier), [Resizer](/resizer), [Retimer](/retimer),
+[Code](/code), [Color](/color), [Properties](/properties), [Module](/module),
+**Trail Preview**, [Paths](/paths) and **Settings**.
 
-SineVFX scales its whole UI so it stays comfortable on any monitor. Adjust the scale to make
-windows and controls larger or smaller.
+**Hub Corner** picks which corner it sits in: bottom-left (default), bottom-right, top-left or
+top-right.
+
+## Emission
+
+- **Repeat Timer** - the gap between bursts when [Repeat](/emit#repeat) is running (0 to 10s).
+
+## Interface
+
+- **Scale** - makes all of SineVFX's windows and controls larger or smaller (0.5 to 2).
+- **Display Order** - where SineVFX draws compared to other UI.
+- **Edge Margin** and **Margin Size** - keep windows a set gap away from the screen edges.
+- **Auto-Hide** - hides the tools when nothing editable is selected.
+- **Dim Unfocused** - fades out windows you aren't working in, so the one you're using stands
+  out.
+- **Dodge Windows** - windows shove each other out of the way and spring back to their spot.
+  Off by default.
+- **Hub Corner** - see [The hub](#the-hub).
+- **Counter Pos** and **Counter Max** - where the Particle Counter sits on screen, and the count
+  above which it reads `N+`.
+
+## Tooltips
+
+Turn hover tooltips on or off, and set the **Hover Delay** before one shows.
 
 ## Themes
 
-SineVFX is fully themeable - colours for surfaces, text, accents, and effect states are all
-driven by a theme.
+Colours, transparency, corners, the font and an animated background image are all set by the
+theme. See [Themes](/themes). The docs site you're reading uses the plugin's own blue-on-near-black
+palette as its starting point.
 
-- **Built-in themes** - **Green**, **Red**, **Purple**, **Yellow/Orange**, **Grey/Blue** and
-  **Greyish** ship with the plugin and are listed first. They're read-only, so make a new theme
-  if you want to tweak one.
-- **Theme Editor** - edit the active theme's colours live.
-- **Import Theme** - bring in a theme someone shared.
-- **Export Theme** - share your theme as a portable string/file.
+## Window Layout
 
-Switching themes, applying a theme and dragging colours in the Theme Editor all recolour the
-open windows **in place**, without rebuilding them, so there's no lag or flicker.
+A layout saves where all your windows are, so you can switch between setups. **Default**,
+**Medium** and **Small** are built in, and on first run SineVFX picks one to fit your screen.
+**Save**, **Load**, **Import**, **Export** and **Delete** manage your own.
 
-## Windows
+## Asset Library
 
-- **Dim Unfocused** - fades out windows you aren't working in, so the one you're using stands
-  out.
-- Windows fade in and out smoothly when you open and close them.
-- Window sizes stay correct when you change the UI scale.
+**Grid Size** sets how large [Asset Library](/library) tiles are, **Always Animate** keeps
+flipbook tiles playing without hovering, and **Flipbook FPS** sets their speed.
 
-The docs site you're reading uses the plugin's own blue-on-near-black palette as its
-starting point.
+## Keybinds
+
+See [Keybinds](/keybinds).
+
+## Reset
+
+**Reset Everything** wipes all SineVFX settings, including themes, layouts and window positions.
+It asks first, and it can't be undone.
 
 ## Persistence
 
 Almost everything you'd expect to stick, sticks - window positions and sizes, which windows
-were open, the FAB corner and expanded state, the Paths toggle, pinned windows, and your
+were open, the hub corner and expanded state, the Paths toggle, pinned windows, and your
 theme. Reopen Studio and you're back where you left off. Under the hood this uses Studio's
 per-plugin settings store.
 
@@ -53,5 +79,9 @@ SineVFX includes a handful of supporting windows that open contextually:
 - **Confirm / Notice** - confirmations and messages.
 - **Particle Counter** - keep an eye on particle counts while tuning performance.
 - **Trail Preview** - preview trail shapes.
+- **Update available** - tells you when a newer version is out, with **Later** and **Skip
+  version** buttons.
+- **Color Wheel** and **Gradient editor** - open when you edit a colour or a colour sequence.
+  See [Color Wheel](/color-wheel) and [Gradient editor](/gradient-editor).
 - **Asset Library / Asset Upload** - the [texture library](/library) and uploading
   your own textures.

@@ -3,7 +3,7 @@
 The **Asset Library** is a browsable collection of **over 14,000 assets** you can apply to
 selected effects with a click, no hunting for asset IDs.
 
-Open it from the **Library** entry on the SineVFX menu (default keybind `B`, see
+Open it from the **Library** icon on the [hub](/settings#the-hub) (default keybind `B`, see
 [Keybinds](/keybinds)). It opens as a dockable Studio widget, and remembers where you docked
 it between sessions.
 

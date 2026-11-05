@@ -22,11 +22,12 @@ as:
 - **Appearance** - how each particle looks (colour, transparency, size, LightEmission /
   LightInfluence / Brightness for glow).
 - **Emission** - Rate, Lifetime, Speed, TimeScale, EmitCount, EmitDelay, EmitDuration.
-- **Shape / EmitterShape** - where and in what direction particles spawn.
-- **Raycast** - snap particles onto the first surface a ray hits (see [Raycast](#raycast)).
+- **Shape / EmitterShape** (addon) - where and in what direction particles spawn.
+- **Raycast** (addon) - snap particles onto the first surface a ray hits (see [Raycast](#raycast)).
 - **Particles / Flipbook** - texture and sprite-sheet options (see below).
 - **Collision, Optimization** - physics and performance.
-- **Lightning** - turns each particle into a bolt (see [Lightning mode](#lightning-mode)).
+- **Type** - what each particle is (see [Particle types](#particle-types)).
+- **Addons** - optional sections you add when you need them (see [Addons](/properties#addons)).
 
 Any numeric channel can be driven by a lifetime **[graph](/graph-editor)**.
 
@@ -81,12 +82,12 @@ own life; the emit-timing channels are SineVFX playback additions.
 ### Raycast
 
 Snaps each particle onto the first surface a ray hits: ground cracks, scorch marks, debris on
-walls, rocks scattered across uneven terrain. It runs at spawn, **before** the Position graphs,
+walls, rocks scattered across uneven terrain. Add it from the [Addons](/properties#addons)
+section. It runs at spawn, **before** the Position graphs,
 so Position then moves the particle from where it landed.
 
 | Property      | Meaning                                                                               |
 | ------------- | ------------------------------------------------------------------------------------- |
-| **Raycast**   | The on/off toggle. The rest only shows when it's on.                                  |
 | **From**      | **Spawn** = each particle's own spawn point (after Shape), so a Shape scatters hits around. **Emitter** = the emitter's centre. |
 | **Direction** | Which way the ray goes, in the emitter's own axes (turns with the emitter). `0, -1, 0` = the emitter's down. |
 | **Distance**  | How far the ray reaches, in studs.                                                    |
@@ -98,6 +99,16 @@ so Position then moves the particle from where it landed.
 
 Raycast respects **Spacing**, so particles that land too close together are re-rolled instead
 of piling up. [Paths](/paths) shows where they'll land.
+
+### Spacing
+
+**SpacingBy** picks what Spacing measures against:
+
+| Option           | Measures against                                                              |
+| ---------------- | ----------------------------------------------------------------------------- |
+| **Particles**    | Where live particles are right now.                                           |
+| **Spawn Points** | Only where particles spawned, for an even spray pattern.                      |
+| **Endpoints**    | Where each one finishes, so bolt tips land apart. With a Route target or a Shockwave, it compares spawn points. |
 
 ### Particles / Flipbook
 
@@ -113,7 +124,7 @@ instead of 2D frames (see above).
 
 ### Collision & Optimization
 
-These groups hold the physics and performance switches - particle collision behaviour, and
+These groups (Collision is an addon) hold the physics and performance switches - particle collision behaviour, and
 culling/limit settings that keep large emitters cheap. Leave them at defaults unless an effect
 needs to bounce off the world or you're trimming cost on a heavy emitter.
 
@@ -129,16 +140,49 @@ animate its geometry (a tumbling debris shape, a morphing blob) rather than just
 Set these up in the emitter's mesh-flipbook settings, and they play back over the same lifetime
 timeline as everything else.
 
-## Lightning mode
+## Particle types
 
-Switch on **Lightning** (in the Lightning section of Properties) and each particle becomes a
-**lightning bolt** instead of a flying part. The bolt is built from jagged segments of the
-RenderPart and supports branches, crackle, growing strikes, routes between targets, and
-striking surfaces. See [Lightning](/lightning) for the full guide and property reference.
+The **Type** dropdown at the top of **Appearance** decides what each particle is. Everything
+except **Particle** is a chain built from segments of the RenderPart, so it shares
+[Lightning](/lightning) settings like Width, Segments and Amplitude.
+
+| Type          | What it is                                  |
+| ------------- | ------------------------------------------- |
+| **Particle**  | A normal moving part. The default.          |
+| **Lightning** | A jagged bolt. See [Lightning](/lightning). |
+| **Tendril**   | A curling arm.                              |
+| **Crack**     | A line that crawls along surfaces.          |
+| **Shockwave** | An expanding ring.                          |
+
+### Tendril
+
+| Property   | Meaning                                                                                  |
+| ---------- | ---------------------------------------------------------------------------------------- |
+| **Curl**   | How far it bends along its length, in degrees (graph). 90 = gentle arm, 180 = curling, 360+ = tight coils. |
+| **Bends**  | How many bends fit along it (graph). 1-2 = long sweeps, 4+ = wiggly.                     |
+| **Writhe** | How fast the bends travel, in cycles per second (graph). 0 = frozen, 0.5 = lazy, 2 = thrashing. Negative flows toward the root. |
+| **Droop**  | Pulls it down as it goes (graph). 0 = none, 1 = heavy. Negative lifts it up.             |
+
+### Crack
+
+| Property   | Meaning                                                                                  |
+| ---------- | ---------------------------------------------------------------------------------------- |
+| **Wander** | How sharply it can turn at each segment, in degrees. 15 = nearly straight, 35 = natural, 80 = chaotic. |
+| **Search** | How far to look for a surface, in studs: along the emission direction first, then straight down. No surface in reach = no crack. |
+| **Lift**   | How far it floats above the surface, in studs. About half the Width works.               |
+
+### Shockwave
+
+| Property      | Meaning                                                                               |
+| ------------- | ------------------------------------------------------------------------------------- |
+| **Radius**    | Size of the ring in studs (graph). Start low and end high to make it expand. Amplitude makes it uneven; use 30+ Segments for a smooth circle. |
+| **Height**    | How tall the ring's band is, in studs (graph). Width sets how thick it is across. EditableMesh and ZOffset ignore this. |
+| **HugGround** | Drops the ring onto the surface under it so it follows the terrain. Off = a flat ring. |
 
 ## Nesting
 
-A part placed inside another emitter's RenderPart template can itself be transformed into a
+Add the **Nested** addon for the on-spawn options. A part placed inside another emitter's
+RenderPart template can itself be transformed into a
 nested 3D particle, so you can layer effects (a glowing core that also sheds sparks, for
 example). Nested `ParticleEmitter` / `Beam` / `Trail` / `Light` / `Sound`, and transformed
 [Lights](/light), [Highlights](/highlight) and [Decals](/decal), inside the template can also

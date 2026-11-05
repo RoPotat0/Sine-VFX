@@ -36,6 +36,9 @@ freezes it in place. It's handy for slow-mo moments, or for speeding one layer o
 effect up without retiming its graphs. (To permanently rescale an effect's timing values, use
 the [Retimer](/retimer) instead.)
 
+TimeScale can also be a [graph](/graph-editor), for speed ramps. Each particle then follows the
+curve over its own life, while the emitter itself keeps running at normal speed.
+
 ## Not transformed, but still driven
 
 You don't transform a `ParticleEmitter` or a `Sound`. The [Part](/part) model gives you

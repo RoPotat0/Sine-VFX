@@ -7,7 +7,7 @@ across many effects.
 ## Using it
 
 1. Select the transformed effects you want to change (emitters, trails, and/or beams).
-2. Open **Tools → Shifter**.
+2. Open **Shifter** from the [hub](/settings#the-hub).
 3. Pick the property and drag the slider. Every selected effect shifts together, live.
 
 Because Shifter keys each object by kind, a mixed selection is handled correctly, each shifted

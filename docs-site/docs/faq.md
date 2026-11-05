@@ -65,6 +65,11 @@ it back afterwards, and with **Distance** on it only hits players whose camera i
 **Enable Mesh / Image APIs** turned on in the Creator Dashboard. Without that, bolts fall back to
 segment parts automatically.
 
+## My theme's background image disappeared
+
+Files you pick from your PC only last until you close Studio, because Roblox plugins can't read a
+file path. **Upload** them in Theme Image to keep them. See [Themes](/themes#use-or-upload).
+
 ## Where's my data stored?
 
 - **Graphs / bezier curves** live as attributes **on the instance**, so they travel with the

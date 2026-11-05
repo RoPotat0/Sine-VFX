@@ -1,7 +1,7 @@
 # Color
 
 The **Color** tool is SineVFX's full colour workflow - a proper picker plus batch recolour
-operations that work across many instance types at once. Open it from **Tools → Color**.
+operations that work across many instance types at once. Open it from the **Color** icon on the [hub](/settings#the-hub).
 
 ## The picker
 
@@ -30,15 +30,22 @@ The Color tool collects colour targets across many instance types in one pass:
 - `Trail`
 - `UIGradient`
 - `BasePart`
-- Transformed [Decals](/decal) (their Color graph)
+- `Light`s
+- `Highlight`s - **fill** and **outline** are separate channels, so each shifts from its own
+  colour
+- [3D particles](/part) - their **Color** graph, plus the **Flipbook** tint as its own channel
+- Transformed [Trails](/trail) and [Beams](/beam) - their Color graph
+- Transformed [Decals](/decal) - their Color graph
+- [Screen Effects](/camera) - their Color Grade **Tint** (it only shows when Color Grade is on)
 
 So a single Replace or Shift can sweep an entire multi-part effect - particles, beams,
 trails, and the parts they're attached to - together.
 
 ## Colour sequences
 
-For channels that use a **colour sequence** over lifetime, SineVFX provides sequence editing
-so a colour can transition across a particle's life, not just sit static.
+For channels that use a **colour sequence** over lifetime, edit the stops by hand in the
+[Gradient editor](/gradient-editor). To pick a single colour (or grab one from the screen with
+the eyedropper), use the [Color Wheel](/color-wheel).
 
 ## Tips
 

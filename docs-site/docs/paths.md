@@ -3,7 +3,7 @@
 **Paths** is a preview mode that draws the **predicted trajectory** of particles for the
 selected emitters, so you can see where they'll travel before you even emit.
 
-Toggle it from the **Paths** entry on the SineVFX menu.
+Toggle it from the **Paths** icon on the [hub](/settings#the-hub).
 
 ## What it shows
 
@@ -35,3 +35,6 @@ updates the curve when world-space forces like Acceleration or wind are involved
 - Paths is a **global preview mode**, not a window - it stays on until you toggle it off, and
   its state persists between sessions.
 - It affects only the **selected** emitters, so select the ones you're tuning.
+- The lines' colour and see-through amount come from your theme: **Paths** colour and
+  **Path Transparency** in the Theme Editor's **3D Viewport** section (built-in themes use
+  0.85). See [Themes](/themes).
