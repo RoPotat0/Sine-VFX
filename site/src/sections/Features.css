@@ -1,0 +1,21 @@
+/* One flat list, flowed into columns. */
+.featlist {
+  max-width: 920px; margin: 0 auto; padding: 0; list-style: none; text-align: left;
+  columns: 3; column-gap: 40px;
+}
+.featlist li {
+  position: relative; padding: 0 0 10px 18px; break-inside: avoid;
+  font-size: 15.5px; line-height: 1.4; color: var(--muted); cursor: default; transition: color .16s;
+}
+.featlist li::before {
+  content: ""; position: absolute; left: 0; top: .5em; width: 6px; height: 6px;
+  border-radius: 50%; background: var(--blue);
+}
+.featlist li:hover { color: var(--text); }
+.featlist li.more { color: var(--dim); font-style: italic; }
+
+@media (max-width: 760px) {
+  .featlist { columns: 2; column-gap: 20px; }
+  .featlist li { font-size: 14.5px; }
+}
+@media (max-width: 380px) { .featlist { columns: 1; } }

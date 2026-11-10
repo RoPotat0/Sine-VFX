@@ -1,0 +1,9 @@
+.footer { padding: 36px 0 64px; border-top: 1px solid var(--line); margin-top: 24px; }
+.footer .wrap { display: flex; align-items: center; justify-content: center; gap: 22px; flex-wrap: wrap; }
+.footer a {
+  display: inline-flex; align-items: center; gap: 8px;
+  color: var(--muted); text-decoration: none; font-size: 15px;
+  transition: color .18s;
+}
+.footer a:hover { color: var(--text); }
+.footer .credit { margin-top: 18px; padding: 0 24px; color: var(--dim); font-size: 13.5px; }

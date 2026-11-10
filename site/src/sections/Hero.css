@@ -1,0 +1,53 @@
+.hero { padding: 54px 0 92px; }
+
+.hero-logo {
+  width: 126px; height: 126px; border-radius: 27px; margin-bottom: 16px;
+  animation: logoGlow 7.5s ease-in-out infinite;
+}
+@keyframes logoGlow {
+  0%, 100% { filter: drop-shadow(0 12px 32px rgba(111, 191, 252, .34)); }
+  33%      { filter: drop-shadow(0 16px 46px rgba(34, 224, 95, .36)); }
+  66%      { filter: drop-shadow(0 16px 46px rgba(255, 77, 77, .36)); }
+}
+
+.wordmark {
+  font: 400 clamp(52px, 10vw, 104px)/1 var(--display);
+  letter-spacing: .01em; color: var(--text);
+  margin: 6px 0 0; animation: introUp .85s var(--ease) both;
+  text-shadow: 0 0 26px rgba(111, 191, 252, .35), 0 0 54px rgba(34, 224, 95, .16);
+}
+
+/* Colour sine wave under the wordmark. The wave shape scrolls by exactly one
+   tile (100px), so the loop is seamless. */
+.sinewave {
+  --wave: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='100'%20height='26'%20viewBox='0%200%20100%2026'%3E%3Cpath%20d='M0%2013%20Q12.5%203%2025%2013%20T50%2013%20T75%2013%20T100%2013'%20fill='none'%20stroke='%23fff'%20stroke-width='2.5'%20stroke-linecap='round'/%3E%3C/svg%3E");
+  width: min(340px, 66%); height: 26px; margin: 12px auto 20px;
+  background: linear-gradient(90deg, var(--green), var(--blue), var(--red));
+  -webkit-mask-image: var(--wave); mask-image: var(--wave);
+  -webkit-mask-repeat: repeat-x; mask-repeat: repeat-x;
+  -webkit-mask-size: 100px 26px; mask-size: 100px 26px;
+  filter: drop-shadow(0 0 6px rgba(111, 191, 252, .4));
+  animation: waveTravel 5s linear infinite, introUp .85s .12s var(--ease) both;
+}
+@keyframes waveTravel {
+  from { -webkit-mask-position: 0 center; mask-position: 0 center; }
+  to   { -webkit-mask-position: 100px center; mask-position: 100px center; }
+}
+
+.sub { color: var(--muted); font-size: 19px; max-width: 47ch; margin: 22px auto 0; animation: introUp .85s .08s var(--ease) both; }
+.sub b { color: var(--text); font-weight: 700; }
+
+.actions { display: flex; gap: 12px; justify-content: center; margin-top: 36px; flex-wrap: wrap; animation: introUp .85s .16s var(--ease) both; }
+@keyframes introUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+
+.stats { display: flex; gap: 58px; justify-content: center; margin-top: 56px; }
+.stat b {
+  display: block; font: 730 33px/1.1 var(--sans); letter-spacing: -.03em;
+  font-variant-numeric: tabular-nums;
+}
+.stat span { display: block; margin-top: 4px; font-size: 14.5px; color: var(--dim); }
+
+@media (max-width: 760px) {
+  .hero { padding: 34px 0 60px; }
+  .stats { gap: 40px; }
+}

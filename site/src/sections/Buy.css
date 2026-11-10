@@ -1,0 +1,57 @@
+.storecard {
+  display: flex; align-items: center; gap: 14px; text-decoration: none;
+  max-width: 620px; margin: 0 auto; padding: 14px 18px;
+  background: var(--card); border-radius: var(--r); color: var(--text);
+  backdrop-filter: blur(14px);
+  transition: transform .16s var(--ease), background .16s;
+}
+.storecard:hover { transform: translateY(-2px); background: var(--card-2); }
+.scbadge {
+  flex: 0 0 auto; width: 44px; height: 44px; border-radius: 50%;
+  display: grid; place-items: center; background: var(--blue); color: var(--on-blue);
+}
+.scbadge img { width: 24px; height: 24px; display: block; }
+.scbadge.green { background: var(--green); color: #000; }
+.scbadge .ic { width: 22px; height: 22px; stroke-width: 2; fill: currentColor; }
+.sctext { flex: 1; display: flex; flex-direction: column; text-align: left; min-width: 0; }
+.sctext b { font: 700 16.5px/1.2 var(--display); letter-spacing: -.01em; }
+.sctext span { font-size: 13px; color: var(--muted); margin-top: 2px; }
+.scarrow { color: var(--dim); display: flex; transition: transform .2s var(--ease); }
+.storecard:hover .scarrow { transform: translateX(4px); }
+
+.ordiv {
+  max-width: 620px; margin: 22px auto; display: flex; align-items: center; gap: 12px;
+  color: var(--dim); font-size: 13px; letter-spacing: .01em;
+}
+.ordiv::before, .ordiv::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+
+.shirtblock { margin-top: 4px; }
+.shirtsteps {
+  margin: 0 0 10px; padding-left: 20px;
+  color: var(--muted); font-size: 14px; line-height: 1.7; text-align: left;
+  display: flex; flex-direction: column; gap: 4px;
+}
+.shirtsteps li { padding-left: 4px; }
+.shirtsteps b { color: var(--text); font-weight: 600; }
+.shirtsteps a { color: var(--text); text-decoration: underline; text-underline-offset: 2px; }
+
+/* "How it works" dropdown under each option. */
+.explain { max-width: 620px; margin: 10px auto 0; text-align: left; }
+.explain summary {
+  display: inline-flex; align-items: center; gap: 6px; cursor: pointer; list-style: none;
+  padding: 4px 8px; margin-left: 10px; border-radius: var(--r-sm);
+  font-size: 13.5px; font-weight: 650; color: var(--dim);
+  transition: color .16s, background .16s;
+}
+.explain summary::-webkit-details-marker { display: none; }
+.explain summary:hover { color: var(--text); background: rgba(255, 255, 255, .04); }
+.explain summary .ic { width: 15px; height: 15px; transition: transform .2s var(--ease); }
+.explain[open] summary { color: var(--muted); }
+.explain[open] summary .ic { transform: rotate(180deg); }
+.explain-body {
+  margin: 6px 0 0; padding: 14px 18px;
+  border-radius: var(--r-sm); background: rgba(11, 14, 22, .5);
+  color: var(--muted); font-size: 14px; line-height: 1.65;
+  animation: explainIn .25s var(--ease);
+}
+@keyframes explainIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }

@@ -1,8 +1,8 @@
 name: Deploy site + docs
 
-# Assembles the existing static site (in /docs) at the root and builds the
-# VitePress documentation (in /docs-site) into the /docs sub-path, then
-# publishes the combined result to GitHub Pages.
+# Builds the React landing page (in /site) to the root and the VitePress
+# documentation (in /docs-site) into the /docs sub-path, then publishes the
+# combined result to GitHub Pages.
 
 on:
   push:
@@ -28,6 +28,12 @@ jobs:
         with:
           node-version: 20
 
+      - name: Build landing page
+        working-directory: site
+        run: |
+          npm ci
+          npm run build
+
       - name: Build VitePress docs
         working-directory: docs-site
         run: |
@@ -38,10 +44,9 @@ jobs:
         run: |
           rm -rf _site
           mkdir -p _site
-          # Main static website at the root (keeps its CNAME → sinevfx.xyz)
-          cp -r docs/. _site/
+          # Landing page at the root (public/CNAME keeps sinevfx.xyz)
+          cp -r site/dist/. _site/
           # Documentation under /docs
-          rm -rf _site/docs
           mkdir -p _site/docs
           cp -r docs-site/docs/.vitepress/dist/. _site/docs/
 

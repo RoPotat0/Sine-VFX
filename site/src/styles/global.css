@@ -1,0 +1,119 @@
+/* Sine VFX. Dark, flat, no card/button outlines. Tokens + base + shared bits. */
+
+:root {
+  --bg: #04050a;
+
+  /* Cards: darker, slightly translucent, no border. */
+  --card: rgba(11, 14, 22, .72);
+  --card-2: rgba(15, 19, 30, .82);
+
+  --btn: #0d101a;
+  --btn-h: #151a28;
+
+  --line: rgba(255, 255, 255, .06);
+
+  --text: #f4f6fd;
+  --muted: #a8b1cd;
+  --dim: #6f7999;
+
+  --blue: #6fbffc;
+  --blue-2: #9ad6ff;
+  --on-blue: #04121f;
+  --green: #22e05f;
+  --red: #ff6b6b;
+
+  /* Cantora One for big display text; Nunito for the rest. */
+  --sans: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
+  --display: 'Cantora One', var(--sans);
+
+  --maxw: 1040px;
+  --r: 12px;
+  --r-sm: 8px;
+
+  --ease: cubic-bezier(.22, 1, .36, 1);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17.5px/1.65 var(--sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.vfx-bg { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+.nav, main, .footer { position: relative; z-index: 2; }
+.nav { z-index: 40; }
+
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+
+h1, h2, h3 { margin: 0; font-family: var(--display); font-weight: 400; line-height: 1.1; letter-spacing: -.01em; }
+h3 { font-size: 20px; }
+p { margin: 0; }
+
+/* ── sections ─────────────────────────────────────────────────────── */
+.section { padding: 100px 0; }
+.section-title { font-size: clamp(30px, 3.8vw, 46px); margin-bottom: 46px; }
+.section-title::after {
+  content: ""; display: block; width: 104px; height: 3px; margin: 18px auto 0;
+  border-radius: 2px; background: linear-gradient(90deg, var(--green), var(--blue), var(--red));
+}
+
+.reveal { opacity: 0; transform: translateY(20px); }
+.reveal.in { opacity: 1; transform: none; transition: opacity .7s var(--ease), transform .7s var(--ease); }
+
+/* ── brand ────────────────────────────────────────────────────────── */
+.brand {
+  display: inline-flex; align-items: center; gap: 11px;
+  font-weight: 730; font-size: 18px; text-decoration: none; color: var(--text);
+  letter-spacing: -.022em;
+}
+.brand img { width: 32px; height: 32px; border-radius: var(--r-sm); display: block; }
+
+/* mask-tinted brand marks: they take the surrounding TEXT colour. */
+.wmark, .dicon {
+  display: inline-block; flex: 0 0 auto;
+  background: currentColor;
+  -webkit-mask-position: center; mask-position: center;
+  -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
+  -webkit-mask-size: contain; mask-size: contain;
+}
+.wmark { width: 20px; height: 20px; -webkit-mask-image: url("../assets/WHite icon small.png"); mask-image: url("../assets/WHite icon small.png"); }
+.dicon { width: 18px; height: 18px; -webkit-mask-image: url("../assets/discord.png"); mask-image: url("../assets/discord.png"); }
+
+.ic {
+  width: 18px; height: 18px; flex: 0 0 auto;
+  fill: none; stroke: currentColor; stroke-width: 1.85;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+
+/* ── buttons: thin, flat, no outline ──────────────────────────────── */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+  height: 44px; padding: 0 22px; border-radius: var(--r-sm);
+  font: 620 15.5px/1 var(--sans); text-decoration: none; cursor: pointer;
+  border: 0; color: var(--text); background: var(--btn);
+  transition: background .16s, transform .16s var(--ease), color .16s;
+}
+.btn.big { height: 50px; padding: 0 26px; font-size: 16px; }
+.btn:hover { transform: translateY(-2px); }
+.btn:active { transform: translateY(0); }
+.btn-primary { background: var(--blue); color: var(--on-blue); }
+.btn-primary:hover { background: var(--blue-2); }
+.btn-soft:hover { background: var(--btn-h); }
+
+@media (max-width: 760px) {
+  body { font-size: 16.5px; }
+  .section { padding: 66px 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; }
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}

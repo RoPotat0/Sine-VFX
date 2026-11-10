@@ -1,0 +1,40 @@
+.strip-wrap {
+  --clipw: min(1060px, 92vw);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 24%, #000 76%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 24%, #000 76%, transparent 100%);
+}
+.strip {
+  display: flex; gap: 30px; overflow-x: auto;
+  padding: 14px calc(50% - var(--clipw) / 2);
+  scrollbar-width: none; cursor: grab;
+  overscroll-behavior-x: contain;
+}
+.strip::-webkit-scrollbar { display: none; }
+.strip.dragging { cursor: grabbing; }
+
+.clip {
+  flex: 0 0 var(--clipw);
+  border-radius: var(--r); overflow: hidden; position: relative;
+  background: #080a12;
+  transform: scale(.955); opacity: .46;
+  transition: transform .55s var(--ease), opacity .55s var(--ease);
+}
+.clip.active { transform: scale(1); opacity: 1; }
+.clip video {
+  display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #06080f;
+}
+.clip .cap {
+  position: absolute; left: 18px; bottom: 18px;
+  padding: 9px 16px; border-radius: var(--r-sm);
+  background: rgba(5, 6, 12, .8); backdrop-filter: blur(10px);
+  font-size: 15px; font-weight: 590;
+  opacity: 0; transform: translateY(6px);
+  transition: opacity .4s var(--ease), transform .4s var(--ease);
+}
+.clip.active .cap { opacity: 1; transform: none; }
+.strip .empty {
+  flex: 0 0 var(--clipw);
+  display: grid; place-items: center; aspect-ratio: 16 / 9;
+  border-radius: var(--r); background: #080a12;
+  color: var(--dim); font-size: 15px; padding: 24px;
+}
